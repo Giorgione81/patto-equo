@@ -8,6 +8,7 @@
 <meta property="og:title" content="Tassazione differenziata delle rendite finanziarie — Patto Equo">
 <meta property="og:description" content="20% per i piccoli risparmiatori, 30-35% sopra i 5 milioni di patrimonio finanziario: la proposta, le fonti e le obiezioni.">
 <meta property="og:type" content="article">
+<link rel="canonical" href="https://pattoequo.it/tassazione-rendite-finanziarie.html">
 <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="39" cy="42" r="17" fill="none" stroke="%231B2A4A" stroke-width="5"/><circle cx="61" cy="42" r="17" fill="none" stroke="%23A9832F" stroke-width="5"/><path d="M 53.72 50.5 A 17 17 0 0 1 44.25 58.17" fill="none" stroke="%231B2A4A" stroke-width="5"/><line x1="15" y1="70" x2="85" y2="70" stroke="%231B2A4A" stroke-width="3" stroke-linecap="round"/></svg>'>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -75,6 +76,18 @@
     background:#fff;
   }
   .verificata-badge svg{width:11px; height:11px; flex-shrink:0;}
+  .mini-chart{background:#fff; border:1px solid var(--line); padding:16px 18px; margin-top:14px;}
+  .mini-chart .mc-title{font-family:'IBM Plex Mono',monospace; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--gold); display:block; margin-bottom:12px;}
+  .mini-chart .mc-row{display:flex; align-items:center; gap:10px; margin-bottom:9px;}
+  .mini-chart .mc-row:last-of-type{margin-bottom:0;}
+  .mini-chart .mc-label{width:150px; flex-shrink:0; font-size:0.82rem; color:#3a372f;}
+  .mini-chart .mc-track{flex:1; height:14px; background:var(--paper-deep); border-radius:2px; overflow:hidden;}
+  .mini-chart .mc-fill{height:100%; background:var(--gold);}
+  .mini-chart .mc-fill.red{background:var(--red);}
+  .mini-chart .mc-fill.green{background:var(--green-gain);}
+  .mini-chart .mc-value{font-family:'IBM Plex Mono',monospace; font-size:0.85rem; color:var(--ink); width:60px; text-align:right; flex-shrink:0;}
+  .mini-chart .mc-source{display:block; margin-top:10px; font-size:0.72rem; color:#8a8577;}
+  @media (max-width:520px){.mini-chart .mc-label{width:100px; font-size:0.76rem;}}
   .placeholder-note{
     background:#fff; border:1px dashed var(--gold); padding:16px 18px; margin-top:14px; font-size:0.9rem; color:#6b6659;
   }
@@ -147,6 +160,13 @@
       <h3>Un'aliquota identica per il piccolo risparmiatore e per il grande portafoglio</h3>
       <p>Le rendite finanziarie in Italia sono tassate al 26%, con un'unica eccezione: i titoli di Stato italiani ed esteri whitelist restano al 12,5%. Questa distinzione riguarda però solo il tipo di titolo, non chi lo possiede: chi realizza una plusvalenza da un fondo azionario o incassa un dividendo paga il 26% sia che l'investimento valga 2.000 euro sia che faccia parte di un portafoglio da 50 milioni.</p>
       <p>I Conti distributivi di Banca d'Italia mostrano che il 10% delle famiglie più ricche detiene il 60,6% della ricchezza netta totale, e che la composizione del patrimonio è molto eterogenea: le famiglie più povere lo tengono soprattutto in casa e depositi, quelle più ricche lo diversificano maggiormente, anche in strumenti finanziari. Questo significa che i guadagni da dividendi e capital gain, pur tassati con la stessa aliquota per tutti, si concentrano in misura sproporzionata nella parte più alta della distribuzione.</p>
+      <div class="mini-chart">
+        <span class="mc-title">Aliquota su dividendi e capital gain — oggi vs proposta</span>
+        <div class="mc-row"><span class="mc-label">Oggi — tutti</span><div class="mc-track"><div class="mc-fill red" style="width:26%"></div></div><span class="mc-value">26%</span></div>
+        <div class="mc-row"><span class="mc-label">Proposta — sotto 5M</span><div class="mc-track"><div class="mc-fill green" style="width:20%"></div></div><span class="mc-value">20%</span></div>
+        <div class="mc-row"><span class="mc-label">Proposta — sopra 5M</span><div class="mc-track"><div class="mc-fill" style="width:32.5%"></div></div><span class="mc-value">30-35%</span></div>
+        <span class="mc-source">Solo su azioni, ETF, fondi e obbligazioni societarie — titoli di Stato invariati al 12,5% per tutti</span>
+      </div>
       <h3 style="margin-top:22px;">Come fanno gli altri paesi</h3>
       <p>Il confronto europeo conferma che l'Italia non è un caso isolato nell'uso di un'aliquota unica: Germania (25% + solidarietà, ~26,4%) e Francia (flat tax al 30%) applicano anch'esse un'aliquota fissa sulle rendite finanziarie, indipendente dal reddito o dal patrimonio (salvo opzione per la tassazione IRPEF ordinaria, se più conveniente per chi ha redditi bassi). La Spagna invece usa una scala progressiva dal 19% al 30% legata all'importo annuo del reddito da capitale, non al patrimonio complessivo. Un vero precedente di aliquota legata al valore del patrimonio detenuto esiste nei Paesi Bassi, dove l'imposta si applica a un rendimento presunto che cresce con il valore totale degli asset posseduti. Un'aliquota italiana esplicitamente differenziata per fasce di patrimonio finanziario non ha oggi equivalenti diretti tra i principali Paesi UE.</p>
       <div class="source-card">

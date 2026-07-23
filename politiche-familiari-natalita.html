@@ -8,6 +8,7 @@
 <meta property="og:title" content="Politiche per le famiglie e la natalità — Patto Equo">
 <meta property="og:description" content="Asili nido, congedi pagati e casa per i giovani invece di bonus una tantum: cosa dice l'evidenza OCSE sulla natalità.">
 <meta property="og:type" content="article">
+<link rel="canonical" href="https://pattoequo.it/politiche-familiari-natalita.html">
 <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="39" cy="42" r="17" fill="none" stroke="%231B2A4A" stroke-width="5"/><circle cx="61" cy="42" r="17" fill="none" stroke="%23A9832F" stroke-width="5"/><path d="M 53.72 50.5 A 17 17 0 0 1 44.25 58.17" fill="none" stroke="%231B2A4A" stroke-width="5"/><line x1="15" y1="70" x2="85" y2="70" stroke="%231B2A4A" stroke-width="3" stroke-linecap="round"/></svg>'>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -75,6 +76,17 @@
     background:#fff;
   }
   .verificata-badge svg{width:11px; height:11px; flex-shrink:0;}
+  .mini-chart{background:#fff; border:1px solid var(--line); padding:16px 18px; margin-top:14px;}
+  .mini-chart .mc-title{font-family:'IBM Plex Mono',monospace; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--gold); display:block; margin-bottom:12px;}
+  .mini-chart .mc-row{display:flex; align-items:center; gap:10px; margin-bottom:9px;}
+  .mini-chart .mc-row:last-of-type{margin-bottom:0;}
+  .mini-chart .mc-label{width:150px; flex-shrink:0; font-size:0.82rem; color:#3a372f;}
+  .mini-chart .mc-track{flex:1; height:14px; background:var(--paper-deep); border-radius:2px; overflow:hidden;}
+  .mini-chart .mc-fill{height:100%; background:var(--gold);}
+  .mini-chart .mc-fill.red{background:var(--red);}
+  .mini-chart .mc-value{font-family:'IBM Plex Mono',monospace; font-size:0.85rem; color:var(--ink); width:60px; text-align:right; flex-shrink:0;}
+  .mini-chart .mc-source{display:block; margin-top:10px; font-size:0.72rem; color:#8a8577;}
+  @media (max-width:520px){.mini-chart .mc-label{width:100px; font-size:0.76rem;}}
   .placeholder-note{
     background:#fff; border:1px dashed var(--gold); padding:16px 18px; margin-top:14px; font-size:0.9rem; color:#6b6659;
   }
@@ -147,6 +159,15 @@
       <h3>Il tasso di fecondità più basso mai registrato in Italia</h3>
       <p>Nel 2025 in Italia sono nati 355mila bambini, il 3,9% in meno rispetto al 2024. Il numero medio di figli per donna è sceso a 1,14, contro l'1,18 dell'anno precedente: il valore più basso mai registrato nella serie storica. La popolazione residente resta sostanzialmente stabile, poco sotto i 59 milioni, ma solo grazie al saldo migratorio (+296mila nel 2025): il saldo naturale — nascite meno decessi — è ampiamente negativo (-296mila circa, peggiore del -283mila del 2024). Senza l'immigrazione, la popolazione italiana starebbe già calando (il ruolo demografico ed economico dell'immigrazione è approfondito nel <a href="immigrazione-canali-legali.html">tema 05 — Immigrazione</a>).</p>
       <p>Il divario territoriale è ampio: la Sardegna è sotto un figlio per donna (0,85) per il sesto anno consecutivo, seguita da Molise (1,02) e Lazio (1,05); il Trentino-Alto Adige, con 1,40, resta la regione più feconda. L'età media al parto è salita a 32,7 anni, massima al Centro Italia (33,1). Nel confronto europeo l'Italia è oggi sotto Germania (1,36 nel 2024), Spagna (1,10, quasi allineata), Francia (1,61) e Svezia (1,43). Ma il confronto con la Francia mostra un effetto spesso trascurato nel dibattito pubblico: se l'Italia avesse avuto la fecondità francese del 2024, i nati sarebbero stati circa 494mila anziché i 370mila realmente registrati — comunque molto meno dei 664mila nati in Francia, perché in Italia le donne in età fertile sono strutturalmente meno numerose. È un effetto demografico che nessuna politica familiare può correggere nel breve periodo. L'Inapp arriva alla stessa conclusione da un'altra angolazione: nei suoi scenari, nemmeno un aumento della fecondità basterebbe da solo a invertire il calo delle nascite nei prossimi decenni, perché pesa già la riduzione strutturale del numero di donne in età feconda, effetto ereditato dalla denatalità degli anni passati. L'Italia è il primo paese al mondo ad aver visto, già nella prima metà degli anni '90, gli ultra65enni superare gli under 15 in numero.</p>
+      <div class="mini-chart">
+        <span class="mc-title">Figli per donna — confronto europeo, 2024</span>
+        <div class="mc-row"><span class="mc-label">Italia</span><div class="mc-track"><div class="mc-fill red" style="width:70.8%"></div></div><span class="mc-value">1,14</span></div>
+        <div class="mc-row"><span class="mc-label">Spagna</span><div class="mc-track"><div class="mc-fill" style="width:68.3%"></div></div><span class="mc-value">1,10</span></div>
+        <div class="mc-row"><span class="mc-label">Germania</span><div class="mc-track"><div class="mc-fill" style="width:84.5%"></div></div><span class="mc-value">1,36</span></div>
+        <div class="mc-row"><span class="mc-label">Svezia</span><div class="mc-track"><div class="mc-fill" style="width:88.8%"></div></div><span class="mc-value">1,43</span></div>
+        <div class="mc-row"><span class="mc-label">Francia</span><div class="mc-track"><div class="mc-fill" style="width:100%"></div></div><span class="mc-value">1,61</span></div>
+        <span class="mc-source">Istat, Indicatori demografici 2025; confronto europeo su dati nazionali più recenti disponibili</span>
+      </div>
       <p>Non è un fenomeno solo italiano, né recente. La fecondità media OCSE è scesa da 3,3 figli per donna nel 1960 a 1,5 nel 2022, ma l'Italia — insieme alla Spagna — ha il valore più basso tra i paesi OCSE (1,2 nel 2022). Quasi una donna italiana su quattro nata nel 1975 (23%) arriva a fine dell'età fertile senza figli, una quota raddoppiata rispetto alla generazione nata nel 1935 e tra le più alte nei paesi OCSE insieme a Spagna e Giappone. La letteratura accademica segnala inoltre che in Italia, soprattutto nelle regioni meridionali, il lavoro femminile resta più in tensione con la genitorialità che in paesi come Danimarca e Norvegia, dove i modelli familiari a doppio reddito sono da tempo la norma.</p>
       <p>Il quadro familiare italiano è cambiato anche a prescindere dalla fecondità: le coppie con figli sono scese dal 41,4% delle famiglie (2003-2005) al 28,4% di oggi; le famiglie unipersonali sono passate dal 25,9% al 37,1%, diventando il tipo di famiglia più diffuso nel paese. Sono aumentate anche le famiglie monogenitoriali, soprattutto madri sole (8,6% del totale).</p>
       <div class="source-card">

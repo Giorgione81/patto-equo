@@ -8,6 +8,7 @@
 <meta property="og:title" content="Limite alla concentrazione di beni immobili — Patto Equo">
 <meta property="og:description" content="Un tetto alla concentrazione immobiliare con trasparenza proprietaria obbligatoria: la proposta, i precedenti reali e le obiezioni.">
 <meta property="og:type" content="article">
+<link rel="canonical" href="https://pattoequo.it/concentrazione-immobiliare.html">
 <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="39" cy="42" r="17" fill="none" stroke="%231B2A4A" stroke-width="5"/><circle cx="61" cy="42" r="17" fill="none" stroke="%23A9832F" stroke-width="5"/><path d="M 53.72 50.5 A 17 17 0 0 1 44.25 58.17" fill="none" stroke="%231B2A4A" stroke-width="5"/><line x1="15" y1="70" x2="85" y2="70" stroke="%231B2A4A" stroke-width="3" stroke-linecap="round"/></svg>'>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -75,6 +76,13 @@
     background:#fff;
   }
   .verificata-badge svg{width:11px; height:11px; flex-shrink:0;}
+  .mini-chart{background:#fff; border:1px solid var(--line); padding:16px 18px; margin-top:14px;}
+  .mini-chart .mc-title{font-family:'IBM Plex Mono',monospace; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--gold); display:block; margin-bottom:12px;}
+  .mini-chart.stat-row{display:flex; gap:28px; flex-wrap:wrap;}
+  .mini-chart.stat-row .mc-stat{flex:1; min-width:160px; border-left:3px solid var(--gold); padding-left:12px;}
+  .mini-chart.stat-row .mc-stat .mc-num{font-family:'IBM Plex Mono',monospace; font-size:1.35rem; color:var(--ink); display:block;}
+  .mini-chart.stat-row .mc-stat .mc-lbl{font-size:0.78rem; color:#6b6659;}
+  .mini-chart .mc-source{display:block; margin-top:12px; font-size:0.72rem; color:#8a8577;}
   .placeholder-note{
     background:#fff; border:1px dashed var(--gold); padding:16px 18px; margin-top:14px; font-size:0.9rem; color:#6b6659;
   }
@@ -146,6 +154,11 @@
     <div class="block-content">
       <h3>La casa come asset finanziario, non solo come bene abitativo</h3>
       <p>Il costo delle abitazioni in Italia, come in gran parte d'Europa, è cresciuto più velocemente dei salari: secondo uno studio della Fondazione Ifel ripreso dal Sole 24 Ore, tra il 2018 e il 2024 i canoni di locazione sono cresciuti in media del 22,6%, e oltre 1,5 milioni di famiglie italiane destinano più del 40% del reddito netto alle spese abitative. Una parte di questa dinamica è legata a un fenomeno raramente affrontato nel dibattito pubblico: la concentrazione di un numero crescente di immobili nelle mani di pochi soggetti — individui, fondi, società immobiliari — che trattano la casa come strumento finanziario piuttosto che come bene abitativo. Il dibattito politico italiano si concentra quasi sempre sulla leva fiscale generale (patrimoniale, IMU) o sull'offerta (permessi edilizi, PNRR): manca quasi del tutto una discussione su un terzo strumento, il limite diretto alla quantità di patrimonio immobiliare accumulabile da un singolo soggetto. Il costo della casa pesa anche su un altro fronte documentato in questo sito: è tra i fattori con effetto negativo più solido sulla natalità (vedi <a href="politiche-familiari-natalita.html">tema 04 — Politiche per le famiglie</a>).</p>
+      <div class="mini-chart stat-row">
+        <div class="mc-stat"><span class="mc-num">+22,6%</span><span class="mc-lbl">canoni di locazione, 2018-2024</span></div>
+        <div class="mc-stat"><span class="mc-num">1,5 mln</span><span class="mc-lbl">famiglie che spendono oltre il 40% del reddito netto in affitto</span></div>
+        <span class="mc-source">Fondazione Ifel, ripreso da Il Sole 24 Ore</span>
+      </div>
       <div class="placeholder-note"><span class="ns-tag">Cosa non sappiamo ancora</span>Non esistono, a oggi, dati pubblici italiani che quantifichino con precisione quante persone fisiche possiedano un numero molto elevato di immobili (es. sopra le 100 unità): i Conti distributivi di Banca d'Italia sono basati su un campione che per costruzione non cattura bene la coda estrema della distribuzione. Lo diciamo esplicitamente invece di stimarlo a caso.</div>
     </div>
   </div>

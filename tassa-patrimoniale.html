@@ -8,6 +8,7 @@
 <meta property="og:title" content="Tassa patrimoniale sopra i 50 milioni — Patto Equo">
 <meta property="og:description" content="Un'imposta minima del 2% sopra i 50 milioni di euro, con fonti verificate, obiezioni incluse e impatto stimato.">
 <meta property="og:type" content="article">
+<link rel="canonical" href="https://pattoequo.it/tassa-patrimoniale.html">
 <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="39" cy="42" r="17" fill="none" stroke="%231B2A4A" stroke-width="5"/><circle cx="61" cy="42" r="17" fill="none" stroke="%23A9832F" stroke-width="5"/><path d="M 53.72 50.5 A 17 17 0 0 1 44.25 58.17" fill="none" stroke="%231B2A4A" stroke-width="5"/><line x1="15" y1="70" x2="85" y2="70" stroke="%231B2A4A" stroke-width="3" stroke-linecap="round"/></svg>'>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -152,6 +153,23 @@
     background:#fff;
   }
   .verificata-badge svg{width:11px; height:11px; flex-shrink:0;}
+  .mini-chart{background:#fff; border:1px solid var(--line); padding:16px 18px; margin-top:14px;}
+  .mini-chart .mc-title{font-family:'IBM Plex Mono',monospace; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--gold); display:block; margin-bottom:12px;}
+  .mini-chart .mc-row{display:flex; align-items:center; gap:10px; margin-bottom:9px;}
+  .mini-chart .mc-row:last-of-type{margin-bottom:0;}
+  .mini-chart .mc-label{width:150px; flex-shrink:0; font-size:0.82rem; color:#3a372f;}
+  .mini-chart .mc-track{flex:1; height:14px; background:var(--paper-deep); border-radius:2px; overflow:hidden;}
+  .mini-chart .mc-fill{height:100%; background:var(--gold);}
+  .mini-chart .mc-fill.red{background:var(--red);}
+  .mini-chart .mc-value{font-family:'IBM Plex Mono',monospace; font-size:0.85rem; color:var(--ink); width:60px; text-align:right; flex-shrink:0;}
+  .mini-chart .mc-source{display:block; margin-top:10px; font-size:0.72rem; color:#8a8577;}
+  @media (max-width:520px){.mini-chart .mc-label{width:100px; font-size:0.76rem;}}
+  .mini-pie{display:flex; gap:22px; align-items:center; flex-wrap:wrap;}
+  .pie-chart{width:110px; height:110px; border-radius:50%; flex-shrink:0;}
+  .pie-legend{flex:1; min-width:190px;}
+  .pie-item{display:flex; align-items:center; gap:8px; font-size:0.82rem; color:#3a372f; margin-bottom:7px;}
+  .pie-item:last-child{margin-bottom:0;}
+  .pie-swatch{width:12px; height:12px; border-radius:2px; flex-shrink:0;}
   .placeholder-note{
     background:#fff; border:1px dashed var(--gold); padding:16px 18px; margin-top:14px; font-size:0.9rem; color:#6b6659;
   }
@@ -227,6 +245,18 @@
     <div class="block-content">
       <h3>La ricchezza si concentra più velocemente di quanto cresca l'economia</h3>
       <p>Il World Inequality Lab documenta una crescita sostenuta della quota di ricchezza detenuta dall'1% più ricco a livello globale nell'ultimo trentennio. In Italia, i Conti distributivi di Banca d'Italia confermano il fenomeno su base nazionale: il 10% delle famiglie più abbienti detiene il 60,6% della ricchezza netta totale, mentre il 50% meno ricco possiede appena il 7,2%. L'indice di Gini, che misura la disuguaglianza, è salito da 71,5 (2024) a 72,2 (2025) — la concentrazione è in aumento, non stabile.</p>
+      <div class="mini-chart">
+        <span class="mc-title">Chi si mangia la torta — quota di ricchezza netta, Italia</span>
+        <div class="mini-pie">
+          <div class="pie-chart" style="background: conic-gradient(var(--red) 0% 60.6%, var(--gold) 60.6% 92.8%, var(--green-gain) 92.8% 100%);"></div>
+          <div class="pie-legend">
+            <div class="pie-item"><span class="pie-swatch" style="background:var(--red)"></span>10% più ricco — 60,6%</div>
+            <div class="pie-item"><span class="pie-swatch" style="background:var(--gold)"></span>40% intermedio — 32,2%</div>
+            <div class="pie-item"><span class="pie-swatch" style="background:var(--green-gain)"></span>50% meno ricco — 7,2%</div>
+          </div>
+        </div>
+        <span class="mc-source">Banca d'Italia, Conti distributivi sulla ricchezza delle famiglie, 4° trim. 2025 — quota intermedia calcolata per differenza</span>
+      </div>
       <p>Guardando alla fascia più alta della distribuzione, il dato è ancora più netto: il 5% delle famiglie più ricche possiede oggi il 50,3% della ricchezza netta nazionale, contro il 46% del 2022 — un salto di quattro punti in tre anni. A livello globale, il rapporto commissionato dalla presidenza brasiliana del G20 all'economista Gabriel Zucman (giugno 2024) stima che i miliardari versano oggi in media l'equivalente dello 0,3% del proprio patrimonio in tasse ogni anno, a fronte di un rendimento reale medio del 7,5% annuo negli ultimi quattro decenni — un divario che nessun sistema fiscale, per quanto progressivo sulla carta, riesce oggi a colmare.</p>
       <p>In Italia il problema ha una faccia specifica: il sistema fiscale ha smesso da tempo di essere progressivo ai livelli più alti della distribuzione. Le rendite finanziarie sono tassate al 26% (12,5% sui titoli di Stato), le locazioni al 21-26% con cedolare secca, mentre i redditi da lavoro dipendente arrivano ad aliquote marginali che superano il 60% già a 32.000 euro se si contano le addizionali locali. Il governo ha inoltre esteso più volte la flat tax sui redditi esteri per i nuovi residenti facoltosi, portandola da 100.000 a 300.000 euro l'anno — un regime pensato per attrarre grandi patrimoni stranieri, non per tassarli. L'imposta di successione italiana genera un gettito inferiore allo 0,1% del PIL, contro circa lo 0,3% di Francia, Germania e Spagna: la trasmissione della ricchezza tra generazioni è oggi, in pratica, quasi esente da imposta.</p>
       <div class="source-card">

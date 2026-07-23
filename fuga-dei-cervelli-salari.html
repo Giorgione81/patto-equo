@@ -8,6 +8,7 @@
 <meta property="og:title" content="Fuga dei cervelli e salari fermi — Patto Equo">
 <meta property="og:description" content="Spostare il carico fiscale dal lavoro a patrimoni e rendite, investire in istruzione, creare condizioni strutturali per restare: la proposta con fonti e obiezioni.">
 <meta property="og:type" content="article">
+<link rel="canonical" href="https://pattoequo.it/fuga-dei-cervelli-salari.html">
 <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="39" cy="42" r="17" fill="none" stroke="%231B2A4A" stroke-width="5"/><circle cx="61" cy="42" r="17" fill="none" stroke="%23A9832F" stroke-width="5"/><path d="M 53.72 50.5 A 17 17 0 0 1 44.25 58.17" fill="none" stroke="%231B2A4A" stroke-width="5"/><line x1="15" y1="70" x2="85" y2="70" stroke="%231B2A4A" stroke-width="3" stroke-linecap="round"/></svg>'>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,6 +75,17 @@
     background:#fff;
   }
   .verificata-badge svg{width:11px; height:11px; flex-shrink:0;}
+  .mini-chart{background:#fff; border:1px solid var(--line); padding:16px 18px; margin-top:14px;}
+  .mini-chart .mc-title{font-family:'IBM Plex Mono',monospace; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--gold); display:block; margin-bottom:12px;}
+  .mini-chart .mc-row{display:flex; align-items:center; gap:10px; margin-bottom:9px;}
+  .mini-chart .mc-row:last-of-type{margin-bottom:0;}
+  .mini-chart .mc-label{width:150px; flex-shrink:0; font-size:0.82rem; color:#3a372f;}
+  .mini-chart .mc-track{flex:1; height:14px; background:var(--paper-deep); border-radius:2px; overflow:hidden;}
+  .mini-chart .mc-fill{height:100%; background:var(--gold);}
+  .mini-chart .mc-fill.green{background:var(--green-gain);}
+  .mini-chart .mc-value{font-family:'IBM Plex Mono',monospace; font-size:0.85rem; color:var(--ink); width:70px; text-align:right; flex-shrink:0;}
+  .mini-chart .mc-source{display:block; margin-top:10px; font-size:0.72rem; color:#8a8577;}
+  @media (max-width:520px){.mini-chart .mc-label{width:100px; font-size:0.76rem;}}
   .placeholder-note{
     background:#fff; border:1px dashed var(--gold); padding:16px 18px; margin-top:14px; font-size:0.9rem; color:#6b6659;
   }
@@ -151,6 +163,12 @@
       <p>Di fronte all'inflazione del 2022-23 gli altri grandi paesi europei hanno protetto il potere d'acquisto con strumenti pubblici: la Francia con il salario minimo indicizzato, la Germania alzando i salari pubblici e facendo pressione sui contratti privati, la Spagna con clausole di garanzia nei contratti collettivi; quasi tutti hanno neutralizzato il fiscal drag. L'Italia — con una contrattazione ancora basata sul protocollo Ciampi del 1993, che non prevede il recupero dell'inflazione imprevista, e con scaglioni IRPEF non indicizzati — è rimasta indietro di circa 8 punti di potere d'acquisto (analisi di Marco Leonardi, Revolution 30/04/2026).</p>
       <h3 style="margin-top:22px;">Chi parte, quanti sono, quanto ci costa</h3>
       <p>Il risultato si legge nei flussi migratori. Secondo l'Istat, nel 2024 gli espatri di cittadini italiani sono stati 156.000 (+36,5% sul 2023): 270.000 nel solo biennio 2023-24, +39,3% sul biennio precedente, il valore più alto dell'ultimo decennio. Chi parte è giovane (età media 32,8 anni) e istruito — i laureati sono tra il 40% e il 44% degli espatriati — e il saldo migratorio degli italiani con l'estero è negativo per 103.000 persone nel solo 2024; il 74% delle partenze resta in Europa. La Fondazione Nord Est stima che tra il 2011 e il 2023 siano emigrati circa 550.000 giovani tra i 18 e i 34 anni, con un saldo netto di -377.000 unità e un valore del capitale umano perso di circa 134 miliardi di euro; e che l'Italia attragga appena il 6% dei giovani europei che si spostano, contro il 34% della Svizzera e il 32% della Spagna. AlmaLaurea misura anche il perché: a cinque anni dal titolo, chi lavora all'estero guadagna in media 2.941 euro netti al mese contro i 1.840 di chi è rimasto — quasi il 60% in più — e il 29,8% di chi è partito indica come motivo la mancanza di opportunità adeguate in Italia.</p>
+      <div class="mini-chart">
+        <span class="mc-title">Retribuzione netta a 5 anni dal titolo</span>
+        <div class="mc-row"><span class="mc-label">Laureati in Italia</span><div class="mc-track"><div class="mc-fill" style="width:62.6%"></div></div><span class="mc-value">1.840 €</span></div>
+        <div class="mc-row"><span class="mc-label">Laureati all'estero</span><div class="mc-track"><div class="mc-fill green" style="width:100%"></div></div><span class="mc-value">2.941 €</span></div>
+        <span class="mc-source">AlmaLaurea, XXVIII Indagine sulla condizione occupazionale dei laureati (2026)</span>
+      </div>
       <p>Non è la mobilità circolare fisiologica di un'economia aperta: è un deflusso netto di età lavorativa e di competenze, in un paese dove la popolazione 20-64 anni è già attesa in calo di oltre un milione di persone nel triennio 2026-2028 (Istat) e dove solo il 30% circa dei giovani è laureato, contro il 70% della Corea del Sud. Ogni laureato che parte porta con sé un investimento pubblico in istruzione che l'Italia ha pagato e che un altro paese incassa.</p>
       <div class="source-card">
         <span class="verificata-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Verificata</span>
