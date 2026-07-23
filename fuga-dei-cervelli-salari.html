@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fuga dei cervelli e salari fermi: trattenere il lavoro qualificato — Patto Equo</title>
+<meta name="description" content="Nel 2024 sono espatriati 156.000 italiani, 4 su 10 laureati; all'estero guadagnano il 60% in più. I dati Istat, FNE e AlmaLaurea, la proposta concreta, le obiezioni e l'impatto.">
+<meta property="og:title" content="Fuga dei cervelli e salari fermi — Patto Equo">
+<meta property="og:description" content="Spostare il carico fiscale dal lavoro a patrimoni e rendite, investire in istruzione, creare condizioni strutturali per restare: la proposta con fonti e obiezioni.">
+<meta property="og:type" content="article">
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="39" cy="42" r="17" fill="none" stroke="%231B2A4A" stroke-width="5"/><circle cx="61" cy="42" r="17" fill="none" stroke="%23A9832F" stroke-width="5"/><path d="M 53.72 50.5 A 17 17 0 0 1 44.25 58.17" fill="none" stroke="%231B2A4A" stroke-width="5"/><line x1="15" y1="70" x2="85" y2="70" stroke="%231B2A4A" stroke-width="3" stroke-linecap="round"/></svg>'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"L'Italia ha il record di occupati: il problema del lavoro non esiste?","acceptedAnswer":{"@type":"Answer","text":"Il record (24,1 milioni) è reale, ma l'occupazione è cresciuta soprattutto in settori a bassa produttività mentre i salari reali perdevano circa l'8% dal 2019: più posti, pagati meno."}},{"@type":"Question","name":"La mobilità dei giovani non è normale in Europa?","acceptedAnswer":{"@type":"Answer","text":"La mobilità circolare è positiva; il problema è il saldo: -103.000 italiani nel solo 2024 (Istat), -377.000 giovani tra 2011 e 2023 (Fondazione Nord Est), e solo il 6% dei giovani europei mobili sceglie l'Italia."}},{"@type":"Question","name":"Gli incentivi al rientro dei cervelli non esistono già?","acceptedAnswer":{"@type":"Answer","text":"Esistono (regime impatriati), ma sono sgravi fiscali temporanei: quando finiscono restano le cause strutturali della partenza — salari, precarietà, ricerca sottofinanziata."}},{"@type":"Question","name":"I salari non li decide il mercato?","acceptedAnswer":{"@type":"Answer","text":"In parte, ma cuneo fiscale e fiscal drag sono scelte pubbliche, e Francia, Germania e Spagna hanno protetto il potere d'acquisto con strumenti pubblici mentre l'Italia restava indietro di 8 punti."}},{"@type":"Question","name":"Più laureati non significa più disoccupati con laurea?","acceptedAnswer":{"@type":"Answer","text":"È l'obiezione più seria: un tessuto di piccole imprese lontane dalla frontiera tecnologica assorbe pochi laureati. Per questo domanda e offerta di competenze vanno mosse insieme."}}]}</script>
+<style>
+  :root{
+    --ink:#1B2A4A;
+    --paper:#F7F5EF;
+    --paper-deep:#EFEBE1;
+    --red:#8C3B33;
+    --gold:#A9832F;
+    --charcoal:#262421;
+    --line:#D9D2C2;
+    --green-gain: #3E6B4F;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--charcoal);
+    font-family:'Inter',sans-serif;
+    line-height:1.55;
+  }
+  h1,h2,h3,.display{
+    font-family:'Fraunces',serif;
+    color:var(--ink);
+    margin:0;
+  }
+  .mono{font-family:'IBM Plex Mono',monospace; letter-spacing:0.02em;}
+  a{color:var(--ink);}
+
+  header{
+    padding:22px 6vw;
+    display:flex; justify-content:space-between; align-items:center;
+    border-bottom:1px solid var(--line);
+  }
+  .logo{font-family:'Fraunces',serif; font-weight:600; font-size:1.05rem; color:var(--ink);}
+  .logo span{color:var(--red);}
+  nav a{font-size:0.85rem; text-decoration:none; color:var(--charcoal); margin-left:28px; font-weight:500;}
+
+  .theme-section{max-width:980px; margin:70px auto; padding:0 6vw;}
+  .theme-header{margin-bottom:44px;}
+  .theme-header .cat{font-family:'IBM Plex Mono',monospace; font-size:0.78rem; color:var(--gold); text-transform:uppercase; letter-spacing:0.1em;}
+  .theme-header h1{font-size:clamp(1.8rem,3.5vw,2.6rem); margin-top:10px;}
+  .theme-header .apertura{font-style:italic; color:#4a4640; margin-top:14px; font-size:1.02rem;}
+  .correlati{font-family:'IBM Plex Mono',monospace; font-size:0.8rem; margin-top:18px;}
+  .block{border-top:1px solid var(--line); padding:34px 0; display:grid; grid-template-columns:160px 1fr; gap:28px;}
+  .block .block-label{font-family:'IBM Plex Mono',monospace; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#8a8577; padding-top:4px;}
+  .block .block-content h3{font-size:1.25rem; font-weight:500; margin-bottom:12px;}
+  .block .block-content p{margin:0 0 10px; color:#3a372f;}
+  .block.problema .block-label{color:var(--red);}
+  .block.proposta .block-label{color:var(--ink);}
+  .source-card{background:var(--paper-deep); border-left:3px solid var(--gold); padding:16px 18px; margin-top:14px; font-size:0.92rem; position:relative;}
+  .source-card .src-name{font-weight:600; display:block; margin-bottom:4px; padding-right:110px;}
+  .source-card a{font-size:0.85rem; text-decoration:underline; color:var(--ink);}
+  .verificata-badge{
+    position:absolute; top:14px; right:16px;
+    display:flex; align-items:center; gap:5px;
+    border:1.5px solid var(--gold); border-radius:20px;
+    padding:3px 10px 3px 7px;
+    font-family:'IBM Plex Mono',monospace; font-size:0.62rem;
+    letter-spacing:0.03em; text-transform:uppercase; color:var(--gold);
+    background:#fff;
+  }
+  .verificata-badge svg{width:11px; height:11px; flex-shrink:0;}
+  .placeholder-note{
+    background:#fff; border:1px dashed var(--gold); padding:16px 18px; margin-top:14px; font-size:0.9rem; color:#6b6659;
+  }
+  .placeholder-note .ns-tag{font-family:'IBM Plex Mono',monospace; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--gold); display:block; margin-bottom:6px;}
+  .obj{border:1px solid var(--line); border-radius:2px; margin-bottom:10px; overflow:hidden;}
+  .obj summary{padding:14px 18px; cursor:pointer; font-weight:500; background:#fff; list-style:none; display:flex; justify-content:space-between; align-items:center;}
+  .obj summary::after{content:"+"; font-family:'IBM Plex Mono',monospace; color:var(--gold); font-size:1.1rem;}
+  .obj[open] summary::after{content:"–";}
+  .obj .risposta{padding:0 18px 18px; color:#3a372f; font-size:0.94rem; border-top:1px solid var(--line); padding-top:14px;}
+  .obj .risposta .tag{font-family:'IBM Plex Mono',monospace; font-size:0.7rem; color:var(--green-gain); text-transform:uppercase; display:block; margin-bottom:6px;}
+  .bilancio{display:grid; grid-template-columns:1fr auto 1fr; gap:20px; align-items:stretch; margin-top:18px;}
+  .piatto{background:#fff; border:1px solid var(--line); padding:20px; border-radius:2px;}
+  .piatto.perde{border-top:3px solid var(--red);}
+  .piatto.guadagna{border-top:3px solid var(--green-gain);}
+  .piatto .who{font-weight:600; font-size:0.95rem; margin-bottom:4px;}
+  .piatto .amount{font-family:'IBM Plex Mono',monospace; font-size:1.3rem; color:var(--ink); display:block; margin:8px 0 4px;}
+  .piatto .note{font-size:0.82rem; color:#6b6659;}
+  .fulcro{display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:0.75rem; color:#8a8577; writing-mode:vertical-lr; text-transform:uppercase;}
+
+  .ascolta-wrap{background:var(--paper-deep); padding:56px 6vw;}
+  .ascolta-inner{max-width:700px; margin:0 auto;}
+  .ascolta-inner .cat{font-family:'IBM Plex Mono',monospace; font-size:0.78rem; color:var(--gold); text-transform:uppercase; letter-spacing:0.1em;}
+  .ascolta-inner h2{font-size:clamp(1.5rem,3vw,2rem); margin-top:10px;}
+  .ascolta-inner p.desc{color:#4a4640; margin-top:12px; font-size:0.96rem; max-width:560px;}
+  .ascolta-form{margin-top:24px;}
+  .ascolta-form p{font-size:0.9rem; color:#6b6659; margin:0 0 14px;}
+  .ascolta-form button{background:var(--ink); color:#fff; border:none; padding:13px 28px; font-family:'Inter',sans-serif; font-weight:600; font-size:0.92rem; border-radius:2px; cursor:pointer;}
+  .ascolta-form button:hover{background:#26375c;}
+
+  footer{border-top:1px solid var(--line); padding:36px 6vw; text-align:center; font-size:0.8rem; color:#847e6f;}
+
+  @media (max-width: 720px){
+    .block{grid-template-columns:1fr; gap:8px;}
+    .bilancio{grid-template-columns:1fr;}
+    .fulcro{writing-mode:horizontal-tb; padding:6px 0;}
+    nav a{margin-left:14px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo" style="display:flex; align-items:center; gap:10px;">
+    <a href="index.html" style="text-decoration:none; color:var(--ink); display:flex; align-items:center; gap:10px;">
+      <svg viewBox="0 0 100 100" width="26" height="26" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="39" cy="42" r="17" fill="none" stroke="#1B2A4A" stroke-width="5"/>
+        <circle cx="61" cy="42" r="17" fill="none" stroke="#A9832F" stroke-width="5"/>
+        <path d="M 53.72 50.5 A 17 17 0 0 1 44.25 58.17" fill="none" stroke="#1B2A4A" stroke-width="5"/>
+        <line x1="15" y1="70" x2="85" y2="70" stroke="#1B2A4A" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      Patto <span>Equo</span>
+    </a>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#news">News</a>
+    <a href="index.html#ascolta-home">Giorgio Ascolta</a>
+  </nav>
+</header>
+
+<section class="theme-section" id="fuga-cervelli">
+  <div class="theme-header">
+    <span class="cat">Tema 06 — Lavoro, salari e fuga dei cervelli</span>
+    <h1>Salari fermi e giovani in partenza: trattenere il lavoro qualificato, non solo rimpiangerlo</h1>
+    <p class="apertura">In una frase: spostare il carico fiscale dal lavoro dipendente verso patrimoni e rendite, investire nell'istruzione e creare condizioni strutturali — non sgravi temporanei — perché restare in Italia torni a essere una scelta razionale.</p>
+  </div>
+
+  <div class="block problema">
+    <div class="block-label">Il problema</div>
+    <div class="block-content">
+      <h3>Un paese che forma lavoro qualificato e poi lo regala all'estero</h3>
+      <p>I salari reali italiani restano inferiori del 6,1% rispetto al primo trimestre del 2021: secondo l'analisi OCSE ripresa dalla stampa italiana, è il divario più ampio tra le grandi economie dell'area. E non è un incidente recente: sui dati OCSE citati dall'economista Marco Leonardi (Università Statale di Milano, ex capo dei consiglieri economici del governo Draghi), tra il 1991 e il 2023 i salari reali italiani sono <em>scesi</em> del 3,4%, mentre nella media dei paesi industrializzati crescevano del 25% e in Germania e Francia di oltre il 30%; nel solo periodo 2019-2024 l'Italia ha perso circa l'8%. L'occupazione intanto cresce — 24,1 milioni di occupati, un record storico — ma cresce soprattutto dove produttività e salari sono più bassi.</p>
+      <p>Il carico fiscale aggrava il quadro, in due modi documentati. Il primo è il fiscal drag: con l'inflazione del 2022-2024, scaglioni IRPEF non indicizzati hanno trasferito dai lavoratori dipendenti e pensionati allo Stato circa 25 miliardi di euro in due anni (stima di Marco Leonardi e Lorenzo Rizzo su lavoce.info, citata nella puntata Revolution del 24/09/2025) — un aumento di tasse mai votato da nessun Parlamento. Il secondo è l'iniquità orizzontale: come osserva Giuseppe Pisauro (ex presidente dell'Ufficio Parlamentare di Bilancio), a parità di reddito un lavoratore dipendente può pagare un'aliquota fino al 45%, mentre un autonomo in regime forfettario paga il 15% sostitutivo fino a 85.000 euro di ricavi. Il sistema fiscale, cioè, tratta il lavoro dipendente come la base imponibile più facile da spremere — lo stesso squilibrio documentato nel <a href="tassa-patrimoniale.html">tema 01</a> rispetto a patrimoni e rendite.</p>
+      <h3 style="margin-top:22px;">Come fanno gli altri paesi</h3>
+      <p>Di fronte all'inflazione del 2022-23 gli altri grandi paesi europei hanno protetto il potere d'acquisto con strumenti pubblici: la Francia con il salario minimo indicizzato, la Germania alzando i salari pubblici e facendo pressione sui contratti privati, la Spagna con clausole di garanzia nei contratti collettivi; quasi tutti hanno neutralizzato il fiscal drag. L'Italia — con una contrattazione ancora basata sul protocollo Ciampi del 1993, che non prevede il recupero dell'inflazione imprevista, e con scaglioni IRPEF non indicizzati — è rimasta indietro di circa 8 punti di potere d'acquisto (analisi di Marco Leonardi, Revolution 30/04/2026).</p>
+      <h3 style="margin-top:22px;">Chi parte, quanti sono, quanto ci costa</h3>
+      <p>Il risultato si legge nei flussi migratori. Secondo l'Istat, nel 2024 gli espatri di cittadini italiani sono stati 156.000 (+36,5% sul 2023): 270.000 nel solo biennio 2023-24, +39,3% sul biennio precedente, il valore più alto dell'ultimo decennio. Chi parte è giovane (età media 32,8 anni) e istruito — i laureati sono tra il 40% e il 44% degli espatriati — e il saldo migratorio degli italiani con l'estero è negativo per 103.000 persone nel solo 2024; il 74% delle partenze resta in Europa. La Fondazione Nord Est stima che tra il 2011 e il 2023 siano emigrati circa 550.000 giovani tra i 18 e i 34 anni, con un saldo netto di -377.000 unità e un valore del capitale umano perso di circa 134 miliardi di euro; e che l'Italia attragga appena il 6% dei giovani europei che si spostano, contro il 34% della Svizzera e il 32% della Spagna. AlmaLaurea misura anche il perché: a cinque anni dal titolo, chi lavora all'estero guadagna in media 2.941 euro netti al mese contro i 1.840 di chi è rimasto — quasi il 60% in più — e il 29,8% di chi è partito indica come motivo la mancanza di opportunità adeguate in Italia.</p>
+      <p>Non è la mobilità circolare fisiologica di un'economia aperta: è un deflusso netto di età lavorativa e di competenze, in un paese dove la popolazione 20-64 anni è già attesa in calo di oltre un milione di persone nel triennio 2026-2028 (Istat) e dove solo il 30% circa dei giovani è laureato, contro il 70% della Corea del Sud. Ogni laureato che parte porta con sé un investimento pubblico in istruzione che l'Italia ha pagato e che un altro paese incassa.</p>
+      <div class="source-card">
+        <span class="verificata-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Verificata</span>
+        <span class="src-name">Istat — "Gli italiani residenti all'estero — Anni 2023 e 2024" (luglio 2025)</span>
+        <a href="https://www.istat.it/wp-content/uploads/2025/07/Stat-today_Italiani-residenti-allestero_2023-24.pdf" target="_blank">→ istat.it — Italiani residenti all'estero 2023-24 (PDF)</a>
+      </div>
+      <div class="source-card">
+        <span class="verificata-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Verificata</span>
+        <span class="src-name">ISTAT — Indicatori demografici, anno 2025 (popolazione in età lavorativa)</span>
+        <a href="https://www.istat.it/wp-content/uploads/2026/03/Report_Indicatori-demografici_Anno-2025.pdf" target="_blank">→ istat.it — Report Indicatori demografici, anno 2025</a>
+      </div>
+      <div class="placeholder-note"><span class="ns-tag">Cosa non sappiamo ancora</span>Due limiti che i numeri qui sopra impongono di dichiarare. Parte del balzo degli espatri 2024 è un effetto statistico della legge 213/2023, che ha introdotto sanzioni per la mancata iscrizione all'AIRE (l'anagrafe degli italiani all'estero): il fenomeno è reale e in crescita, ma l'ultimo anno riflette in parte l'emersione di partenze già avvenute — lo segnala la stessa Istat. E la cifra di 134 miliardi di capitale umano perso è una stima della sola Fondazione Nord Est, con metodologia propria: la citiamo come ordine di grandezza, non come dato consolidato.</div>
+    </div>
+  </div>
+
+  <div class="block proposta">
+    <div class="block-label">La proposta</div>
+    <div class="block-content">
+      <h3>Quattro leve strutturali, non un bonus per chi torna</h3>
+      <p><strong>1. Spostare il carico fiscale dal lavoro a patrimoni e rendite.</strong> Il gettito delle proposte dei temi <a href="tassa-patrimoniale.html">01 (patrimoniale sopra i 50 milioni)</a> e <a href="tassazione-rendite-finanziarie.html">02 (rendite finanziarie)</a> destinato prioritariamente alla riduzione del cuneo fiscale sul lavoro dipendente, insieme all'indicizzazione automatica degli scaglioni IRPEF all'inflazione, per eliminare il fiscal drag in modo strutturale: nessun aumento di tasse senza un voto esplicito del Parlamento. A questo si aggiunge la leva contrattuale indicata da Marco Leonardi: clausole nei contratti collettivi nazionali che consentano di recuperare l'inflazione imprevista anche in vigenza di contratto, come già avviene in Spagna — un aggiornamento di istituzioni ferme al 1993, non una nuova spesa pubblica.</p>
+      <p><strong>2. Stessa tassazione a parità di reddito.</strong> Riallineamento graduale tra il regime forfettario degli autonomi e la tassazione del lavoro dipendente: non punire chi è autonomo, ma smettere di penalizzare chi è dipendente — l'iniquità orizzontale segnalata da Pisauro.</p>
+      <p><strong>3. Investire nell'istruzione terziaria e nella ricerca.</strong> È la proposta avanzata dall'economista Francesco Billari (rettore dell'Università Bocconi): con poche coorti giovani, l'unica strada è renderle più produttive — percorsi di studio più lunghi, insegnanti pagati meglio, obiettivo di portare la quota di laureati verso i livelli dei paesi avanzati. Con una condizione complementare: incentivare anche la domanda di lavoro qualificato delle imprese (innovazione, dimensione, aggregazione), perché l'offerta di laureati senza domanda produce solo disoccupati istruiti o emigrati.</p>
+      <p><strong>4. Dal rientro agevolato alle condizioni per restare.</strong> Il regime "impatriati" oggi offre sgravi fiscali temporanei a chi rientra: utile, ma non tocca le ragioni della partenza. La leva strutturale è rendere competitive le condizioni di partenza — retribuzioni d'ingresso, stabilità contrattuale, finanziamento della ricerca, tempi di carriera — misurate ogni anno rispetto a Francia, Germania e Spagna con un rapporto pubblico.</p>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-label">La fonte</div>
+    <div class="block-content">
+      <div class="source-card">
+        <span class="verificata-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Verificata</span>
+        <span class="src-name">Istat — "Migrazioni interne e internazionali della popolazione residente — Anni 2023/2024" (giugno 2025)</span>
+        <p>Gli espatri di cittadini italiani: 270.000 nel biennio 2023-24 (+39,3%), 156.000 nel solo 2024 — il massimo dell'ultimo decennio.</p>
+        <a href="https://www.istat.it/wp-content/uploads/2025/06/Report-MIGRAZIONI-INTERNE-E-INTERNAZIONALI-DELLA-POPOLAZIONE-RESIDENTE-ANNI-2023-2024-1.pdf" target="_blank">→ istat.it — Report Migrazioni 2023-2024 (PDF)</a>
+      </div>
+      <div class="source-card">
+        <span class="verificata-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Verificata</span>
+        <span class="src-name">Istat — "Gli italiani residenti all'estero — Anni 2023 e 2024" (luglio 2025)</span>
+        <p>Età media di chi emigra (32,8 anni), quota di laureati tra gli espatriati (40-44%), saldo migratorio degli italiani (-103.000 nel 2024), mete (74% in Europa) e il caveat sulla legge AIRE 213/2023.</p>
+        <a href="https://www.istat.it/wp-content/uploads/2025/07/Stat-today_Italiani-residenti-allestero_2023-24.pdf" target="_blank">→ istat.it — Italiani residenti all'estero 2023-24 (PDF)</a>
+      </div>
+      <div class="source-card">
+        <span class="verificata-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Verificata</span>
+        <span class="src-name">Fondazione Nord Est — "I giovani e la scelta di trasferirsi all'estero" (presentato al CNEL, ottobre 2023)</span>
+        <p>550.000 giovani 18-34 emigrati tra 2011 e 2023, saldo netto -377.000, capitale umano stimato ~134 miliardi di euro (stima con metodologia propria), Italia ultima in Europa per attrattività dei giovani (6% contro 34% della Svizzera).</p>
+        <a href="https://www.fnordest.it/web/fne/content.nsf/0/207F7347275379C9C1258A4E002C8CCC/$file/Paper%20FINALE%20-%20Ottobre%202023.pdf" target="_blank">→ fnordest.it — il paper completo (PDF)</a>
+      </div>
+      <div class="source-card">
+        <span class="src-name">AlmaLaurea — XXVIII Indagine sulla condizione occupazionale dei laureati (2026)</span>
+        <p>Retribuzione a 5 anni dal titolo: 2.941 euro netti/mese all'estero contro 1.840 in Italia (+60% circa); il 91,2% degli occupati all'estero lavora in Europa; il 29,8% indica la mancanza di opportunità adeguate in Italia come motivo dell'espatrio.</p>
+        <a href="https://www.almalaurea.it/i-dati/le-nostre-indagini/condizione-occupazionale-laureati" target="_blank">→ almalaurea.it — condizione occupazionale dei laureati (link all'edizione esatta da verificare)</a>
+      </div>
+      <div class="source-card">
+        <span class="src-name">OCSE — Employment Outlook (dati sui salari reali), ripreso dalla stampa italiana</span>
+        <p>Il dato sui salari reali italiani (-6,1% rispetto al primo trimestre 2021, divario più ampio tra le grandi economie OCSE) e sulla quota di giovani "fragili" (27%). Le serie di lungo periodo (1991-2023: -3,4% Italia contro +25% della media OCSE; 2019-2024: -8%) sono citate da Marco Leonardi nella puntata Revolution del 30/04/2026.</p>
+        <a href="https://www.oecd.org/en/publications/serials/oecd-employment-outlook_g1gh2e4e.html" target="_blank">→ oecd.org — OECD Employment Outlook (link da verificare sull'edizione esatta)</a>
+      </div>
+      <div class="source-card">
+        <span class="verificata-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Verificata</span>
+        <span class="src-name">Fondazione Leone Moressa — XV Rapporto annuale sull'economia dell'immigrazione, ed. 2025</span>
+        <p>La segmentazione del mercato del lavoro: solo il 9,1% degli occupati stranieri in professioni qualificate o tecniche, contro il 39,6% degli italiani.</p>
+        <a href="https://www.fondazioneleonemoressa.org/2025/10/20/presentazione-rapporto-2024-2-2/" target="_blank">→ fondazioneleonemoressa.org — Rapporto 2025</a>
+      </div>
+      <div class="source-card">
+        <span class="src-name">Revolution (Rai Radio 3, Stefano Feltri) — puntate dell'11/12/2025 "Sciopero" (Pietro Galeone, Bocconi), 30/04/2026 "Il problema nascosto del lavoro" (Marco Leonardi, Università Statale di Milano), 04/06/2026 "Un futuro da rider" (NIDIL-CGIL), oltre a 24/09/2025, 26/05/2026 e 10/06/2026</span>
+        <p>Fiscal drag (stima Leonardi/Rizzo su lavoce.info), salari reali di lungo periodo e confronto europeo (Leonardi), frattura sindacale e divari retributivi per dimensione d'impresa (Galeone su dati Istat), condizioni del lavoro di piattaforma, iniquità orizzontale della flat tax (Pisauro) e proposta Billari sull'istruzione. Fonte giornalistica di commento e intervista, non un dato primario: le citazioni sono attribuite ai singoli ospiti.</p>
+        <a href="https://open.spotify.com/show/0y5A5Vr60wggGWfMuJTS9H" target="_blank">→ pagina del programma su Spotify</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-label">Obiezioni</div>
+    <div class="block-content">
+      <details class="obj">
+        <summary>L'Italia ha il record storico di occupati: il problema del lavoro non esiste</summary>
+        <div class="risposta"><span class="tag">Risposta</span>Il record è reale — circa 24,1 milioni di occupati — ma può essere il sintomo del problema, non la sua smentita. Come osserva Marco Leonardi, l'occupazione è cresciuta soprattutto in settori a bassa produttività e a bassi salari (turismo, ristorazione), tra gli over 50 trattenuti dall'età pensionabile (+20% dal 2008, contro appena +1,4% tra i 25-34enni), e in parte perché l'inflazione ha reso il lavoro più economico per le imprese. Lo ha riconosciuto anche il governatore della Banca d'Italia Fabio Panetta nelle Considerazioni finali sul 2025: la dinamica dell'occupazione ha superato quella del prodotto "grazie alla forte moderazione salariale". Più posti, pagati meno, non è una buona notizia da celebrare senza guardare le buste paga.</div>
+      </details>
+      <details class="obj">
+        <summary>La mobilità dei giovani è normale in un'economia europea aperta, non un'emergenza</summary>
+        <div class="risposta"><span class="tag">Risposta</span>Vero per la mobilità circolare: partire, formarsi, tornare è un arricchimento, non un problema. Il punto critico italiano è il saldo, che ora i dati primari misurano: -103.000 italiani nel solo 2024 (Istat, rimpatri in calo del 14,3%), -377.000 giovani tra il 2011 e il 2023 (Fondazione Nord Est), e appena il 6% dei giovani europei che si spostano sceglie l'Italia, contro il 34% della Svizzera. Chi arriva, inoltre, non compensa per livello di qualifica: secondo la Fondazione Leone Moressa solo il 9,1% degli occupati stranieri lavora in professioni qualificate o tecniche, contro il 39,6% degli italiani. La differenza tra circolazione e fuga sta tutta nel saldo — e il saldo italiano è una fuga.</div>
+      </details>
+      <details class="obj">
+        <summary>Gli incentivi al rientro esistono già: il regime "impatriati"</summary>
+        <div class="risposta"><span class="tag">Risposta</span>Esistono, e per alcuni profili funzionano come spinta al rientro. Ma sono sgravi temporanei: alla scadenza, la persona si ritrova con le stesse condizioni che l'avevano spinta a partire — salari d'ingresso più bassi che altrove, precarietà più lunga, ricerca sottofinanziata. Un incentivo fiscale a tempo non corregge un divario strutturale: lo rinvia. È il motivo per cui la proposta punta sulle condizioni per restare, non solo sugli sconti per tornare.</div>
+      </details>
+      <details class="obj">
+        <summary>I salari li decide il mercato, non la politica</summary>
+        <div class="risposta"><span class="tag">Risposta</span>In parte è vero: la dinamica salariale dipende da produttività, contrattazione e concorrenza. Ma due leve sono interamente pubbliche: il cuneo fiscale decide quanta parte del costo del lavoro arriva in busta paga, e il fiscal drag — l'aumento di prelievo dovuto a scaglioni non indicizzati all'inflazione — è una scelta di policy, non un esito di mercato: circa 25 miliardi in due anni trasferiti dai redditi da lavoro allo Stato senza alcun voto parlamentare, secondo la stima citata nel blocco "Il problema".</div>
+      </details>
+      <details class="obj">
+        <summary>L'obiezione più seria: più laureati significa solo più disoccupati con laurea, se le imprese non li assorbono</summary>
+        <div class="risposta"><span class="tag">Risposta</span>È il limite reale della sola leva dell'istruzione, emerso anche nel dibattito sulla proposta Billari: un tessuto produttivo di piccole imprese lontane dalla frontiera tecnologica domanda pochi laureati, e l'offerta senza domanda produce sotto-occupazione qualificata o emigrazione — esattamente il fenomeno che si vorrebbe curare. Per questo la proposta lega esplicitamente l'investimento in istruzione agli incentivi alla domanda di lavoro qualificato (innovazione e crescita dimensionale delle imprese): le due leve funzionano solo insieme, e lo diciamo apertamente invece di promettere che una basti.</div>
+      </details>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-label">Impatto stimato</div>
+    <div class="block-content">
+      <div class="bilancio">
+        <div class="piatto perde">
+          <div class="who">Chi ci perde</div>
+          <span class="amount">Il bilancio pubblico nel breve periodo, i regimi agevolati</span>
+          <div class="note">L'indicizzazione degli scaglioni IRPEF rinuncia al gettito "automatico" del fiscal drag (circa 25 miliardi nel solo biennio 2022-2024, secondo la stima Leonardi/Rizzo) e il riallineamento del forfettario riduce un vantaggio oggi goduto da una parte degli autonomi. Non esiste una stima indipendente verificata del costo netto complessivo della proposta: lo diciamo esplicitamente, invece di inventare una cifra. La copertura indicata è il gettito dei temi 01 e 02.</div>
+        </div>
+        <div class="fulcro">bilancio</div>
+        <div class="piatto guadagna">
+          <div class="who">Chi ci guadagna</div>
+          <span class="amount">Lavoratori dipendenti e giovani qualificati</span>
+          <div class="note">Milioni di lavoratori dipendenti e pensionati smettono di subire aumenti di tasse mai votati; i giovani qualificati trovano condizioni d'ingresso misurate ogni anno contro Francia, Germania e Spagna — dove oggi un laureato guadagna, a cinque anni dal titolo, quasi il 60% in più che in Italia (AlmaLaurea). E il paese smette di regalare all'estero l'investimento pubblico in istruzione di chi parte: per i soli giovani emigrati tra il 2011 e il 2023, la Fondazione Nord Est lo valuta in circa 134 miliardi di euro (stima con metodologia propria, citata come ordine di grandezza).</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="theme-section" style="margin-top:0; margin-bottom:40px;">
+  <p style="font-style:italic; color:#4a4640; border-top:1px solid var(--line); padding-top:28px;">In sintesi: non proponiamo bonus per chi torna né vincoli per chi vuole partire — la libertà di movimento è un diritto, non il problema. Proponiamo di rimuovere le ragioni strutturali della partenza: un fisco che tratta il lavoro dipendente come la base imponibile più facile da spremere, salari reali fermi da trent'anni mentre altrove crescevano del 25-30%, 156.000 espatri nel solo 2024 con 4 laureati ogni 10 che partono. La copertura viene dalle altre proposte di questo sito: chi ha di più contribuisce di più, perché lavorare in Italia torni a convenire.</p>
+  <details class="obj" style="margin-top:18px;">
+    <summary>Glossario minimo: "fiscal drag", "cuneo fiscale", "regime impatriati"</summary>
+    <div class="risposta"><span class="tag">Definizioni</span><strong>Fiscal drag</strong>: quando l'inflazione spinge i redditi nominali in scaglioni IRPEF più alti senza che il potere d'acquisto sia aumentato — un aumento di tasse automatico e mai votato. <strong>Cuneo fiscale</strong>: la differenza tra quanto un lavoratore costa all'azienda e quanto riceve netto in busta paga. <strong>Regime impatriati</strong>: lo sgravio fiscale temporaneo per i lavoratori che trasferiscono la residenza in Italia dopo un periodo all'estero.</div>
+  </details>
+  <p class="correlati">Temi correlati: <a href="tassa-patrimoniale.html">01 — Patrimoniale sopra i 50 milioni</a> · <a href="tassazione-rendite-finanziarie.html">02 — Tassazione delle rendite finanziarie</a> · <a href="immigrazione-canali-legali.html">05 — Immigrazione: canali legali</a></p>
+</div>
+
+<div class="ascolta-wrap">
+  <div class="ascolta-inner">
+    <span class="cat">Interazione</span>
+    <h2>Giorgio Ascolta</h2>
+    <p class="desc">Un'obiezione a questa proposta specifica? Un dato migliore? Scrivilo qui.</p>
+    <div class="ascolta-form">
+      <p>Il modulo apre un Google Form in una nuova scheda: le risposte arrivano come notifica sulla Gmail di Giorgio, senza servizi esterni.</p>
+      <button type="button" onclick="window.open('https://forms.gle/4Bj3wFLKexVwtMXy8','_blank')">Apri il modulo →</button>
+    </div>
+  </div>
+</div>
+
+<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 22 luglio 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
+
+</body>
+</html>

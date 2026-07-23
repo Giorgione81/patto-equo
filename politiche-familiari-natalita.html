@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politiche per le famiglie e la natalità — Patto Equo</title>
+<meta name="description" content="La fecondità in Italia è scesa a 1,14 figli per donna: cosa dicono i dati Istat e OCSE su asili nido, congedi e casa, una proposta concreta e i suoi limiti, dichiarati apertamente.">
+<meta property="og:title" content="Politiche per le famiglie e la natalità — Patto Equo">
+<meta property="og:description" content="Asili nido, congedi pagati e casa per i giovani invece di bonus una tantum: cosa dice l'evidenza OCSE sulla natalità.">
+<meta property="og:type" content="article">
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="39" cy="42" r="17" fill="none" stroke="%231B2A4A" stroke-width="5"/><circle cx="61" cy="42" r="17" fill="none" stroke="%23A9832F" stroke-width="5"/><path d="M 53.72 50.5 A 17 17 0 0 1 44.25 58.17" fill="none" stroke="%231B2A4A" stroke-width="5"/><line x1="15" y1="70" x2="85" y2="70" stroke="%231B2A4A" stroke-width="3" stroke-linecap="round"/></svg>'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qualche politica familiare ha mai riportato la fecondità al livello di sostituzione?","acceptedAnswer":{"@type":"Answer","text":"No, e lo ammette la stessa OCSE. L'obiettivo realistico è ridurre i vincoli materiali (casa, lavoro, servizi) che impediscono alle persone di avere i figli che desiderano."}},{"@type":"Question","name":"Il calo delle nascite dipende dagli smartphone?","acceptedAnswer":{"@type":"Answer","text":"L'effetto stimato esiste ma è piccolo: senza smartphone la fecondità italiana 2025 sarebbe stata 1,24 invece di 1,14, a fronte di un calo da oltre 2,4 figli per donna dagli anni '60."}},{"@type":"Question","name":"Bastano i bonus in denaro?","acceptedAnswer":{"@type":"Answer","text":"L'evidenza mostra effetti deboli o transitori dei trasferimenti monetari isolati; l'associazione più solida con la fecondità riguarda asili nido e congedi parentali ben retribuiti."}},{"@type":"Question","name":"L'immigrazione può sostituire le politiche familiari?","acceptedAnswer":{"@type":"Answer","text":"Oggi compensa numericamente il saldo naturale negativo, ma non è un sostituto: la fecondità cala anche nei paesi d'origine e chi migra trova le stesse carenze di servizi."}}]}</script>
+<style>
+  :root{
+    --ink:#1B2A4A;
+    --paper:#F7F5EF;
+    --paper-deep:#EFEBE1;
+    --red:#8C3B33;
+    --gold:#A9832F;
+    --charcoal:#262421;
+    --line:#D9D2C2;
+    --green-gain: #3E6B4F;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--charcoal);
+    font-family:'Inter',sans-serif;
+    line-height:1.55;
+  }
+  h1,h2,h3,.display{
+    font-family:'Fraunces',serif;
+    color:var(--ink);
+    margin:0;
+  }
+  .mono{font-family:'IBM Plex Mono',monospace; letter-spacing:0.02em;}
+  a{color:var(--ink);}
+
+  header{
+    padding:22px 6vw;
+    display:flex; justify-content:space-between; align-items:center;
+    border-bottom:1px solid var(--line);
+  }
+  .logo{font-family:'Fraunces',serif; font-weight:600; font-size:1.05rem; color:var(--ink);}
+  .logo span{color:var(--red);}
+  nav a{font-size:0.85rem; text-decoration:none; color:var(--charcoal); margin-left:28px; font-weight:500;}
+
+  .theme-section{max-width:980px; margin:70px auto; padding:0 6vw;}
+  .theme-header{margin-bottom:44px;}
+  .theme-header .cat{font-family:'IBM Plex Mono',monospace; font-size:0.78rem; color:var(--gold); text-transform:uppercase; letter-spacing:0.1em;}
+  .theme-header h1{font-size:clamp(1.8rem,3.5vw,2.6rem); margin-top:10px;}
+  .theme-header .apertura{font-style:italic; color:#4a4640; margin-top:14px; font-size:1.02rem;}
+  .correlati{font-family:'IBM Plex Mono',monospace; font-size:0.8rem; margin-top:18px;}
+  .placeholder-note .ns-tag{font-family:'IBM Plex Mono',monospace; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--gold); display:block; margin-bottom:6px;}
+  .block{border-top:1px solid var(--line); padding:34px 0; display:grid; grid-template-columns:160px 1fr; gap:28px;}
+  .block .block-label{font-family:'IBM Plex Mono',monospace; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#8a8577; padding-top:4px;}
+  .block .block-content h3{font-size:1.25rem; font-weight:500; margin-bottom:12px;}
+  .block .block-content p{margin:0 0 10px; color:#3a372f;}
+  .block.problema .block-label{color:var(--red);}
+  .block.proposta .block-label{color:var(--ink);}
+  .source-card{background:var(--paper-deep); border-left:3px solid var(--gold); padding:16px 18px; margin-top:14px; font-size:0.92rem; position:relative;}
+  .source-card .src-name{font-weight:600; display:block; margin-bottom:4px; padding-right:110px;}
+  .source-card a{font-size:0.85rem; text-decoration:underline; color:var(--ink);}
+  .verificata-badge{
+    position:absolute; top:14px; right:16px;
+    display:flex; align-items:center; gap:5px;
+    border:1.5px solid var(--gold); border-radius:20px;
+    padding:3px 10px 3px 7px;
+    font-family:'IBM Plex Mono',monospace; font-size:0.62rem;
+    letter-spacing:0.03em; text-transform:uppercase; color:var(--gold);
+    background:#fff;
+  }
+  .verificata-badge svg{width:11px; height:11px; flex-shrink:0;}
+  .placeholder-note{
+    background:#fff; border:1px dashed var(--gold); padding:16px 18px; margin-top:14px; font-size:0.9rem; color:#6b6659;
+  }
+  .obj{border:1px solid var(--line); border-radius:2px; margin-bottom:10px; overflow:hidden;}
+  .obj summary{padding:14px 18px; cursor:pointer; font-weight:500; background:#fff; list-style:none; display:flex; justify-content:space-between; align-items:center;}
+  .obj summary::after{content:"+"; font-family:'IBM Plex Mono',monospace; color:var(--gold); font-size:1.1rem;}
+  .obj[open] summary::after{content:"–";}
+  .obj .risposta{padding:0 18px 18px; color:#3a372f; font-size:0.94rem; border-top:1px solid var(--line); padding-top:14px;}
+  .obj .risposta .tag{font-family:'IBM Plex Mono',monospace; font-size:0.7rem; color:var(--green-gain); text-transform:uppercase; display:block; margin-bottom:6px;}
+  .bilancio{display:grid; grid-template-columns:1fr auto 1fr; gap:20px; align-items:stretch; margin-top:18px;}
+  .piatto{background:#fff; border:1px solid var(--line); padding:20px; border-radius:2px;}
+  .piatto.perde{border-top:3px solid var(--red);}
+  .piatto.guadagna{border-top:3px solid var(--green-gain);}
+  .piatto .who{font-weight:600; font-size:0.95rem; margin-bottom:4px;}
+  .piatto .amount{font-family:'IBM Plex Mono',monospace; font-size:1.3rem; color:var(--ink); display:block; margin:8px 0 4px;}
+  .piatto .note{font-size:0.82rem; color:#6b6659;}
+  .fulcro{display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:0.75rem; color:#8a8577; writing-mode:vertical-lr; text-transform:uppercase;}
+
+  .ascolta-wrap{background:var(--paper-deep); padding:56px 6vw;}
+  .ascolta-inner{max-width:700px; margin:0 auto;}
+  .ascolta-inner .cat{font-family:'IBM Plex Mono',monospace; font-size:0.78rem; color:var(--gold); text-transform:uppercase; letter-spacing:0.1em;}
+  .ascolta-inner h2{font-size:clamp(1.5rem,3vw,2rem); margin-top:10px;}
+  .ascolta-inner p.desc{color:#4a4640; margin-top:12px; font-size:0.96rem; max-width:560px;}
+  .ascolta-form{margin-top:24px;}
+  .ascolta-form p{font-size:0.9rem; color:#6b6659; margin:0 0 14px;}
+  .ascolta-form button{background:var(--ink); color:#fff; border:none; padding:13px 28px; font-family:'Inter',sans-serif; font-weight:600; font-size:0.92rem; border-radius:2px; cursor:pointer;}
+  .ascolta-form button:hover{background:#26375c;}
+
+  footer{border-top:1px solid var(--line); padding:36px 6vw; text-align:center; font-size:0.8rem; color:#847e6f;}
+
+  @media (max-width: 720px){
+    .block{grid-template-columns:1fr; gap:8px;}
+    .bilancio{grid-template-columns:1fr;}
+    .fulcro{writing-mode:horizontal-tb; padding:6px 0;}
+    nav a{margin-left:14px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo" style="display:flex; align-items:center; gap:10px;">
+    <a href="index.html" style="text-decoration:none; color:var(--ink); display:flex; align-items:center; gap:10px;">
+      <svg viewBox="0 0 100 100" width="26" height="26" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="39" cy="42" r="17" fill="none" stroke="#1B2A4A" stroke-width="5"/>
+        <circle cx="61" cy="42" r="17" fill="none" stroke="#A9832F" stroke-width="5"/>
+        <path d="M 53.72 50.5 A 17 17 0 0 1 44.25 58.17" fill="none" stroke="#1B2A4A" stroke-width="5"/>
+        <line x1="15" y1="70" x2="85" y2="70" stroke="#1B2A4A" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      Patto <span>Equo</span>
+    </a>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#news">News</a>
+    <a href="index.html#ascolta-home">Giorgio Ascolta</a>
+  </nav>
+</header>
+
+<section class="theme-section" id="famiglie-natalita">
+  <div class="theme-header">
+    <span class="cat">Tema 04 — Politiche familiari e natalità</span>
+    <h1>Sostenere chi vuole avere figli, senza promettere di invertire la denatalità</h1>
+    <p class="apertura">In una frase: investire in asili nido, congedi pagati e casa per i giovani — le tre leve con l'evidenza più solida — invece che in bonus una tantum dall'effetto debole o transitorio.</p>
+  </div>
+
+  <div class="block problema">
+    <div class="block-label">Il problema</div>
+    <div class="block-content">
+      <h3>Il tasso di fecondità più basso mai registrato in Italia</h3>
+      <p>Nel 2025 in Italia sono nati 355mila bambini, il 3,9% in meno rispetto al 2024. Il numero medio di figli per donna è sceso a 1,14, contro l'1,18 dell'anno precedente: il valore più basso mai registrato nella serie storica. La popolazione residente resta sostanzialmente stabile, poco sotto i 59 milioni, ma solo grazie al saldo migratorio (+296mila nel 2025): il saldo naturale — nascite meno decessi — è ampiamente negativo (-296mila circa, peggiore del -283mila del 2024). Senza l'immigrazione, la popolazione italiana starebbe già calando (il ruolo demografico ed economico dell'immigrazione è approfondito nel <a href="immigrazione-canali-legali.html">tema 05 — Immigrazione</a>).</p>
+      <p>Il divario territoriale è ampio: la Sardegna è sotto un figlio per donna (0,85) per il sesto anno consecutivo, seguita da Molise (1,02) e Lazio (1,05); il Trentino-Alto Adige, con 1,40, resta la regione più feconda. L'età media al parto è salita a 32,7 anni, massima al Centro Italia (33,1). Nel confronto europeo l'Italia è oggi sotto Germania (1,36 nel 2024), Spagna (1,10, quasi allineata), Francia (1,61) e Svezia (1,43). Ma il confronto con la Francia mostra un effetto spesso trascurato nel dibattito pubblico: se l'Italia avesse avuto la fecondità francese del 2024, i nati sarebbero stati circa 494mila anziché i 370mila realmente registrati — comunque molto meno dei 664mila nati in Francia, perché in Italia le donne in età fertile sono strutturalmente meno numerose. È un effetto demografico che nessuna politica familiare può correggere nel breve periodo. L'Inapp arriva alla stessa conclusione da un'altra angolazione: nei suoi scenari, nemmeno un aumento della fecondità basterebbe da solo a invertire il calo delle nascite nei prossimi decenni, perché pesa già la riduzione strutturale del numero di donne in età feconda, effetto ereditato dalla denatalità degli anni passati. L'Italia è il primo paese al mondo ad aver visto, già nella prima metà degli anni '90, gli ultra65enni superare gli under 15 in numero.</p>
+      <p>Non è un fenomeno solo italiano, né recente. La fecondità media OCSE è scesa da 3,3 figli per donna nel 1960 a 1,5 nel 2022, ma l'Italia — insieme alla Spagna — ha il valore più basso tra i paesi OCSE (1,2 nel 2022). Quasi una donna italiana su quattro nata nel 1975 (23%) arriva a fine dell'età fertile senza figli, una quota raddoppiata rispetto alla generazione nata nel 1935 e tra le più alte nei paesi OCSE insieme a Spagna e Giappone. La letteratura accademica segnala inoltre che in Italia, soprattutto nelle regioni meridionali, il lavoro femminile resta più in tensione con la genitorialità che in paesi come Danimarca e Norvegia, dove i modelli familiari a doppio reddito sono da tempo la norma.</p>
+      <p>Il quadro familiare italiano è cambiato anche a prescindere dalla fecondità: le coppie con figli sono scese dal 41,4% delle famiglie (2003-2005) al 28,4% di oggi; le famiglie unipersonali sono passate dal 25,9% al 37,1%, diventando il tipo di famiglia più diffuso nel paese. Sono aumentate anche le famiglie monogenitoriali, soprattutto madri sole (8,6% del totale).</p>
+      <div class="source-card">
+        <span class="verificata-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Verificata</span>
+        <span class="src-name">Istat — "Indicatori demografici | Anno 2025"</span>
+        <a href="https://www.istat.it/wp-content/uploads/2026/03/Report_Indicatori-demografici_Anno-2025.pdf" target="_blank">→ istat.it/Report_Indicatori-demografici_Anno-2025</a>
+      </div>
+      <div class="source-card">
+        <span class="verificata-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Verificata</span>
+        <span class="src-name">OCSE — "Society at a Glance 2024", capitolo "Fertility trends across the OECD"</span>
+        <a href="https://www.oecd.org/en/publications/society-at-a-glance-2024_918d8db3-en/full-report/fertility-trends-across-the-oecd-underlying-drivers-and-the-role-for-policy_770679b8.html" target="_blank">→ oecd.org/society-at-a-glance-2024/fertility-trends</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="block proposta">
+    <div class="block-label">La proposta</div>
+    <div class="block-content">
+      <h3>Un pacchetto coerente di servizi, non un bonus una tantum</h3>
+      <p>L'analisi OCSE su un panel di 19 paesi (2002-2019) mostra che le leve con l'associazione più solida e statisticamente significativa con la fecondità sono la spesa per congedi parentali pagati e l'investimento pubblico nei servizi per la prima infanzia (asili nido, 0-2 anni), seguite — con un'associazione più debole — dagli assegni familiari. Il solo tasso di iscrizione ai nidi, se non accompagnato da investimento adeguato, e il congedo riservato specificamente ai padri non mostrano invece, nello stesso modello, un effetto significativo. Su questa base, proponiamo che le risorse pubbliche italiane per le famiglie si concentrino su tre leve:</p>
+      <p><strong>Asili nido e servizi 0-2 anni.</strong> Espansione dell'offerta pubblica fino a coprire la domanda reale, con priorità ai territori dove la copertura è più bassa — oggi mancano insegnanti ed educatori in più regioni (circa 1.500 posti scoperti nella sola Lombardia, secondo dati di settore), un vincolo di personale prima ancora che di strutture.</p>
+      <p><strong>Congedo parentale pagato a tasso di sostituzione adeguato.</strong> Non solo esteso in durata, ma con un'indennità che non penalizzi economicamente chi lo prende, condiviso tra i due genitori.</p>
+      <p><strong>Politiche abitative per l'autonomia dei giovani.</strong> Mutui e affitti agevolati per chi ha meno di 35 anni: il costo della casa ha un effetto negativo e statisticamente significativo sulla fecondità in tutti i paesi OCSE analizzati, e l'Italia è tra i paesi con la quota più alta e crescente di giovani adulti che restano nella casa dei genitori (sul lato dell'offerta abitativa, vedi anche il <a href="concentrazione-immobiliare.html">tema 03 — Limite alla concentrazione immobiliare</a>). L'Ungheria, pur con un modello complessivo controverso (vedi sotto), ha mostrato un effetto positivo specifico del sostegno alla proprietà della casa per le famiglie con figli.</p>
+      <h3 style="margin-top:22px;">Perché non un bonus in denaro</h3>
+      <p>L'evidenza internazionale sui trasferimenti monetari una tantum è più debole. Il programma polacco "500+" (poi "800+") ha ridotto la povertà minorile ma non ha alzato la fecondità; in alcuni cantoni svizzeri, assegni alla nascita hanno avuto un effetto positivo ma transitorio, presto riassorbito; in Spagna un assegno universale ha alzato la fecondità del 3% quando è stato introdotto, ma la sua cancellazione nel 2010 ha prodotto un calo del 6% — più ampio del guadagno iniziale. L'Ungheria ha portato la spesa per le famiglie sopra il 3% del PIL, tra le più alte in Europa, e ha effettivamente riportato la fecondità intorno alla media OCSE (circa 1,5 figli per donna); ma il sostegno è indirizzato soprattutto a chi ha un impiego formale, escludendo di fatto le famiglie più povere e le famiglie rom con tre o più figli.</p>
+      <p>La manovra 2026 del governo italiano stanzia 1,6 miliardi di euro su natalità e famiglia, in gran parte sotto forma di bonus (l'assegno per le madri lavoratrici sale da 40 a 60 euro al mese; la prima casa viene esclusa dal calcolo ISEE). Sono misure reali, ma secondo la demografa Alessandra Minello (Università di Padova) il beneficio netto per una lavoratrice con reddito sotto i 40.000 euro è di circa 700 euro l'anno — una cifra che agisce, nelle sue parole, "non [come] un incentivo alla natalità, ma [come] una sorta di premio a chi questi figli ha già avuti". Lo segnaliamo non per liquidare la misura, ma perché la letteratura OCSE conferma che i trasferimenti monetari isolati hanno un effetto sulla fecondità debole o solo transitorio, rispetto a un investimento strutturale nei servizi.</p>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-label">La fonte</div>
+    <div class="block-content">
+      <div class="source-card">
+        <span class="verificata-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Verificata</span>
+        <span class="src-name">Fluchtmann, van Veen, Adema (2023) — "Fertility, employment and family policy: A cross-country panel analysis", OECD Working Paper n. 299</span>
+        <p>L'analisi econometrica su 19 paesi OCSE (2002-2019) alla base delle stime citate sopra su congedi, asili nido e assegni familiari.</p>
+        <a href="https://www.oecd.org/en/publications/fertility-employment-and-family-policy_326844f0-en.html" target="_blank">→ oecd.org/fertility-employment-and-family-policy</a>
+      </div>
+      <div class="source-card">
+        <span class="verificata-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Verificata</span>
+        <span class="src-name">OCSE — "Society at a Glance 2024: A Spotlight on Fertility Trends"</span>
+        <a href="https://www.oecd.org/en/publications/society-at-a-glance-2024_918d8db3-en.html" target="_blank">→ oecd.org/society-at-a-glance-2024</a>
+      </div>
+      <div class="source-card">
+        <span class="verificata-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Verificata</span>
+        <span class="src-name">Istat — "Indicatori demografici | Anno 2025"</span>
+        <a href="https://www.istat.it/wp-content/uploads/2026/03/Report_Indicatori-demografici_Anno-2025.pdf" target="_blank">→ istat.it/Report_Indicatori-demografici_Anno-2025</a>
+      </div>
+      <div class="source-card">
+        <span class="verificata-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Verificata</span>
+        <span class="src-name">Inapp — "Il cambiamento demografico nella realtà italiana", Sinappsi n. 1/2025 (comunicato del 29/05/2025)</span>
+        <p>Coordinato da Gian Carlo Blangiardo (già presidente Istat), con contributi di Francesco Billari (rettore Università Bocconi) e altri. Conferma da fonte indipendente l'effetto strutturale della piramide demografica sulle nascite, citato anche nella puntata Revolution del 31/12/2025 sulla spesa sanitaria e l'invecchiamento.</p>
+        <a href="https://www.inapp.gov.it/stampa-e-media/comunicati-stampa/29-05-2025-inapp-nel-2050-il-rapporto-tra-pensionati-e-lavoratori-sara-di-uno-ad-uno" target="_blank">→ inapp.gov.it/comunicati-stampa/29-05-2025</a>
+      </div>
+      <div class="source-card">
+        <span class="src-name">Revolution (Rai Radio 3, a cura di Stefano Feltri) — puntate del 24/09/2025 e del 26/05/2026</span>
+        <p>Con la demografa Alessandra Minello (Università di Padova, autrice di "Senza figli") e, nella seconda puntata, con il contributo dell'economista Jesús Fernández-Villaverde (Università della Pennsylvania). Fonte giornalistica di commento e intervista, non un dato primario: le citazioni dirette riportate in questa pagina sono attribuite ai singoli ospiti.</p>
+        <a href="https://open.spotify.com/show/0y5A5Vr60wggGWfMuJTS9H" target="_blank">→ pagina del programma su Spotify</a>
+      </div>
+      <div class="placeholder-note">Le cifre della manovra 2026 (1,6 miliardi di euro, dettaglio delle singole misure) sono riprese dalla copertura giornalistica della legge di bilancio, non dal testo di legge verificato riga per riga: le citiamo come misura di governo realmente in vigore, non come stima indipendente.</div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-label">Obiezioni</div>
+    <div class="block-content">
+      <details class="obj">
+        <summary>Nessuna politica familiare ha mai riportato la fecondità al livello di sostituzione (2,1 figli per donna)</summary>
+        <div class="risposta"><span class="tag">Risposta</span>Vero, ed è l'OCSE stessa ad ammetterlo esplicitamente: anche i paesi con i pacchetti più completi (Danimarca, Francia, Norvegia, Svezia, oltre il 3% del PIL in prestazioni familiari) sono scesi verso la media OCSE negli ultimi anni. L'obiettivo realistico di una politica familiare non è un target demografico, ma permettere alle persone di avere il numero di figli che desiderano, nel momento in cui lo desiderano — un divario reale esiste, in Italia come altrove, tra fecondità desiderata e realizzata, dovuto anche a vincoli materiali (casa, lavoro, servizi) che una politica pubblica può ridurre, non azzerare.</div>
+      </details>
+      <details class="obj">
+        <summary>Il vero problema sono gli smartphone e i social, non le politiche pubbliche</summary>
+        <div class="risposta"><span class="tag">Risposta</span>È una tesi comparsa di recente sui media internazionali, rilanciata anche dal Financial Times, basata sulla correlazione tra diffusione degli smartphone dal 2010 e accelerazione del calo di fecondità tra le adolescenti in più paesi. Ma una simulazione dell'economista Jesús Fernández-Villaverde stima che, senza smartphone, la fecondità italiana del 2025 sarebbe stata 1,24 invece di 1,14 — una differenza reale ma piccola rispetto al crollo complessivo della fecondità italiana negli ultimi sessant'anni (da oltre 2,4 figli per donna a metà anni '60 a 1,14 oggi). Alessandra Minello ricorda inoltre che la fecondità italiana era già ai livelli attuali negli anni '90, prima della diffusione degli smartphone. Ridurre un fenomeno strutturale e decennale a una sola causa "comoda" rischia di distogliere l'attenzione dalle leve — economiche, abitative, di conciliazione — su cui una politica pubblica può davvero incidere.</div>
+      </details>
+      <details class="obj">
+        <summary>Bastano i bonus in denaro come quelli della manovra 2026</summary>
+        <div class="risposta"><span class="tag">Risposta</span>La letteratura mostra effetti deboli o solo transitori dei trasferimenti monetari isolati (Polonia, Spagna, Svizzera), mentre l'associazione più solida con la fecondità riguarda l'investimento strutturale in asili nido e congedi parentali ben retribuiti (vedi "La proposta"). Non significa che i bonus siano inutili come sostegno al reddito familiare — ma non andrebbero presentati come leva risolutiva sulla natalità, cosa che la stessa demografa Alessandra Minello contesta rispetto alle misure attuali.</div>
+      </details>
+      <details class="obj">
+        <summary>L'immigrazione può sostituire le politiche familiari nel tenere in piedi la popolazione italiana</summary>
+        <div class="risposta"><span class="tag">Risposta</span>Oggi lo fa già, numericamente: nel 2025 il saldo migratorio (+296mila) ha quasi esattamente compensato il saldo naturale negativo (-296mila), lasciando la popolazione italiana stabile. Ma Alessandra Minello segnala due limiti a trattarla come soluzione sostitutiva: la fecondità cala anche nei paesi di origine delle persone migranti, e chi migra in Italia trova spesso le stesse carenze di servizi (asili nido, casa, lavoro) che scoraggiano le famiglie italiane — oltre al problema etico di "delegare" ai corpi delle donne migranti un problema demografico italiano. L'immigrazione resta una leva demografica reale, con una sua dignità propria; non è un sostituto delle politiche familiari, né viceversa.</div>
+      </details>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-label">Impatto stimato</div>
+    <div class="block-content">
+      <div class="bilancio">
+        <div class="piatto perde">
+          <div class="who">Il conto pubblico</div>
+          <span class="amount">Ordine di grandezza: miliardi di euro l'anno</span>
+          <div class="note">I paesi con pacchetti di politiche familiari giudicati "coerenti" dall'OCSE (Danimarca, Francia, Norvegia, Svezia, Ungheria) spendono oltre il 3% del PIL in prestazioni familiari, contro una media OCSE del 2,3% e una media EU-22 del 2,6%. I dati a disposizione non riportano una cifra puntuale e aggiornata per la spesa familiare italiana in % di PIL: lo diciamo esplicitamente invece di stimarla a caso. La manovra 2026 stanzia 1,6 miliardi di euro su natalità e famiglia — una frazione minima di un ipotetico riallineamento a quella soglia, su un PIL italiano di circa 2.200 miliardi di euro.</div>
+        </div>
+        <div class="fulcro">bilancio</div>
+        <div class="piatto guadagna">
+          <div class="who">Chi ci guadagna</div>
+          <span class="amount">Famiglie che rinuncerebbero a un figlio per vincoli materiali, non chi sceglie di non averne</span>
+          <div class="note">Il 23% delle donne italiane nate nel 1975 arriva a fine dell'età fertile senza figli (dato OCSE). Non è possibile distinguere, con i dati disponibili, quanta parte sia scelta libera e quanta parte vincolo materiale (casa, lavoro, servizi) — ma è su questo secondo gruppo che una politica familiare seria può incidere, senza pretendere di intervenire sul primo.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="theme-section" style="margin-top:0; margin-bottom:40px;">
+  <p style="font-style:italic; color:#4a4640; border-top:1px solid var(--line); padding-top:28px;">In sintesi: non proponiamo un obiettivo demografico né un ritorno a modelli familiari del passato. Proponiamo di investire dove l'evidenza OCSE mostra un'associazione più solida con la fecondità — asili nido, congedi parentali pagati, casa per i giovani — invece che in bonus una tantum dall'effetto debole o transitorio. E diciamo apertamente il suo limite più serio: nessuna politica, per quanto ben fatta, ha mai riportato la fecondità di un paese OCSE al livello di sostituzione. L'obiettivo realistico non è invertire un trend demografico globale, ma permettere a chi vuole avere figli di poterlo fare.</p>
+  <details class="obj" style="margin-top:18px;">
+    <summary>Glossario minimo: "tasso di fecondità", "livello di sostituzione", "tasso di sostituzione del congedo"</summary>
+    <div class="risposta"><span class="tag">Definizioni</span><strong>Tasso di fecondità</strong>: numero medio di figli per donna in età fertile. <strong>Livello di sostituzione</strong>: la soglia di 2,1 figli per donna necessaria perché una popolazione resti stabile senza immigrazione. <strong>Tasso di sostituzione del congedo</strong>: la percentuale dello stipendio che viene pagata durante il congedo parentale — più è bassa, più il congedo penalizza chi lo prende.</div>
+  </details>
+  <p class="correlati">Temi correlati: <a href="concentrazione-immobiliare.html">03 — Limite alla concentrazione immobiliare</a> · <a href="immigrazione-canali-legali.html">05 — Immigrazione: canali legali</a></p>
+</div>
+
+<div class="ascolta-wrap">
+  <div class="ascolta-inner">
+    <span class="cat">Interazione</span>
+    <h2>Giorgio Ascolta</h2>
+    <p class="desc">Un'obiezione a questa proposta specifica? Un dato migliore? Scrivilo qui.</p>
+    <div class="ascolta-form">
+      <p>Il modulo apre un Google Form in una nuova scheda: le risposte arrivano come notifica sulla Gmail di Giorgio, senza servizi esterni.</p>
+      <button type="button" onclick="window.open('https://forms.gle/4Bj3wFLKexVwtMXy8','_blank')">Apri il modulo →</button>
+    </div>
+  </div>
+</div>
+
+<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 22 luglio 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<svg viewBox="0 0 100 100" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <title>Patto Equo — "Il patto": due anelli intrecciati sopra l'orizzonte</title>
+  <desc>Un anello blu ink e un anello oro intrecciati, sospesi sopra una linea d'orizzonte: l'accordo tra le parti che sorge sulla linea di base del sito.</desc>
+
+  <!-- Anello ink (sinistra) -->
+  <circle cx="39" cy="42" r="17" fill="none" stroke="#1B2A4A" stroke-width="5"/>
+
+  <!-- Anello gold (destra), passa sopra l'ink in alto -->
+  <circle cx="61" cy="42" r="17" fill="none" stroke="#A9832F" stroke-width="5"/>
+
+  <!-- Arco ink ridisegnato sopra il gold nell'incrocio inferiore: crea l'intreccio -->
+  <path d="M 53.72 50.5 A 17 17 0 0 1 44.25 58.17" fill="none" stroke="#1B2A4A" stroke-width="5"/>
+
+  <!-- Linea d'orizzonte -->
+  <line x1="15" y1="70" x2="85" y2="70" stroke="#1B2A4A" stroke-width="3" stroke-linecap="round"/>
+</svg>

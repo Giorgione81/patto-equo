@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tassazione differenziata delle rendite finanziarie in base al patrimonio — Patto Equo</title>
+<meta name="description" content="Tassare dividendi e capital gain in base al patrimonio: 20% sotto i 5 milioni, 30-35% sopra. La proposta di Patto Equo con fonti verificate, obiezioni incluse e impatto stimato.">
+<meta property="og:title" content="Tassazione differenziata delle rendite finanziarie — Patto Equo">
+<meta property="og:description" content="20% per i piccoli risparmiatori, 30-35% sopra i 5 milioni di patrimonio finanziario: la proposta, le fonti e le obiezioni.">
+<meta property="og:type" content="article">
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="39" cy="42" r="17" fill="none" stroke="%231B2A4A" stroke-width="5"/><circle cx="61" cy="42" r="17" fill="none" stroke="%23A9832F" stroke-width="5"/><path d="M 53.72 50.5 A 17 17 0 0 1 44.25 58.17" fill="none" stroke="%231B2A4A" stroke-width="5"/><line x1="15" y1="70" x2="85" y2="70" stroke="%231B2A4A" stroke-width="3" stroke-linecap="round"/></svg>'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Esiste un'anagrafe del patrimonio finanziario aggregato tra più banche?","acceptedAnswer":{"@type":"Answer","text":"Non ancora in forma completa, ma l'Archivio dei rapporti finanziari raccoglie già conti e rapporti con tutti gli intermediari italiani: andrebbe esteso, non costruito da zero."}},{"@type":"Question","name":"Perché usare il patrimonio complessivo e non il reddito annuo da capitale?","acceptedAnswer":{"@type":"Answer","text":"Il patrimonio riflette meglio la capacità contributiva nel tempo: il reddito annuo penalizza i guadagni una tantum di chi ha patrimoni modesti e non tocca i grandi patrimoni che realizzano poco."}},{"@type":"Question","name":"I grandi patrimoni non si sposteranno all'estero?","acceptedAnswer":{"@type":"Answer","text":"Rischio reale, mitigato dallo scambio automatico di informazioni finanziarie già in vigore tra i Paesi UE (CRS/DAC)."}},{"@type":"Question","name":"Un'aliquota più alta non riduce il gettito per effetto lock-in?","acceptedAnswer":{"@type":"Answer","text":"L'effetto è documentato e va riconosciuto: riguarda però una platea molto ristretta, mentre la riduzione dal 26% al 20% beneficia milioni di risparmiatori."}}]}</script>
+<style>
+  :root{
+    --ink:#1B2A4A;
+    --paper:#F7F5EF;
+    --paper-deep:#EFEBE1;
+    --red:#8C3B33;
+    --gold:#A9832F;
+    --charcoal:#262421;
+    --line:#D9D2C2;
+    --green-gain: #3E6B4F;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--charcoal);
+    font-family:'Inter',sans-serif;
+    line-height:1.55;
+  }
+  h1,h2,h3,.display{
+    font-family:'Fraunces',serif;
+    color:var(--ink);
+    margin:0;
+  }
+  .mono{font-family:'IBM Plex Mono',monospace; letter-spacing:0.02em;}
+  a{color:var(--ink);}
+
+  header{
+    padding:22px 6vw;
+    display:flex; justify-content:space-between; align-items:center;
+    border-bottom:1px solid var(--line);
+  }
+  .logo{font-family:'Fraunces',serif; font-weight:600; font-size:1.05rem; color:var(--ink);}
+  .logo span{color:var(--red);}
+  nav a{font-size:0.85rem; text-decoration:none; color:var(--charcoal); margin-left:28px; font-weight:500;}
+
+  .theme-section{max-width:980px; margin:70px auto; padding:0 6vw;}
+  .theme-header{margin-bottom:44px;}
+  .theme-header .cat{font-family:'IBM Plex Mono',monospace; font-size:0.78rem; color:var(--gold); text-transform:uppercase; letter-spacing:0.1em;}
+  .theme-header h1{font-size:clamp(1.8rem,3.5vw,2.6rem); margin-top:10px;}
+  .theme-header .apertura{font-style:italic; color:#4a4640; margin-top:14px; font-size:1.02rem;}
+  .correlati{font-family:'IBM Plex Mono',monospace; font-size:0.8rem; margin-top:18px;}
+  .placeholder-note .ns-tag{font-family:'IBM Plex Mono',monospace; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--gold); display:block; margin-bottom:6px;}
+  .block{border-top:1px solid var(--line); padding:34px 0; display:grid; grid-template-columns:160px 1fr; gap:28px;}
+  .block .block-label{font-family:'IBM Plex Mono',monospace; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#8a8577; padding-top:4px;}
+  .block .block-content h3{font-size:1.25rem; font-weight:500; margin-bottom:12px;}
+  .block .block-content p{margin:0 0 10px; color:#3a372f;}
+  .block.problema .block-label{color:var(--red);}
+  .block.proposta .block-label{color:var(--ink);}
+  .source-card{background:var(--paper-deep); border-left:3px solid var(--gold); padding:16px 18px; margin-top:14px; font-size:0.92rem; position:relative;}
+  .source-card .src-name{font-weight:600; display:block; margin-bottom:4px; padding-right:110px;}
+  .source-card a{font-size:0.85rem; text-decoration:underline; color:var(--ink);}
+  .verificata-badge{
+    position:absolute; top:14px; right:16px;
+    display:flex; align-items:center; gap:5px;
+    border:1.5px solid var(--gold); border-radius:20px;
+    padding:3px 10px 3px 7px;
+    font-family:'IBM Plex Mono',monospace; font-size:0.62rem;
+    letter-spacing:0.03em; text-transform:uppercase; color:var(--gold);
+    background:#fff;
+  }
+  .verificata-badge svg{width:11px; height:11px; flex-shrink:0;}
+  .placeholder-note{
+    background:#fff; border:1px dashed var(--gold); padding:16px 18px; margin-top:14px; font-size:0.9rem; color:#6b6659;
+  }
+  .obj{border:1px solid var(--line); border-radius:2px; margin-bottom:10px; overflow:hidden;}
+  .obj summary{padding:14px 18px; cursor:pointer; font-weight:500; background:#fff; list-style:none; display:flex; justify-content:space-between; align-items:center;}
+  .obj summary::after{content:"+"; font-family:'IBM Plex Mono',monospace; color:var(--gold); font-size:1.1rem;}
+  .obj[open] summary::after{content:"–";}
+  .obj .risposta{padding:0 18px 18px; color:#3a372f; font-size:0.94rem; border-top:1px solid var(--line); padding-top:14px;}
+  .obj .risposta .tag{font-family:'IBM Plex Mono',monospace; font-size:0.7rem; color:var(--green-gain); text-transform:uppercase; display:block; margin-bottom:6px;}
+  .bilancio{display:grid; grid-template-columns:1fr auto 1fr; gap:20px; align-items:stretch; margin-top:18px;}
+  .piatto{background:#fff; border:1px solid var(--line); padding:20px; border-radius:2px;}
+  .piatto.perde{border-top:3px solid var(--red);}
+  .piatto.guadagna{border-top:3px solid var(--green-gain);}
+  .piatto .who{font-weight:600; font-size:0.95rem; margin-bottom:4px;}
+  .piatto .amount{font-family:'IBM Plex Mono',monospace; font-size:1.3rem; color:var(--ink); display:block; margin:8px 0 4px;}
+  .piatto .note{font-size:0.82rem; color:#6b6659;}
+  .fulcro{display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:0.75rem; color:#8a8577; writing-mode:vertical-lr; text-transform:uppercase;}
+
+  .ascolta-wrap{background:var(--paper-deep); padding:56px 6vw;}
+  .ascolta-inner{max-width:700px; margin:0 auto;}
+  .ascolta-inner .cat{font-family:'IBM Plex Mono',monospace; font-size:0.78rem; color:var(--gold); text-transform:uppercase; letter-spacing:0.1em;}
+  .ascolta-inner h2{font-size:clamp(1.5rem,3vw,2rem); margin-top:10px;}
+  .ascolta-inner p.desc{color:#4a4640; margin-top:12px; font-size:0.96rem; max-width:560px;}
+  .ascolta-form{margin-top:24px;}
+  .ascolta-form p{font-size:0.9rem; color:#6b6659; margin:0 0 14px;}
+  .ascolta-form button{background:var(--ink); color:#fff; border:none; padding:13px 28px; font-family:'Inter',sans-serif; font-weight:600; font-size:0.92rem; border-radius:2px; cursor:pointer;}
+  .ascolta-form button:hover{background:#26375c;}
+
+  footer{border-top:1px solid var(--line); padding:36px 6vw; text-align:center; font-size:0.8rem; color:#847e6f;}
+
+  @media (max-width: 720px){
+    .block{grid-template-columns:1fr; gap:8px;}
+    .bilancio{grid-template-columns:1fr;}
+    .fulcro{writing-mode:horizontal-tb; padding:6px 0;}
+    nav a{margin-left:14px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo" style="display:flex; align-items:center; gap:10px;">
+    <a href="index.html" style="text-decoration:none; color:var(--ink); display:flex; align-items:center; gap:10px;">
+      <svg viewBox="0 0 100 100" width="26" height="26" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="39" cy="42" r="17" fill="none" stroke="#1B2A4A" stroke-width="5"/>
+        <circle cx="61" cy="42" r="17" fill="none" stroke="#A9832F" stroke-width="5"/>
+        <path d="M 53.72 50.5 A 17 17 0 0 1 44.25 58.17" fill="none" stroke="#1B2A4A" stroke-width="5"/>
+        <line x1="15" y1="70" x2="85" y2="70" stroke="#1B2A4A" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      Patto <span>Equo</span>
+    </a>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#news">News</a>
+    <a href="index.html#ascolta-home">Giorgio Ascolta</a>
+  </nav>
+</header>
+
+<section class="theme-section" id="rendite-finanziarie">
+  <div class="theme-header">
+    <span class="cat">Tema 02 — Fiscalità delle rendite finanziarie</span>
+    <h1>Tassare le rendite finanziarie in base al patrimonio, non solo al tipo di titolo</h1>
+    <p class="apertura">In una frase: meno tasse sui guadagni finanziari per la larga maggioranza dei risparmiatori (dal 26% al 20%), di più solo sulla parte di patrimonio che supera i 5 milioni di euro.</p>
+  </div>
+
+  <div class="block problema">
+    <div class="block-label">Il problema</div>
+    <div class="block-content">
+      <h3>Un'aliquota identica per il piccolo risparmiatore e per il grande portafoglio</h3>
+      <p>Le rendite finanziarie in Italia sono tassate al 26%, con un'unica eccezione: i titoli di Stato italiani ed esteri whitelist restano al 12,5%. Questa distinzione riguarda però solo il tipo di titolo, non chi lo possiede: chi realizza una plusvalenza da un fondo azionario o incassa un dividendo paga il 26% sia che l'investimento valga 2.000 euro sia che faccia parte di un portafoglio da 50 milioni.</p>
+      <p>I Conti distributivi di Banca d'Italia mostrano che il 10% delle famiglie più ricche detiene il 60,6% della ricchezza netta totale, e che la composizione del patrimonio è molto eterogenea: le famiglie più povere lo tengono soprattutto in casa e depositi, quelle più ricche lo diversificano maggiormente, anche in strumenti finanziari. Questo significa che i guadagni da dividendi e capital gain, pur tassati con la stessa aliquota per tutti, si concentrano in misura sproporzionata nella parte più alta della distribuzione.</p>
+      <h3 style="margin-top:22px;">Come fanno gli altri paesi</h3>
+      <p>Il confronto europeo conferma che l'Italia non è un caso isolato nell'uso di un'aliquota unica: Germania (25% + solidarietà, ~26,4%) e Francia (flat tax al 30%) applicano anch'esse un'aliquota fissa sulle rendite finanziarie, indipendente dal reddito o dal patrimonio (salvo opzione per la tassazione IRPEF ordinaria, se più conveniente per chi ha redditi bassi). La Spagna invece usa una scala progressiva dal 19% al 30% legata all'importo annuo del reddito da capitale, non al patrimonio complessivo. Un vero precedente di aliquota legata al valore del patrimonio detenuto esiste nei Paesi Bassi, dove l'imposta si applica a un rendimento presunto che cresce con il valore totale degli asset posseduti. Un'aliquota italiana esplicitamente differenziata per fasce di patrimonio finanziario non ha oggi equivalenti diretti tra i principali Paesi UE.</p>
+      <div class="source-card">
+        <span class="verificata-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Verificata</span>
+        <span class="src-name">Banca d'Italia — Conti distributivi sulla ricchezza delle famiglie, 4° trimestre 2025</span>
+        <a href="https://www.bancaditalia.it/statistiche/tematiche/conti-patrimoniali/conti-distributivi/index.html" target="_blank">→ bancaditalia.it/statistiche/conti-distributivi</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="block proposta">
+    <div class="block-label">La proposta</div>
+    <div class="block-content">
+      <h3>20% sotto i 5 milioni di patrimonio finanziario, 30-35% sulla parte che eccede</h3>
+      <p>I titoli di Stato restano invariati al 12,5%, per tutti, indipendentemente dal patrimonio detenuto: non tocchiamo il costo di finanziamento del debito pubblico. La differenziazione per patrimonio riguarda solo dividendi e capital gain su azioni, ETF, fondi comuni e obbligazioni societarie.</p>
+      <p>Per chi ha un patrimonio finanziario investito in questi strumenti sotto i 5 milioni di euro, l'aliquota scende dal 26% al 20% (o anche meno, da definire in sede tecnica): un beneficio diretto per la larghissima maggioranza dei risparmiatori italiani. Per la parte di patrimonio che eccede i 5 milioni, l'aliquota sale in una forbice tra il 30% e il 35% — un intervallo aperto, non un numero secco, perché non esiste oggi una stima pubblica che indichi un valore preciso come ottimale.</p>
+      <p>Il meccanismo è a "top-up" sulla sola eccedenza, sullo stesso modello già proposto per la <a href="tassa-patrimoniale.html">patrimoniale sopra i 50 milioni</a>: chi ha un patrimonio finanziario di 5,5 milioni paga il 20% sui primi 5 milioni e il 30-35% solo sui 500.000 euro che superano la soglia, non sull'intero portafoglio. Evita l'effetto "scalino" per chi si trova appena sopra il limite.</p>
+      <p>Un nodo tecnico da affrontare apertamente: la soglia richiede di conoscere il patrimonio finanziario complessivo di ciascun contribuente, aggregato tra tutti gli intermediari presso cui detiene conti e titoli — non solo il singolo conto su cui matura il guadagno. È un'informazione che oggi l'Agenzia delle Entrate può già in parte ricostruire tramite l'Archivio dei rapporti finanziari (usato per i controlli fiscali), ma che andrebbe estesa e resa sistematica per questo scopo specifico.</p>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-label">La fonte</div>
+    <div class="block-content">
+      <div class="source-card">
+        <span class="verificata-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Verificata</span>
+        <span class="src-name">Tax Foundation Europe — Capital Gains Tax Rates in Europe, 2026</span>
+        <a href="https://taxfoundation.org/data/all/eu/capital-gains-tax-rates-europe/" target="_blank">→ taxfoundation.org — capital-gains-tax-rates-europe</a>
+      </div>
+      <div class="source-card">
+        <span class="verificata-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Verificata</span>
+        <span class="src-name">Banca d'Italia — "I conti distributivi sulla ricchezza delle famiglie: metodi e prime evidenze", QEF 836/2024</span>
+        <a href="https://www.bancaditalia.it/pubblicazioni/qef/2024-0836/index.html" target="_blank">→ bancaditalia.it/pubblicazioni/qef/2024-0836</a>
+      </div>
+      <div class="placeholder-note"><span class="ns-tag">Cosa non sappiamo ancora</span>Non esiste, ad oggi, una stima pubblica indipendente e verificabile né del numero di contribuenti italiani con oltre 5 milioni di euro di patrimonio finanziario, né del gettito atteso da questa proposta: i Conti distributivi di Banca d'Italia aggregano la ricchezza per decili complessivi (immobili + finanziaria), non isolano il solo patrimonio in azioni e fondi per singola famiglia, e — come già notato nel tema sulla patrimoniale — il campione su cui si basano cattura male la coda estrema della distribuzione. Le soglie di aliquota (20% e 30-35%) sono qui proposte come intervalli di discussione, non come cifre definitive.</div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-label">Obiezioni</div>
+    <div class="block-content">
+      <details class="obj">
+        <summary>Non esiste un'anagrafe che aggreghi il patrimonio finanziario di un contribuente su più banche e intermediari</summary>
+        <div class="risposta"><span class="tag">Risposta</span>Vero limite di partenza, ma non si parte da zero: l'Archivio dei rapporti finanziari (ex art. 7, sesto comma, DPR 605/1973) già raccoglie conti, depositi e rapporti con tutti gli intermediari italiani ai fini dei controlli fiscali. Andrebbe esteso e reso sistematico per calcolare la soglia dei 5 milioni, non costruito da zero — un lavoro tecnico, non un ostacolo concettuale.</div>
+      </details>
+      <details class="obj">
+        <summary>Perché usare il patrimonio complessivo e non il reddito annuo da capitale, come fa la Spagna?</summary>
+        <div class="risposta"><span class="tag">Risposta</span>Il reddito annuo è più semplice da misurare, ma penalizza chi realizza un guadagno una tantum (es. la vendita di una piccola partecipazione ereditata) pur avendo un patrimonio complessivo modesto, e non tocca chi ha un grande patrimonio ma realizza pochi guadagni in un dato anno. Il patrimonio complessivo riflette meglio la capacità contributiva reale nel tempo, ma richiede l'aggregazione dei dati descritta sopra: è un compromesso, non una scelta priva di costi.</div>
+      </details>
+      <details class="obj">
+        <summary>Rischio che i grandi patrimoni si spostino verso conti esteri o strumenti esenti</summary>
+        <div class="risposta"><span class="tag">Risposta</span>Rischio reale, già segnalato per la proposta di patrimoniale. Si mitiga con lo scambio automatico di informazioni finanziarie già in vigore tra i Paesi UE (CRS/DAC), che rende sempre più difficile nascondere posizioni all'estero rispetto a dieci anni fa — non un'obiezione che ne consiglia l'abbandono, ma un motivo per accompagnarla con controlli seri.</div>
+      </details>
+      <details class="obj">
+        <summary>Un'aliquota più alta sopra soglia riduce la frequenza con cui i grandi patrimoni realizzano i guadagni (lock-in effect), con meno gettito nel breve termine</summary>
+        <div class="risposta"><span class="tag">Risposta</span>Effetto economico documentato (lo nota anche Tax Foundation Europe nella sua analisi comparata) e va riconosciuto onestamente, non minimizzato. Riguarda però una platea molto ristretta — chi supera i 5 milioni di patrimonio finanziario — mentre il beneficio in termini di equità e di riduzione del prelievo per la larga maggioranza dei risparmiatori (dal 26% al 20%) riguarda milioni di famiglie. Il compromesso va valutato nel merito, non escluso a priori.</div>
+      </details>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-label">Impatto stimato</div>
+    <div class="block-content">
+      <div class="bilancio">
+        <div class="piatto perde">
+          <div class="who">Chi ci perde</div>
+          <span class="amount">Patrimoni finanziari oltre 5 milioni di euro</span>
+          <div class="note">Sulla sola parte eccedente i 5 milioni, l'aliquota su dividendi e capital gain salirebbe dal 26% al 30-35% (aumento di 4-9 punti). Platea molto ristretta: i Conti distributivi Bankitalia, basati su un campione, non permettono di isolare con precisione quante famiglie italiane superano questa soglia solo in patrimonio finanziario (lo stesso limite già segnalato per il tema della patrimoniale sopra i 50 milioni).</div>
+        </div>
+        <div class="fulcro">bilancio</div>
+        <div class="piatto guadagna">
+          <div class="who">Chi ci guadagna</div>
+          <span class="amount">Risparmiatori sotto i 5 milioni di patrimonio finanziario</span>
+          <div class="note">Aliquota su dividendi e capital gain ridotta dal 26% al 20% (risparmio di 6 punti su ogni guadagno realizzato), per la larga maggioranza di chi investe in azioni, ETF e fondi in Italia. Non esiste una stima verificata del numero esatto di famiglie coinvolte né dell'effetto netto sul gettito complessivo: va detto esplicitamente, non stimato a caso.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="theme-section" style="margin-top:0; margin-bottom:40px;">
+  <p style="font-style:italic; color:#4a4640; border-top:1px solid var(--line); padding-top:28px;">In sintesi: non proponiamo di eliminare la tassazione agevolata dei titoli di Stato, né un'aliquota unica più alta per tutti. Proponiamo di aggiungere una seconda dimensione — il patrimonio finanziario complessivo — a quella già esistente per tipo di titolo, abbassando il prelievo per chi risparmia poco e alzandolo solo sulla parte di patrimonio che eccede una soglia molto alta (5 milioni di euro). Restano nodi tecnici reali, a partire dall'aggregazione dei dati patrimoniali tra intermediari: li trattiamo come tali, non li nascondiamo.</p>
+  <details class="obj" style="margin-top:18px;">
+    <summary>Glossario minimo: "capital gain", "top-up", "lock-in"</summary>
+    <div class="risposta"><span class="tag">Definizioni</span><strong>Capital gain</strong>: il guadagno realizzato vendendo un titolo a un prezzo superiore a quello di acquisto. <strong>Top-up</strong>: l'aliquota più alta si applica solo alla parte che eccede la soglia, non all'intero patrimonio. <strong>Lock-in</strong>: la tendenza a rimandare la vendita dei titoli per rimandare l'imposta, riducendo il gettito nel breve periodo.</div>
+  </details>
+  <p class="correlati">Temi correlati: <a href="tassa-patrimoniale.html">01 — Patrimoniale sopra i 50 milioni</a> · <a href="concentrazione-immobiliare.html">03 — Limite alla concentrazione immobiliare</a></p>
+</div>
+
+<div class="ascolta-wrap">
+  <div class="ascolta-inner">
+    <span class="cat">Interazione</span>
+    <h2>Giorgio Ascolta</h2>
+    <p class="desc">Un'obiezione a questa proposta specifica? Un dato migliore? Scrivilo qui.</p>
+    <div class="ascolta-form">
+      <p>Il modulo apre un Google Form in una nuova scheda: le risposte arrivano come notifica sulla Gmail di Giorgio, senza servizi esterni.</p>
+      <button type="button" onclick="window.open('https://forms.gle/4Bj3wFLKexVwtMXy8','_blank')">Apri il modulo →</button>
+    </div>
+  </div>
+</div>
+
+<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 22 luglio 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
+
+</body>
+</html>

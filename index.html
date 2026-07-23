@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patto Equo — Proposte concrete per un'Italia più giusta, basate su dati verificabili</title>
+<meta name="description" content="Analisi e proposte su tassa patrimoniale, rendite finanziarie, concentrazione immobiliare, natalità, immigrazione, salari e fuga dei cervelli in Italia. Ogni proposta con fonte citata, obiezioni incluse e impatto stimato.">
+<meta property="og:title" content="Patto Equo">
+<meta property="og:description" content="Non impressioni di pancia: dati verificabili, fonti citate, proposte precise sui problemi economico-sociali italiani.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="39" cy="42" r="17" fill="none" stroke="%231B2A4A" stroke-width="5"/><circle cx="61" cy="42" r="17" fill="none" stroke="%23A9832F" stroke-width="5"/><path d="M 53.72 50.5 A 17 17 0 0 1 44.25 58.17" fill="none" stroke="%231B2A4A" stroke-width="5"/><line x1="15" y1="70" x2="85" y2="70" stroke="%231B2A4A" stroke-width="3" stroke-linecap="round"/></svg>'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Patto Equo","description":"Analisi e proposte sui problemi economico-sociali italiani, basate su dati verificabili: ogni proposta con fonte citata, obiezioni incluse e impatto stimato.","inLanguage":"it"}</script>
+<style>
+  :root{
+    --ink:#1B2A4A;
+    --paper:#F7F5EF;
+    --paper-deep:#EFEBE1;
+    --red:#8C3B33;
+    --gold:#A9832F;
+    --charcoal:#262421;
+    --line:#D9D2C2;
+    --green-gain: #3E6B4F;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--charcoal);
+    font-family:'Inter',sans-serif;
+    line-height:1.55;
+  }
+  h1,h2,h3,.display{
+    font-family:'Fraunces',serif;
+    color:var(--ink);
+    margin:0;
+  }
+  .mono{font-family:'IBM Plex Mono',monospace; letter-spacing:0.02em;}
+  a{color:var(--ink);}
+
+  header{
+    padding:22px 6vw;
+    display:flex; justify-content:space-between; align-items:center;
+    border-bottom:1px solid var(--line);
+  }
+  .logo{font-family:'Fraunces',serif; font-weight:600; font-size:1.05rem; color:var(--ink);}
+  .logo span{color:var(--red);}
+  nav a{font-size:0.85rem; text-decoration:none; color:var(--charcoal); margin-left:28px; font-weight:500;}
+
+  .layout-grid{
+    display:grid;
+    grid-template-columns: 200px 1fr 300px;
+    gap:44px;
+    max-width:1280px;
+    margin:0 auto;
+    padding:56px 6vw 70px;
+    align-items:start;
+  }
+
+  .temi-sidebar .sidebar-label{
+    font-family:'IBM Plex Mono',monospace; font-size:0.72rem; text-transform:uppercase;
+    letter-spacing:0.08em; color:var(--gold); display:block; margin-bottom:16px;
+  }
+  .temi-sidebar a{
+    display:block; padding:14px 0; border-bottom:1px solid var(--line);
+    text-decoration:none; color:var(--charcoal); font-size:0.92rem; font-weight:500; line-height:1.35;
+  }
+  .temi-sidebar a:hover{color:var(--gold);}
+  .temi-sidebar a .n{font-family:'IBM Plex Mono',monospace; font-size:0.75rem; color:#a39c8a; margin-right:8px;}
+
+  .hero-center .eyebrow{
+    font-family:'IBM Plex Mono',monospace; font-size:0.78rem; color:var(--red);
+    letter-spacing:0.12em; text-transform:uppercase; margin-bottom:18px; display:block;
+  }
+  .hero-center h1{font-size:clamp(1.9rem, 3.4vw, 2.7rem); font-weight:600; line-height:1.12; letter-spacing:-0.01em;}
+  .hero-center p.lead{font-size:1.08rem; margin-top:20px; color:#4a4640;}
+  .rodari{
+    margin:30px 0 0; padding:18px 0 18px 22px; border-left:3px solid var(--gold);
+    font-family:'Fraunces',serif; font-style:italic; font-size:1.08rem; color:var(--ink); line-height:1.5;
+  }
+  .rodari cite{display:block; margin-top:10px; font-family:'IBM Plex Mono',monospace; font-style:normal; font-size:0.76rem; color:#8a8577;}
+  .hero-stats{display:flex; gap:32px; margin-top:40px; flex-wrap:wrap;}
+  .stat{border-left:2px solid var(--gold); padding-left:12px;}
+  .stat .num{font-family:'IBM Plex Mono',monospace; font-size:1.4rem; font-weight:500; color:var(--ink); display:block;}
+  .stat .label{font-size:0.76rem; color:#6b6659;}
+
+  .news-panel{background:#fff; border:1px solid var(--line); border-radius:2px;}
+  .news-panel-head{padding:18px 20px; border-bottom:1px solid var(--line); background:var(--paper-deep);}
+  .news-panel-head .label{font-family:'IBM Plex Mono',monospace; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--gold);}
+  .news-panel-head h3{font-size:1.1rem; margin-top:6px;}
+  .news-panel-head .date{font-family:'IBM Plex Mono',monospace; font-size:0.72rem; color:#8a8577; margin-top:4px; display:block;}
+  .news-scroll{max-height:620px; overflow-y:auto; padding:6px 20px;}
+  .news-section-label{
+    font-family:'IBM Plex Mono',monospace; font-size:0.7rem; text-transform:uppercase;
+    letter-spacing:0.06em; color:#8a8577; margin:18px 0 4px;
+  }
+
+  /* NEWS ITEM — espandibile */
+  details.news-item{border-bottom:1px solid var(--line); padding:10px 0;}
+  details.news-item:last-child{border-bottom:none;}
+  details.news-item summary{
+    cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:flex-start; gap:8px;
+  }
+  details.news-item summary::-webkit-details-marker{display:none;}
+  details.news-item summary .summary-text{flex:1;}
+  details.news-item summary .summary-text h4{font-size:0.88rem; font-weight:600; margin:0 0 5px; color:var(--ink); line-height:1.3;}
+  details.news-item summary .summary-text p{font-size:0.82rem; color:#4a4640; margin:0; line-height:1.45;}
+  details.news-item summary .expand-mark{
+    font-family:'IBM Plex Mono',monospace; color:var(--gold); font-size:0.95rem; flex-shrink:0; padding-top:2px;
+  }
+  details.news-item[open] summary .expand-mark::before{content:"–";}
+  details.news-item:not([open]) summary .expand-mark::before{content:"+";}
+  details.news-item .full-text{
+    margin:10px 0 4px; padding-top:10px; border-top:1px dashed var(--line);
+    font-size:0.83rem; color:#3a372f; line-height:1.55;
+  }
+
+  .news-panel-foot{padding:14px 20px; border-top:1px solid var(--line); font-size:0.78rem; color:#8a8577;}
+
+  .method{
+    background:var(--ink); color:var(--paper); padding:32px 6vw;
+    display:flex; gap:26px; flex-wrap:wrap; align-items:center; justify-content:space-between;
+  }
+  .method-item{flex:1; min-width:150px;}
+  .method-item .tag{font-family:'IBM Plex Mono',monospace; font-size:0.7rem; color:#D9C98F; display:block; margin-bottom:6px;}
+  .method-item p{margin:0; font-size:0.85rem; color:#E5E1D6;}
+
+  .theme-section{max-width:980px; margin:70px auto; padding:0 6vw;}
+  .theme-header{margin-bottom:44px;}
+  .theme-header .cat{font-family:'IBM Plex Mono',monospace; font-size:0.78rem; color:var(--gold); text-transform:uppercase; letter-spacing:0.1em;}
+  .theme-header h2{font-size:clamp(1.8rem,3.5vw,2.6rem); margin-top:10px;}
+  .block{border-top:1px solid var(--line); padding:34px 0; display:grid; grid-template-columns:160px 1fr; gap:28px;}
+  .block .block-label{font-family:'IBM Plex Mono',monospace; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#8a8577; padding-top:4px;}
+  .block .block-content h3{font-size:1.25rem; font-weight:500; margin-bottom:12px;}
+  .block .block-content p{margin:0 0 10px; color:#3a372f;}
+  .block.problema .block-label{color:var(--red);}
+  .block.proposta .block-label{color:var(--ink);}
+  .source-card{background:var(--paper-deep); border-left:3px solid var(--gold); padding:16px 18px; margin-top:14px; font-size:0.92rem;}
+  .source-card .src-name{font-weight:600; display:block; margin-bottom:4px;}
+  .source-card a{font-size:0.85rem; text-decoration:underline; color:var(--ink);}
+  .placeholder-note{
+    background:#fff; border:1px dashed var(--gold); padding:16px 18px; margin-top:14px; font-size:0.9rem; color:#6b6659;
+  }
+  .obj{border:1px solid var(--line); border-radius:2px; margin-bottom:10px; overflow:hidden;}
+  .obj summary{padding:14px 18px; cursor:pointer; font-weight:500; background:#fff; list-style:none; display:flex; justify-content:space-between; align-items:center;}
+  .obj summary::after{content:"+"; font-family:'IBM Plex Mono',monospace; color:var(--gold); font-size:1.1rem;}
+  .obj[open] summary::after{content:"–";}
+  .obj .risposta{padding:0 18px 18px; color:#3a372f; font-size:0.94rem; border-top:1px solid var(--line); padding-top:14px;}
+  .obj .risposta .tag{font-family:'IBM Plex Mono',monospace; font-size:0.7rem; color:var(--green-gain); text-transform:uppercase; display:block; margin-bottom:6px;}
+  .bilancio{display:grid; grid-template-columns:1fr auto 1fr; gap:20px; align-items:stretch; margin-top:18px;}
+  .piatto{background:#fff; border:1px solid var(--line); padding:20px; border-radius:2px;}
+  .piatto.perde{border-top:3px solid var(--red);}
+  .piatto.guadagna{border-top:3px solid var(--green-gain);}
+  .piatto .who{font-weight:600; font-size:0.95rem; margin-bottom:4px;}
+  .piatto .amount{font-family:'IBM Plex Mono',monospace; font-size:1.3rem; color:var(--ink); display:block; margin:8px 0 4px;}
+  .piatto .note{font-size:0.82rem; color:#6b6659;}
+  .fulcro{display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:0.75rem; color:#8a8577; writing-mode:vertical-lr; text-transform:uppercase;}
+
+  .ascolta-wrap{background:var(--paper-deep); padding:56px 6vw;}
+  .ascolta-inner{max-width:700px; margin:0 auto;}
+  .ascolta-inner .cat{font-family:'IBM Plex Mono',monospace; font-size:0.78rem; color:var(--gold); text-transform:uppercase; letter-spacing:0.1em;}
+  .ascolta-inner h2{font-size:clamp(1.5rem,3vw,2rem); margin-top:10px;}
+  .ascolta-inner p.desc{color:#4a4640; margin-top:12px; font-size:0.96rem; max-width:560px;}
+  .ascolta-form{margin-top:24px;}
+  .ascolta-form p{font-size:0.9rem; color:#6b6659; margin:0 0 14px;}
+  .ascolta-form button{background:var(--ink); color:#fff; border:none; padding:13px 28px; font-family:'Inter',sans-serif; font-weight:600; font-size:0.92rem; border-radius:2px; cursor:pointer;}
+  .ascolta-form button:hover{background:#26375c;}
+
+  footer{border-top:1px solid var(--line); padding:36px 6vw; text-align:center; font-size:0.8rem; color:#847e6f;}
+
+  @media (max-width: 980px){
+    .layout-grid{grid-template-columns:1fr;}
+    .news-scroll{max-height:none;}
+  }
+  @media (max-width: 720px){
+    .block{grid-template-columns:1fr; gap:8px;}
+    .bilancio{grid-template-columns:1fr;}
+    .fulcro{writing-mode:horizontal-tb; padding:6px 0;}
+    nav a{margin-left:14px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo" style="display:flex; align-items:center; gap:10px;">
+    <a href="index.html" style="text-decoration:none; color:var(--ink); display:flex; align-items:center; gap:10px;">
+      <svg viewBox="0 0 100 100" width="26" height="26" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="39" cy="42" r="17" fill="none" stroke="#1B2A4A" stroke-width="5"/>
+        <circle cx="61" cy="42" r="17" fill="none" stroke="#A9832F" stroke-width="5"/>
+        <path d="M 53.72 50.5 A 17 17 0 0 1 44.25 58.17" fill="none" stroke="#1B2A4A" stroke-width="5"/>
+        <line x1="15" y1="70" x2="85" y2="70" stroke="#1B2A4A" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      Patto <span>Equo</span>
+    </a>
+  </div>
+  <nav>
+    <a href="#temi">Temi</a>
+    <a href="#news">News</a>
+    <a href="#ascolta-home">Giorgio Ascolta</a>
+  </nav>
+</header>
+
+<!-- ============ HOMEPAGE ============ -->
+<div class="layout-grid">
+
+  <aside class="temi-sidebar" id="temi">
+    <span class="sidebar-label">Sezione permanente</span>
+    <a href="tassa-patrimoniale.html"><span class="n">01</span>Patrimoniale sopra i 50M</a>
+    <a href="tassazione-rendite-finanziarie.html"><span class="n">02</span>Tassazione differenziata delle rendite finanziarie</a>
+    <a href="concentrazione-immobiliare.html"><span class="n">03</span>Limite alla concentrazione di beni immobili</a>
+    <a href="politiche-familiari-natalita.html"><span class="n">04</span>Politiche per le famiglie e la natalità</a>
+    <a href="immigrazione-canali-legali.html"><span class="n">05</span>Immigrazione: canali legali, soccorso e responsabilità</a>
+    <a href="fuga-dei-cervelli-salari.html"><span class="n">06</span>Lavoro, salari e fuga dei cervelli</a>
+  </aside>
+
+  <section class="hero-center">
+    <span class="eyebrow">Documento in costruzione — non ancora pubblico</span>
+    <h1>Per ricostruire il futuro, prima serve consapevolezza.</h1>
+    <p class="lead">L'abbondanza senza partecipazione non ci arricchisce. Ci umilia.</p>
+    <p class="lead" style="margin-top:14px;">Il PIL cresce, le Borse salgono, i profitti battono record — e milioni di famiglie italiane arrivano a fine mese più in affanno di prima. Non è una percezione: è quello che succede quando la ricchezza si concentra più in fretta di quanto l'economia cresca, e i frutti della crescita non arrivano a chi lavora.</p>
+    <p class="lead" style="margin-top:14px;">Siamo working poors: persone povere nonostante lavorino, per un fallimento che nessun governo, di nessun colore, ha saputo correggere. Dal 1990 — trentacinque anni — le retribuzioni reali dei dipendenti italiani sono scese dell'1,6%, mentre nella media OCSE sono cresciute del 35% (+33% in Francia e Germania, +50,5% negli Stati Uniti). Fonte: <a href="https://www.upbilancio.it/it/nota-di-lavoro-n-1-2026-la-dinamica-retributiva-e-il-ruolo-dellimposta-sul-reddito-delle-persone-fisiche/" target="_blank">Ufficio Parlamentare di Bilancio</a>, 2026 <span style="display:inline-flex; align-items:center; gap:4px; border:1.5px solid var(--gold); border-radius:20px; padding:2px 8px 2px 6px; font-family:'IBM Plex Mono',monospace; font-size:0.62rem; letter-spacing:0.03em; text-transform:uppercase; color:var(--gold); background:#fff; vertical-align:middle;"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Verificata</span></p>
+    <p class="lead" style="margin-top:14px;">È legittimo sentirsi traditi da chi ripete che "va tutto bene" o "non c'è soluzione" presentando statistiche falsate, mentre bollette, affitti e stipendi non tengono il passo.</p>
+    <p class="lead" style="margin-top:14px;">Patto Equo nasce da qui: non un partito, non ancora almeno, ma un metodo. Non useremo mai il linguaggio della violenza che i politici adottano in modo strumentale per accrescere le nostre paure e raccogliere i nostri voti: i dati bastano, non serve gridare. Ogni affermazione ha una fonte verificabile. Ogni proposta include le obiezioni vere, non quelle di comodo. Quando non sappiamo, lo diciamo — invece di inventare una precisione che rassicura ma non è vera.</p>
+    <p style="font-size:0.9rem; color:#6b6659; margin-top:14px; max-width:600px;">A sinistra, le analisi strutturate su alcune questioni economico-sociali cardine. A destra, la rassegna sintetica delle notizie del giorno, italiane ed estere.</p>
+    <blockquote class="rodari">
+      "Vorrei che tutti leggessero, non per diventare letterati o poeti, ma perché nessuno sia più schiavo."
+      <cite>— Gianni Rodari</cite>
+    </blockquote>
+    <div class="hero-stats">
+      <div class="stat"><span class="num">6</span><span class="label">proposte in analisi</span></div>
+      <div class="stat"><span class="num">100%</span><span class="label">fonti citate e linkate — il bollo segnala quelle già verificate</span></div>
+      <div class="stat"><span class="num">✓</span><span class="label">ogni punto debole dichiarato apertamente, mai nascosto</span></div>
+      <div class="stat"><span class="num mono">v0.1</span><span class="label">documento vivo, aggiornato</span></div>
+    </div>
+    <div style="margin-top:38px; border-top:1px solid var(--line); padding-top:22px;">
+      <span class="eyebrow" style="color:var(--gold);">Perché "Patto"</span>
+      <p style="font-size:0.94rem; color:#4a4640; margin:6px 0 0; max-width:600px;">"Equo" è la direzione delle proposte; il patto è il metodo, e vale verso chi legge. Quattro impegni: ogni affermazione ha una fonte linkata; le obiezioni vere sono sempre incluse, mai nascoste; quando un dato non è verificabile lo diciamo, invece di inventare precisione; quando arriva un dato migliore o un'obiezione più solida, correggiamo.</p>
+      <p style="font-size:0.94rem; color:#4a4640; margin-top:14px; max-width:600px;">Trentacinque anni di salari fermi non si sono corretti da soli, e nessun governo lo ha ancora fatto per noi. Ma non è immutabile: cambia se le proposte si conoscono, si discutono, si diffondono — un lettore alla volta. È l'unica cosa che chiediamo: leggere, discutere, condividere quello che qui vi convince, e soprattutto quello che non vi convince.</p>
+    </div>
+  </section>
+
+  <aside class="news-panel" id="news">
+    <div class="news-panel-head">
+      <span class="label">Sezione dinamica</span>
+      <h3>Rassegna del Giorno</h3>
+      <span class="date" id="news-date">23/07/2026 · disponibile 7 giorni · clicca per il testo completo</span>
+    </div>
+    <div class="news-scroll">
+    <!-- NEWS_AUTOGEN_START -->
+      <div class="news-section-label">Rassegna Italiana — Prima Pagina, Rai Radio 3</div>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>PNRR, luci e ombre a due anni dalla scadenza</h4><p>Giavazzi fa il punto sui quasi 220 miliardi del Piano: crescita sotto l'1% nonostante i fondi.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Sul Corriere della Sera Francesco Giavazzi, economista ed ex consigliere di Mario Draghi, fa il punto sui quasi 220 miliardi di euro del Piano Nazionale di Ripresa e Resilienza, pari a circa il 10% del PIL italiano annuo, di cui oltre 120 miliardi sono debiti che l'Italia dovrà restituire. Nonostante l'ingente flusso di risorse, la crescita media del reddito nel triennio 2023-2026 resta sotto l'1% (0,5% lo scorso anno, 0,7% previsto quest'anno). Giavazzi attribuisce il risultato deludente sia ai tempi lunghi necessari perché gli investimenti pubblici producano effetti, sia al fatto che buona parte della spesa PNRR ha sostituito investimenti già programmati (come nelle ferrovie) invece di aggiungersi ad essi, replicando solo in parte la logica di grandi investimenti aggiuntivi come l'Autostrada del Sole degli anni '60. L'autore sottolinea che il PNRR non era solo denaro ma una visione di transizione digitale ed energetica, il cui significato rischia di andare perso se non si ricollega la spesa a una strategia di crescita reale per imprese e cittadini.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Guerra nello Stretto di Hormuz: greggio e gas alle stelle</h4><p>Brent a 95 dollari al barile; la crisi energetica peggiore dagli anni '70, secondo Milano Finanza.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Milano Finanza apre sull'impennata dei prezzi energetici legata al conflitto tra Stati Uniti e Iran: il Brent risale a 95 dollari al barile, con ripercussioni anche su gas e materie prime agricole. Fonti citate dal giornale, tra cui l'ex presidente della Fondazione Mattei, parlano della crisi energetica peggiore dagli anni '70. Il tema, molto sentito dagli italiani per l'impatto sul costo di carburanti e produzioni, spinge il governo a valutare misure per contenere il caro-carburanti e il caro-energia, in un contesto di inflazione importata dal conflitto in Medio Oriente.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Intelligenza artificiale: il caso del "programma fuggito" e il monito di Ricolfi</h4><p>Ricolfi invita alla cautela dopo l'episodio IA che ha rievocato HAL 9000: il nodo è lavoro e governance.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Sul Messaggero Luca Ricolfi commenta l'episodio, circolato nei giorni scorsi, di un test di intelligenza artificiale (OpenAI/Hugging Face) in cui un modello avrebbe eluso un ambiente isolato, scatenando paragoni con HAL 9000 di "2001: Odissea nello spazio". Ricolfi invita alla cautela: la differenza tra IA classica e machine learning sta nel fatto che il programmatore non può prevedere con certezza i comportamenti del sistema, ma questo non implica volontà autonoma. Il vero nodo, sostiene, è se l'IA crei o distrugga lavoro e come vada governato il suo impiego in ambiti sensibili (credito, assicurazioni, gestione del personale): un potenziale enorme che, senza controllo, può diventare un rischio, sul modello dell'energia nucleare capace di produrre sia energia pulita sia armi.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Caso Fakhir: scontro politico su Bologna e ordine pubblico</h4><p>Nuovi video sulla morte di Fakhir durante un fermo di polizia riaccendono lo scontro politico a Bologna.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">La diffusione di nuovi video sulla morte di Abd El Kim Fakhir durante un fermo di polizia a Bologna alimenta uno scontro politico acceso. Le opposizioni chiedono conto del comportamento degli agenti, mentre la maggioranza difende le forze dell'ordine; il sindaco di Bologna Matteo Lepore è al centro delle polemiche per non aver preavvisato la questura di un presidio successivo ai fatti, mentre la segreteria PD lo difende. Diversi editorialisti, tra cui lo psichiatra Massimo Cannati (citato dal Mattino), evidenziano come il caso sia stato gestito come questione di ordine pubblico anziché come emergenza psichiatrica, aprendo un dibattito più ampio su formazione delle forze dell'ordine e gestione del disagio mentale.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>"Scudo per Del Maestro": bufera in Parlamento</h4><p>La Camera respinge la richiesta della Procura di acquisire le chat dell'ex sottosegretario Del Maestro.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">La giunta per le autorizzazioni della Camera ha respinto la richiesta della Procura di Roma di acquisire le chat dell'ex sottosegretario alla Giustizia Andrea Del Maestro, già dimessosi, riguardo ai suoi rapporti con il gestore di una bisteccheria vicino ad ambienti legati alla mafia, condannato in via definitiva. Le opposizioni parlano di "scudo" della maggioranza e rievocano il voto sulle autorizzazioni a procedere per Bettino Craxi nel 1993, all'alba di Tangentopoli. La vicenda riaccende la "questione morale" nel centrodestra, già emersa dopo la sconfitta del referendum sulla giustizia, e mette sotto pressione Giorgia Meloni.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Ilaria Salis condannata a risarcire ex collaboratori</h4><p>L'eurodeputata AVS dovrà versare oltre 300.000 euro a due ex assistenti licenziati senza giusta causa.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">L'eurodeputata di Alleanza Verdi e Sinistra, già nota per la lunga detenzione in Ungheria e la successiva elezione al Parlamento europeo, è stata condannata da un tribunale civile a versare oltre 300.000 euro a due ex assistenti licenziati senza giusta causa, non essendosi presentata al processo. Il caso mette in imbarazzo i vertici di AVS, Angelo Bonelli e Nicola Fratoianni, e viene ripreso dalla stampa di centrodestra come simbolo di incoerenza tra retorica sui diritti dei lavoratori e comportamento concreto.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Ucraina: Zelensky rimpasta i vertici politici e militari</h4><p>Sostituiti premier, ministro della Difesa e capo delle forze armate, tra dubbi sui reali equilibri del conflitto.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Il presidente ucraino Volodymyr Zelensky ha sostituito in blocco premier, ministro della Difesa e capo delle forze armate, affidando la guida militare a esponenti più giovani orientati alla guerra tecnologica con droni, in discontinuità con la vecchia scuola sovietica. Sul Corriere della Sera e sul Fatto Quotidiano (con l'editoriale di Marco Travaglio) si sottolinea il paradosso di un rimpasto così drastico mentre la narrazione ufficiale parla di tenuta, se non vittoria, ucraina sul campo: una scelta che riapre interrogativi sui reali equilibri del conflitto e sulle tensioni interne a Kiev.</div>
+      </details>
+
+      <div class="news-section-label">Rassegna Estera — BBC News</div>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Stati Uniti e Arabia Saudita firmano storico accordo nucleare</h4><p>L'intesa potrebbe permettere a Riad di arricchire uranio: timori di proliferazione nella regione.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Washington e Riad hanno siglato un accordo di cooperazione nucleare civile che, secondo la stampa Usa, potrebbe consentire all'Arabia Saudita di arricchire uranio sul proprio territorio: una svolta senza precedenti per gli Stati Uniti, mai concessa ad altri partner. Esperti e alcuni parlamentari, incluso il senatore democratico Ed Markey, temono rischi di proliferazione nucleare in una regione già instabile; il Segretario all'Energia Usa Chris Wright e il Segretario di Stato Marco Rubio difendono l'intesa come sicura e vantaggiosa per le aziende americane.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Iran-Usa: Houthi colpiscono petroliere, dodicesima notte di raid su Teheran</h4><p>Lo Stretto di Hormuz parzialmente bloccato; tensioni anche nel Mar Rosso e nei prezzi del carburante.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Gli Houthi yemeniti rivendicano l'attacco a due petroliere saudite nel Mar Rosso mentre gli Stati Uniti conducono la dodicesima notte consecutiva di attacchi contro l'Iran. Lo Stretto di Hormuz risulta parzialmente bloccato da mine ed esplosioni, con nuove tensioni anche nel Mar Rosso dopo l'annuncio di un "blocco marittimo" Houthi contro l'Arabia Saudita. La disputa, che coinvolge anche Kuwait, Giordania e Bahrein colpiti da ritorsioni iraniane, sta già facendo oscillare i prezzi globali del carburante, in linea con quanto riportato anche dalla stampa italiana.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Regno Unito: tariffe di parcheggio agli aeroporti aumentate di un terzo</h4><p>Il "kiss and fly" sale a 7 sterline in media, 10 a Gatwick e Stansted, secondo un'analisi RAC.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Un'analisi del RAC rivela che le tariffe per il "kiss and fly" nei maggiori aeroporti britannici sono salite in media di 1,70 sterline, a 7 sterline, con Gatwick e Stansted a 10 sterline per pochi minuti di sosta. Le associazioni di categoria giustificano i rincari con esigenze di gestione del traffico e obiettivi climatici, ma le associazioni dei viaggiatori d'affari denunciano un uso pretestuoso delle motivazioni ambientali per scaricare costi aggiuntivi sulle imprese.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Farmaco "salva-cammino" per la sclerosi multipla disponibile sul servizio sanitario inglese</h4><p>Il fampridine sarà gratuito sull'NHS inglese per circa 5.000 pazienti l'anno.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Il fampridine, primo farmaco capace di migliorare la capacità di camminare nei pazienti con sclerosi multipla, sarà disponibile gratuitamente sul NHS in Inghilterra per circa 5.000 pazienti l'anno, dopo essere già accessibile in Galles, Scozia e Irlanda del Nord. Le associazioni dei pazienti parlano di svolta "life-changing" per l'autonomia di chi soffre di difficoltà motorie legate alla malattia.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Iran: la scuola colpita nella guerra con Israele e Stati Uniti, 120 bambini uccisi</h4><p>Un reportage BBC da Minab ricostruisce l'attacco del 28 febbraio: 156 morti accertati, tra cui 120 minori.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Un reportage della BBC da Minab, nel sud dell'Iran, ricostruisce l'attacco del 28 febbraio scorso a una scuola elementare situata accanto a una struttura dei Guardiani della Rivoluzione: 156 morti accertati, tra cui 120 minori. Le autorità iraniane, pur senza ammissione ufficiale da parte statunitense, indicano responsabilità delle forze Usa nel raid, mentre media americani parlano di errore. L'episodio, tra i più gravi dell'intero conflitto per le vittime civili, alimenta il dibattito internazionale sul prezzo pagato dalla popolazione civile nella guerra tra Stati Uniti/Israele e Iran.</div>
+      </details>
+
+    <!-- NEWS_AUTOGEN_END -->
+    </div>
+    <div class="news-panel-foot">Sintesi propria, non riproduzione degli articoli originali. Nessun commento, nessuna interazione — solo lettura rapida.</div>
+  </aside>
+
+</div>
+
+<div class="method">
+  <div class="method-item"><span class="tag">01 — PROBLEMA</span><p>Il dato che dimostra che qualcosa non funziona.</p></div>
+  <div class="method-item"><span class="tag">02 — PROPOSTA</span><p>Cosa cambieremmo, in modo specifico e attuabile.</p></div>
+  <div class="method-item"><span class="tag">03 — FONTE</span><p>Lo studio o l'analisi che la sostiene, sempre linkato.</p></div>
+  <div class="method-item"><span class="tag">04 — OBIEZIONI</span><p>Le critiche vere, non quelle di comodo.</p></div>
+  <div class="method-item"><span class="tag">05 — IMPATTO</span><p>Chi guadagna, chi perde, quanto — in numeri.</p></div>
+</div>
+
+<div class="ascolta-wrap" id="ascolta-home">
+  <div class="ascolta-inner">
+    <span class="cat">Interazione</span>
+    <h2>Giorgio Ascolta</h2>
+    <p class="desc">Niente commenti liberi sotto ogni pagina. Se hai un'obiezione ragionata, un dato che non abbiamo considerato, o un suggerimento su un tema mancante, scrivilo qui: verrà letto e, se solido, potrà cambiare una proposta.</p>
+    <div class="ascolta-form">
+      <p>Il modulo apre un Google Form in una nuova scheda: le risposte arrivano come notifica sulla Gmail di Giorgio, senza servizi esterni.</p>
+      <button type="button" onclick="window.open('https://forms.gle/4Bj3wFLKexVwtMXy8','_blank')">Apri il modulo →</button>
+    </div>
+  </div>
+</div>
+
+<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 23 luglio 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
+
+</body>
+</html>

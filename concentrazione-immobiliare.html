@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Limite alla concentrazione di beni immobili — Patto Equo</title>
+<meta name="description" content="Tassazione progressiva oltre 100 appartamenti equivalenti ed esproprio indennizzato oltre una seconda soglia: la proposta, i precedenti (UK, Berlino), le obiezioni e l'impatto stimato.">
+<meta property="og:title" content="Limite alla concentrazione di beni immobili — Patto Equo">
+<meta property="og:description" content="Un tetto alla concentrazione immobiliare con trasparenza proprietaria obbligatoria: la proposta, i precedenti reali e le obiezioni.">
+<meta property="og:type" content="article">
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="39" cy="42" r="17" fill="none" stroke="%231B2A4A" stroke-width="5"/><circle cx="61" cy="42" r="17" fill="none" stroke="%23A9832F" stroke-width="5"/><path d="M 53.72 50.5 A 17 17 0 0 1 44.25 58.17" fill="none" stroke="%231B2A4A" stroke-width="5"/><line x1="15" y1="70" x2="85" y2="70" stroke="%231B2A4A" stroke-width="3" stroke-linecap="round"/></svg>'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"In Italia l'esproprio per concentrazione immobiliare sarebbe costituzionale?","acceptedAnswer":{"@type":"Answer","text":"È il punto più fragile della proposta: l'art. 43 della Costituzione limita l'esproprio a categorie applicate storicamente solo due volte. Servirebbe un'interpretazione estensiva o una riforma costituzionale mirata."}},{"@type":"Question","name":"Chi supera la soglia non frammenterà la proprietà con società-schermo?","acceptedAnswer":{"@type":"Answer","text":"La proposta include la trasparenza look-through fino al 5% e l'obbligo di dichiarare i beneficiari effettivi, sul modello operativo nel Regno Unito dal 2022."}},{"@type":"Question","name":"Il referendum di Berlino non è rimasto inattuato?","acceptedAnswer":{"@type":"Answer","text":"Sì, per inerzia politica: per questo una proposta italiana dovrebbe prevedere tempi di attuazione vincolanti, non solo l'approvazione del principio."}}]}</script>
+<style>
+  :root{
+    --ink:#1B2A4A;
+    --paper:#F7F5EF;
+    --paper-deep:#EFEBE1;
+    --red:#8C3B33;
+    --gold:#A9832F;
+    --charcoal:#262421;
+    --line:#D9D2C2;
+    --green-gain: #3E6B4F;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--charcoal);
+    font-family:'Inter',sans-serif;
+    line-height:1.55;
+  }
+  h1,h2,h3,.display{
+    font-family:'Fraunces',serif;
+    color:var(--ink);
+    margin:0;
+  }
+  .mono{font-family:'IBM Plex Mono',monospace; letter-spacing:0.02em;}
+  a{color:var(--ink);}
+
+  header{
+    padding:22px 6vw;
+    display:flex; justify-content:space-between; align-items:center;
+    border-bottom:1px solid var(--line);
+  }
+  .logo{font-family:'Fraunces',serif; font-weight:600; font-size:1.05rem; color:var(--ink);}
+  .logo span{color:var(--red);}
+  nav a{font-size:0.85rem; text-decoration:none; color:var(--charcoal); margin-left:28px; font-weight:500;}
+
+  .theme-section{max-width:980px; margin:70px auto; padding:0 6vw;}
+  .theme-header{margin-bottom:44px;}
+  .theme-header .cat{font-family:'IBM Plex Mono',monospace; font-size:0.78rem; color:var(--gold); text-transform:uppercase; letter-spacing:0.1em;}
+  .theme-header h1{font-size:clamp(1.8rem,3.5vw,2.6rem); margin-top:10px;}
+  .theme-header .apertura{font-style:italic; color:#4a4640; margin-top:14px; font-size:1.02rem;}
+  .correlati{font-family:'IBM Plex Mono',monospace; font-size:0.8rem; margin-top:18px;}
+  .placeholder-note .ns-tag{font-family:'IBM Plex Mono',monospace; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--gold); display:block; margin-bottom:6px;}
+  .block{border-top:1px solid var(--line); padding:34px 0; display:grid; grid-template-columns:160px 1fr; gap:28px;}
+  .block .block-label{font-family:'IBM Plex Mono',monospace; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#8a8577; padding-top:4px;}
+  .block .block-content h3{font-size:1.25rem; font-weight:500; margin-bottom:12px;}
+  .block .block-content p{margin:0 0 10px; color:#3a372f;}
+  .block.problema .block-label{color:var(--red);}
+  .block.proposta .block-label{color:var(--ink);}
+  .source-card{background:var(--paper-deep); border-left:3px solid var(--gold); padding:16px 18px; margin-top:14px; font-size:0.92rem; position:relative;}
+  .source-card .src-name{font-weight:600; display:block; margin-bottom:4px; padding-right:110px;}
+  .source-card a{font-size:0.85rem; text-decoration:underline; color:var(--ink);}
+  .verificata-badge{
+    position:absolute; top:14px; right:16px;
+    display:flex; align-items:center; gap:5px;
+    border:1.5px solid var(--gold); border-radius:20px;
+    padding:3px 10px 3px 7px;
+    font-family:'IBM Plex Mono',monospace; font-size:0.62rem;
+    letter-spacing:0.03em; text-transform:uppercase; color:var(--gold);
+    background:#fff;
+  }
+  .verificata-badge svg{width:11px; height:11px; flex-shrink:0;}
+  .placeholder-note{
+    background:#fff; border:1px dashed var(--gold); padding:16px 18px; margin-top:14px; font-size:0.9rem; color:#6b6659;
+  }
+  .obj{border:1px solid var(--line); border-radius:2px; margin-bottom:10px; overflow:hidden;}
+  .obj summary{padding:14px 18px; cursor:pointer; font-weight:500; background:#fff; list-style:none; display:flex; justify-content:space-between; align-items:center;}
+  .obj summary::after{content:"+"; font-family:'IBM Plex Mono',monospace; color:var(--gold); font-size:1.1rem;}
+  .obj[open] summary::after{content:"–";}
+  .obj .risposta{padding:0 18px 18px; color:#3a372f; font-size:0.94rem; border-top:1px solid var(--line); padding-top:14px;}
+  .obj .risposta .tag{font-family:'IBM Plex Mono',monospace; font-size:0.7rem; color:var(--green-gain); text-transform:uppercase; display:block; margin-bottom:6px;}
+  .bilancio{display:grid; grid-template-columns:1fr auto 1fr; gap:20px; align-items:stretch; margin-top:18px;}
+  .piatto{background:#fff; border:1px solid var(--line); padding:20px; border-radius:2px;}
+  .piatto.perde{border-top:3px solid var(--red);}
+  .piatto.guadagna{border-top:3px solid var(--green-gain);}
+  .piatto .who{font-weight:600; font-size:0.95rem; margin-bottom:4px;}
+  .piatto .amount{font-family:'IBM Plex Mono',monospace; font-size:1.3rem; color:var(--ink); display:block; margin:8px 0 4px;}
+  .piatto .note{font-size:0.82rem; color:#6b6659;}
+  .fulcro{display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:0.75rem; color:#8a8577; writing-mode:vertical-lr; text-transform:uppercase;}
+
+  .ascolta-wrap{background:var(--paper-deep); padding:56px 6vw;}
+  .ascolta-inner{max-width:700px; margin:0 auto;}
+  .ascolta-inner .cat{font-family:'IBM Plex Mono',monospace; font-size:0.78rem; color:var(--gold); text-transform:uppercase; letter-spacing:0.1em;}
+  .ascolta-inner h2{font-size:clamp(1.5rem,3vw,2rem); margin-top:10px;}
+  .ascolta-inner p.desc{color:#4a4640; margin-top:12px; font-size:0.96rem; max-width:560px;}
+  .ascolta-form{margin-top:24px;}
+  .ascolta-form p{font-size:0.9rem; color:#6b6659; margin:0 0 14px;}
+  .ascolta-form button{background:var(--ink); color:#fff; border:none; padding:13px 28px; font-family:'Inter',sans-serif; font-weight:600; font-size:0.92rem; border-radius:2px; cursor:pointer;}
+  .ascolta-form button:hover{background:#26375c;}
+
+  footer{border-top:1px solid var(--line); padding:36px 6vw; text-align:center; font-size:0.8rem; color:#847e6f;}
+
+  @media (max-width: 720px){
+    .block{grid-template-columns:1fr; gap:8px;}
+    .bilancio{grid-template-columns:1fr;}
+    .fulcro{writing-mode:horizontal-tb; padding:6px 0;}
+    nav a{margin-left:14px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo" style="display:flex; align-items:center; gap:10px;">
+    <a href="index.html" style="text-decoration:none; color:var(--ink); display:flex; align-items:center; gap:10px;">
+      <svg viewBox="0 0 100 100" width="26" height="26" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="39" cy="42" r="17" fill="none" stroke="#1B2A4A" stroke-width="5"/>
+        <circle cx="61" cy="42" r="17" fill="none" stroke="#A9832F" stroke-width="5"/>
+        <path d="M 53.72 50.5 A 17 17 0 0 1 44.25 58.17" fill="none" stroke="#1B2A4A" stroke-width="5"/>
+        <line x1="15" y1="70" x2="85" y2="70" stroke="#1B2A4A" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      Patto <span>Equo</span>
+    </a>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#news">News</a>
+    <a href="index.html#ascolta-home">Giorgio Ascolta</a>
+  </nav>
+</header>
+
+<section class="theme-section" id="immobili">
+  <div class="theme-header">
+    <span class="cat">Tema 03 — Concentrazione della proprietà immobiliare</span>
+    <h1>Un limite alla concentrazione di beni immobili: patrimoniale progressiva ed esproprio indennizzato oltre soglia</h1>
+    <p class="apertura">In una frase: sopra una soglia molto alta (circa 100 appartamenti equivalenti) la concentrazione immobiliare viene prima tassata progressivamente, poi limitata — non tocca chi ha 5-6 case.</p>
+  </div>
+
+  <div class="block problema">
+    <div class="block-label">Il problema</div>
+    <div class="block-content">
+      <h3>La casa come asset finanziario, non solo come bene abitativo</h3>
+      <p>Il costo delle abitazioni in Italia, come in gran parte d'Europa, è cresciuto più velocemente dei salari: secondo uno studio della Fondazione Ifel ripreso dal Sole 24 Ore, tra il 2018 e il 2024 i canoni di locazione sono cresciuti in media del 22,6%, e oltre 1,5 milioni di famiglie italiane destinano più del 40% del reddito netto alle spese abitative. Una parte di questa dinamica è legata a un fenomeno raramente affrontato nel dibattito pubblico: la concentrazione di un numero crescente di immobili nelle mani di pochi soggetti — individui, fondi, società immobiliari — che trattano la casa come strumento finanziario piuttosto che come bene abitativo. Il dibattito politico italiano si concentra quasi sempre sulla leva fiscale generale (patrimoniale, IMU) o sull'offerta (permessi edilizi, PNRR): manca quasi del tutto una discussione su un terzo strumento, il limite diretto alla quantità di patrimonio immobiliare accumulabile da un singolo soggetto. Il costo della casa pesa anche su un altro fronte documentato in questo sito: è tra i fattori con effetto negativo più solido sulla natalità (vedi <a href="politiche-familiari-natalita.html">tema 04 — Politiche per le famiglie</a>).</p>
+      <div class="placeholder-note"><span class="ns-tag">Cosa non sappiamo ancora</span>Non esistono, a oggi, dati pubblici italiani che quantifichino con precisione quante persone fisiche possiedano un numero molto elevato di immobili (es. sopra le 100 unità): i Conti distributivi di Banca d'Italia sono basati su un campione che per costruzione non cattura bene la coda estrema della distribuzione. Lo diciamo esplicitamente invece di stimarlo a caso.</div>
+    </div>
+  </div>
+
+  <div class="block proposta">
+    <div class="block-label">La proposta</div>
+    <div class="block-content">
+      <h3>Due soglie, due strumenti</h3>
+      <p><strong>Prima soglia — tassazione patrimoniale fortemente progressiva.</strong> Fino a una soglia equivalente al valore di circa 100 appartamenti residenziali standard (parametro dinamico: il valore di 100 unità da 100 mq in una zona residenziale di riferimento, rivalutato annualmente), il patrimonio immobiliare eccedente una prima franchigia viene tassato con aliquote crescenti per scaglioni.</p>
+      <p><strong>Seconda soglia — esproprio indennizzato a canone equo.</strong> Superata quella soglia, la quota eccedente non viene più solo tassata: viene trasferita a un ente pubblico mediante esproprio, con un indennizzo calcolato non sul valore di mercato pieno ma su un canone equo capitalizzato.</p>
+      <p>Le due soglie non sono in contraddizione: la prima scoraggia la concentrazione moderata, la seconda pone un tetto assoluto oltre il quale la proprietà privata cede il passo a un interesse pubblico prevalente. Il meccanismo della prima soglia riprende anche l'impianto della proposta italiana "1% Equo" (2026) sulla tassazione patrimoniale progressiva — citata qui come riferimento di dibattito interno, non come stima indipendente verificata.</p>
+      <p><strong>Trasparenza proprietaria obbligatoria.</strong> Il calcolo avviene per trasparenza proporzionale (look-through): chi possiede il 5% di una società che detiene 2.000 appartamenti viene considerato titolare di 100 appartamenti, a prescindere da quanti livelli societari separino la persona fisica dal bene. Le società con sede in giurisdizioni opache sarebbero obbligate a dichiarare i beneficiari effettivi, pena l'impossibilità di acquistare, vendere o ipotecare l'immobile in Italia.</p>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-label">La fonte / i precedenti</div>
+    <div class="block-content">
+      <div class="source-card">
+        <span class="src-name">Referendum "Deutsche Wohnen &amp; Co enteignen" — Berlino, settembre 2021</span>
+        <p><strong>Approvato dal 58%</strong> dei votanti: <strong>esproprio</strong> delle società immobiliari con oltre 3.000 unità in città, con indennizzo su canone equo anziché valore di mercato, in base all'art. 15 della Costituzione tedesca. Una commissione di esperti ne ha confermato la legalità nel 2023; l'attuazione resta però bloccata a livello politico. È la prova che una misura di rottura come questa non è un'astrazione accademica: un elettorato l'ha già scelta democraticamente.</p>
+        <a href="https://www.berlin.de/wahlen/abstimmungen/deutsche-wohnen-und-co-enteignen/" target="_blank">→ berlin.de — pagina ufficiale del referendum</a>
+      </div>
+      <div class="source-card">
+        <span class="src-name">Thomas Piketty — "Capitale e Ideologia" (2019)</span>
+        <p>Propone una "riforma agraria permanente" estesa a tutto il capitale: una tassa patrimoniale non emergenziale ma permanente, pensata per rimettere costantemente in circolazione la ricchezza accumulata. Piketty stesso definisce la proposta ambiziosa, da tentare prima a livello locale.</p>
+        <a href="https://piketty.pse.ens.fr/en/ideology" target="_blank">→ piketty.pse.ens.fr — pagina ufficiale del libro</a>
+      </div>
+      <div class="source-card">
+        <span class="src-name">Register of Overseas Entities — Economic Crime (Transparency and Enforcement) Act 2022, Regno Unito</span>
+        <p>Obbliga le entità estere proprietarie di immobili nel Regno Unito a dichiarare i beneficiari effettivi "guardando attraverso" la struttura societaria (soglia: 25% dei diritti di voto). Il Land Registry blocca ogni transazione fino a registrazione completata.</p>
+        <a href="https://www.gov.uk/guidance/register-of-overseas-entities" target="_blank">→ gov.uk/register-of-overseas-entities</a>
+      </div>
+      <div class="source-card">
+        <span class="src-name">Canada, Danimarca, Spagna — restrizioni all'acquisto per non residenti</span>
+        <p>Modelli diversi ma tutti basati sulla nazionalità del compratore, non sulla concentrazione: divieto penale in Canada (2023), autorizzazione discrezionale in Danimarca, tassa fino al 100% del valore proposta in Spagna (gennaio 2025). Nessuno dei tre pone un limite quantitativo per soggetto.</p>
+        <a href="https://laws-lois.justice.gc.ca/eng/acts/P-25.2/" target="_blank">→ laws-lois.justice.gc.ca — legge canadese (Prohibition on the Purchase of Residential Property by Non-Canadians Act)</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-label">Obiezioni</div>
+    <div class="block-content">
+      <details class="obj">
+        <summary>In Italia l'esproprio per questo motivo non sarebbe costituzionalmente possibile</summary>
+        <div class="risposta"><span class="tag">Risposta</span>Obiezione fondata. L'art. 43 della Costituzione, a differenza dell'art. 15 tedesco, limita l'esproprio a servizi pubblici essenziali, fonti di energia o situazioni di monopolio di "preminente interesse generale" — categorie applicate storicamente solo due volte (ENI, energia elettrica). Servirebbe un'interpretazione estensiva che qualifichi la concentrazione immobiliare oltre soglia come distorsione di un servizio essenziale, oppure una riforma costituzionale mirata. È il punto di maggiore fragilità giuridica della proposta, e va detto apertamente.</div>
+      </details>
+      <details class="obj">
+        <summary>Chi supera la soglia frammenterà la proprietà per eluderla (intestazioni fittizie, società-schermo)</summary>
+        <div class="risposta"><span class="tag">Risposta</span>È il motivo per cui la proposta include la trasparenza look-through fino al 5% e l'obbligo di dichiarazione dei beneficiari effettivi anche per trust e società estere opache, sul modello già operativo nel Regno Unito dal 2022 — con sanzioni che vanno dal blocco delle transazioni a multe e reclusione.</div>
+      </details>
+      <details class="obj">
+        <summary>Anche un mandato popolare chiaro può restare inattuato, come mostra Berlino</summary>
+        <div class="risposta"><span class="tag">Risposta</span>Verissimo, ed è il limite più concreto della proposta: tre anni dopo il referendum berlinese, nessuna nazionalizzazione è avvenuta, per inerzia politica più che per ostacoli tecnici. Una proposta italiana dovrebbe quindi prevedere tempi di attuazione vincolanti, non solo l'approvazione del principio.</div>
+      </details>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-label">Impatto stimato</div>
+    <div class="block-content">
+      <div class="bilancio">
+        <div class="piatto perde">
+          <div class="who">Chi ci perde</div>
+          <span class="amount">Grandi concentrazioni immobiliari sopra soglia</span>
+          <div class="note">Il numero esatto di soggetti coinvolti in Italia non è ricavabile dai dati pubblici disponibili (vedi nota nel blocco "Il problema"). A differenza di una patrimoniale generalizzata, qui l'assenza di questo dato non è un ostacolo alla proposta: la soglia stessa (circa 100 appartamenti equivalenti) definisce per costruzione una platea ristrettissima, quale che sia il numero esatto. Colpiti soprattutto grandi fondi e proprietari con centinaia di unità, non il piccolo-medio risparmiatore con 5-6 case.</div>
+        </div>
+        <div class="fulcro">bilancio</div>
+        <div class="piatto guadagna">
+          <div class="who">Chi ci guadagna</div>
+          <span class="amount">Affittuari e accesso alla prima casa</span>
+          <div class="note">Effetto atteso sui prezzi: maggiore offerta abitativa e minore pressione speculativa. Non esiste oggi una stima verificata dell'entità dell'effetto per il mercato italiano (dati Istat/OMI da integrare): lo diciamo esplicitamente invece di inventare una cifra.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="theme-section" style="margin-top:0; margin-bottom:40px;">
+  <p style="font-style:italic; color:#4a4640; border-top:1px solid var(--line); padding-top:28px;">In sintesi: non proponiamo un'espropriazione generalizzata né un tetto arbitrario alla proprietà privata dei singoli cittadini. Proponiamo che, superata una soglia molto alta e chiaramente definita — equivalente a circa 100 appartamenti standard — il sistema fiscale prima scoraggi, e poi, oltre un secondo limite, trasferisca all'interesse pubblico la parte di patrimonio immobiliare che eccede quella soglia, con un indennizzo equo e trasparenza proprietaria totale. È una proposta di rottura rispetto allo status quo italiano, ma non priva di precedenti: unisce la leva fiscale già proposta in Italia ("1% Equo", Piketty), la leva della trasparenza già operativa nel Regno Unito, e la leva dell'esproprio indennizzato già votata democraticamente a Berlino.</p>
+  <details class="obj" style="margin-top:18px;">
+    <summary>Glossario minimo: "look-through", "canone equo capitalizzato"</summary>
+    <div class="risposta"><span class="tag">Definizioni</span><strong>Look-through (trasparenza proporzionale)</strong>: si "guarda attraverso" le società per attribuire gli immobili alle persone fisiche che le controllano, in proporzione alla quota posseduta, a prescindere dai livelli societari intermedi. <strong>Canone equo capitalizzato</strong>: indennizzo calcolato non sul valore di mercato pieno dell'immobile, ma sul valore attuale dei canoni di affitto "equi" che genererebbe nel tempo.</div>
+  </details>
+  <p class="correlati">Temi correlati: <a href="tassa-patrimoniale.html">01 — Patrimoniale sopra i 50 milioni</a> · <a href="politiche-familiari-natalita.html">04 — Politiche per le famiglie e la natalità</a></p>
+</div>
+
+<div class="ascolta-wrap">
+  <div class="ascolta-inner">
+    <span class="cat">Interazione</span>
+    <h2>Giorgio Ascolta</h2>
+    <p class="desc">Un'obiezione a questa proposta specifica? Un dato migliore? Scrivilo qui.</p>
+    <div class="ascolta-form">
+      <p>Il modulo apre un Google Form in una nuova scheda: le risposte arrivano come notifica sulla Gmail di Giorgio, senza servizi esterni.</p>
+      <button type="button" onclick="window.open('https://forms.gle/4Bj3wFLKexVwtMXy8','_blank')">Apri il modulo →</button>
+    </div>
+  </div>
+</div>
+
+<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 22 luglio 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
+
+</body>
+</html>
