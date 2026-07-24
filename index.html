@@ -98,6 +98,13 @@
     font-family:'IBM Plex Mono',monospace; font-size:0.7rem; text-transform:uppercase;
     letter-spacing:0.06em; color:#8a8577; margin:18px 0 4px;
   }
+  .news-day{margin-bottom:8px;}
+  .news-day + .news-day{border-top:1px solid var(--line); padding-top:4px;}
+  .news-day-label{
+    font-family:'IBM Plex Mono',monospace; font-size:0.74rem; font-weight:600;
+    color:var(--ink); letter-spacing:0.04em; margin:16px 0 2px; padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+  }
 
   /* NEWS ITEM — espandibile */
   details.news-item{border-bottom:1px solid var(--line); padding:10px 0;}
@@ -251,10 +258,80 @@
     <div class="news-panel-head">
       <span class="label">Sezione dinamica</span>
       <h3>Rassegna del Giorno</h3>
-      <span class="date" id="news-date">23/07/2026 · disponibile 7 giorni · clicca per il testo completo</span>
+      <span class="date" id="news-date">ultimi 7 giorni · aggiornata al 24/07/2026 · clicca per il testo completo</span>
     </div>
     <div class="news-scroll">
     <!-- NEWS_AUTOGEN_START -->
+    <!-- FINESTRA MOBILE 7 GIORNI: ad ogni aggiornamento aggiungere un nuovo blocco .news-day IN CIMA con la data odierna, e rimuovere il blocco .news-day più vecchio se sono già presenti 7 giorni (uno per data). -->
+    <div class="news-day">
+      <div class="news-day-label">24/07/2026</div>
+      <div class="news-section-label">Rassegna Italiana — Prima Pagina, Rai Radio 3</div>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Legge elettorale, intesa nel centrodestra sulle preferenze</h4><p>Accordo di maggioranza su un sistema simile alle europee: capolista fisso e fino a tre preferenze di genere diverso.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Sul Corriere della Sera, Francesco Verderami ricostruisce l'intesa raggiunta dalla maggioranza sulla riforma della legge elettorale, dopo settimane di trattative sul nodo delle preferenze, voluto dalla premier Giorgia Meloni e osteggiato in particolare da Forza Italia. Il compromesso ricalca il modello delle elezioni europee: sulla scheda comparirà un capolista fisso seguito da sei nomi, tra cui l'elettore potrà indicarne fino a tre di genere diverso; si aggiunge una quota di genere di almeno 60-40 tra candidati, capilista compresi, e una norma anti-frammentazione per le liste sotto il 3%. Secondo Verderami, l'insistenza di Meloni sarebbe legata al rischio di tornare al vecchio sistema in caso di bocciatura per incostituzionalità del testo già approvato alla Camera. Il testo passa ora al Senato, con approvazione definitiva attesa tra fine settembre e inizio ottobre.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Petrolio sopra i 100 dollari: rincari per 700 milioni sulle famiglie</h4><p>Le tensioni in Medio Oriente spingono benzina oltre i 2 euro al litro; il governo evita nuovi interventi sulle accise.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">La Repubblica e La Stampa riportano il congelamento, da parte di Washington, dell'accordo di cooperazione nucleare civile con l'Arabia Saudita, sospeso per timori di ricadute sugli Accordi di Abramo del 2020. Nel frattempo il greggio è tornato sopra i 100 dollari al barile per la chiusura di rotte nello Stretto di Hormuz e nel Bab al-Mandab; il manifesto segnala il rischio di una crisi energetica aggravata dal blocco simultaneo dei due passaggi. In Italia la benzina ha superato i 2 euro al litro, con rincari differenziati per regione; Repubblica stima un aggravio complessivo di circa 700 milioni di euro per le famiglie legato ai soli rincari estivi. Il Consiglio dei ministri ha evitato di discutere nuovi sconti sulle accise, scelta criticata dalle opposizioni.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Caro-benzina, il governo senza risorse per intervenire</h4><p>Nessun provvedimento sui carburanti; varato invece un ddl concorrenza contro le pratiche fraudolente nella vendita.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Il Messaggero e La Stampa ricostruiscono l'imbarazzo dell'esecutivo di fronte all'impennata dei prezzi dei carburanti: al termine del Consiglio dei ministri, il ministro delle Imprese Adolfo Urso ha invitato i colleghi a evitare dichiarazioni che offrissero sponda alle critiche dell'opposizione sul mancato intervento pubblico. Il settore più colpito resta il jet fuel, con ricadute sui costi dei voli verso l'estero. È stato invece approvato un disegno di legge sulla concorrenza, con norme contro le pratiche fraudolente nella vendita di carburanti e una nuova disciplina sul cosiddetto doggy bag nella ristorazione. Diversi editorialisti richiamano il tema strutturale della scarsità di risorse pubbliche italiane per sostenere le fasce più esposte ai rincari, in un contesto di finanza pubblica vincolata.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Scontrini e POS: l'incrocio dei dati fa emergere 9,1 miliardi</h4><p>L'obbligo di abbinamento tra registratori telematici e POS intercetta imponibile aggiuntivo in forte crescita.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Un'inchiesta di Marco Mobili e Giovanni Parente sul Sole 24 Ore riporta i risultati dell'obbligo di abbinamento tra registratori telematici e sistemi POS, entrato a regime dopo dodici mesi previsti dalla legge di bilancio 2025: l'incrocio dei dati ha fatto emergere un imponibile aggiuntivo stimato in 9,1 miliardi di euro, contro i 5,3 miliardi rilevati a fine maggio, intercettando transazioni che in precedenza sfuggivano alla dichiarazione fiscale. Il dato riapre il dibattito politico su come impiegare le maggiori entrate: alcuni editorialisti propongono di destinarle alla riduzione dell'impatto del caro-energia sulle famiglie, altri invitano alla cautela trattandosi di una stima su un trend di pochi mesi, non ancora gettito consolidato.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Azzardo, raccolta record: 45 miliardi nel primo trimestre</h4><p>Crescita del 17% su base annua; se confermata, la spesa 2026 supererebbe quella sanitaria nazionale.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Un'inchiesta di Giacomo Castellani e Antonio Maria Mira su Avvenire riporta che nel primo trimestre 2026 la raccolta da gioco d'azzardo in Italia ha raggiunto 45,4 miliardi di euro, in crescita di oltre il 17% sullo stesso periodo del 2025; proiettato sull'anno, il dato supererebbe le risorse del PNRR e i circa 160 miliardi della spesa sanitaria nazionale. Don Bruno Bignami, dell'ufficio problemi sociali e lavoro della CEI, collega la crescita del fenomeno a un deficit di prospettive sociali in una fase di stagnazione economica, con l'azzardo che diventerebbe una forma di "speranza immaginaria" per fasce a basso reddito e in condizioni di fragilità. Le associazioni del settore chiedono un intervento normativo più incisivo, evidenziando che gran parte della raccolta si concentra sulle slot machine.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Sicurezza: il governo abbassa la soglia di imputabilità dei minori</h4><p>Ddl a 14 anni salvo prova contraria; critiche dalla magistratura minorile e ipotesi di ricorso costituzionale.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Il Consiglio dei ministri ha approvato un disegno di legge che abbassa, salvo prova contraria sulla capacità di intendere e di volere, la soglia di imputabilità penale a 14 anni, in risposta all'attenzione mediatica sulle cosiddette "baby gang" — sesto intervento sul tema sicurezza dopo altrettanti decreti. Il Mattino riporta le critiche di chi, come l'ex sindaco Gianni Alemanno, chiede parallelamente un intervento sul sovraffollamento carcerario; su Repubblica, Piero Ignazi parla di un cambio di passo securitario più comunicativo che strutturale rispetto al disagio giovanile. La magistratura minorile ha espresso perplessità sulla tenuta costituzionale della norma, con un possibile ricorso alla Corte Costituzionale dopo l'approvazione definitiva.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Il "malgoverno" di Ernesto Rossi torna d'attualità</h4><p>Editorialisti richiamano il tema strutturale della scarsità di risorse pubbliche per le fasce più esposte ai rincari.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Nel dibattito sul caro-energia, più editorialisti richiamano un celebre passo di Ernesto Rossi sul "malgoverno" del 1954 per inquadrare la cronica scarsità di risorse pubbliche italiane a sostegno delle fasce di popolazione più esposte ai rincari, in un contesto di finanza pubblica vincolata: un limite strutturale che nessun governo, di nessun colore, ha ancora risolto in modo organico.</div>
+      </details>
+
+      <div class="news-section-label">Rassegna Estera — BBC News</div>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Usa: nuova ondata di dazi su 60 partner commerciali</h4><p>Tariffe tra il 10% e il 12,5% dopo lo stop della Corte Suprema ai dazi imposti per via emergenziale.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">L'amministrazione Trump ha imposto nuovi dazi tra il 10% e il 12,5% su 60 partner commerciali — tra cui Regno Unito, Cina, Unione Europea, Canada, Giappone e India — con la motivazione ufficiale di sanzionare la mancata adozione di misure contro il lavoro forzato nelle catene di approvvigionamento, ricorrendo alla Sezione 301 del Trade Act del 1974 dopo che la Corte Suprema aveva dichiarato illegittimi a febbraio i dazi imposti tramite poteri d'emergenza. Le nuove tariffe coprono il 99,4% delle importazioni statunitensi. Secondo l'esperta di politica commerciale Deborah Elms (Hinrich Foundation), è improbabile che i Paesi colpiti dimostrino in tempi brevi misure sufficienti; Wendy Cutler (Asia Society Policy Institute) osserva che numerose esenzioni potrebbero attenuare l'impatto su imprese e consumatori. Il Regno Unito lamenta di aver perso il vantaggio comparato rispetto all'Unione Europea, che ha ottenuto un accordo forfettario del 10%.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Regno Unito: mutui ai massimi di un mese per il petrolio a 100 dollari</h4><p>Il tasso fisso a due anni risale al 5,58%; circa cento offerte ritirate temporaneamente dal mercato.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">I tassi medi sui mutui britannici sono risaliti ai livelli di un mese fa dopo settimane di calo, per effetto delle rinnovate tensioni in Medio Oriente sui costi di finanziamento delle banche: il petrolio è tornato sopra i 100 dollari al barile per la prima volta da maggio, dopo nuovi attacchi nel Mar Rosso, riducendo le probabilità di tagli dei tassi. Il tasso medio su un mutuo fisso a due anni si attesta al 5,58%, ancora sotto il picco del 5,9% toccato in aprile durante l'escalation con l'Iran; circa cento offerte sono state temporaneamente ritirate dal mercato. Rachel Springall (Moneyfacts) consiglia a chi deve rinnovare il mutuo di bloccare per tempo un'offerta con il proprio istituto, valutando comunque un intermediario per confrontare le condizioni disponibili.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Il capo di BAE Systems: "Rischio bellico sottovalutato dal Regno Unito"</h4><p>Charles Woodburn segnala una spesa per la difesa ancora insufficiente rispetto all'obiettivo del 3,5% del PIL.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Charles Woodburn, amministratore delegato di BAE Systems, ha dichiarato alla BBC che il livello di minaccia percepito oggi è il più alto della sua esperienza professionale, imputando al Regno Unito un atteggiamento storicamente troppo compiacente rispetto al rischio di conflitto, in particolare dal lato russo. Pur accogliendo con favore i recenti incrementi della spesa per la difesa, ha sottolineato che le risorse restano insufficienti rispetto all'obiettivo dichiarato dal governo del 3,5% del PIL entro il 2035 — l'aumento più recente porterebbe la spesa solo al 2,68% entro il 2030. Woodburn ha inoltre segnalato l'uso sempre più sofisticato di droni e sistemi autonomi mostrato dalla guerra in Ucraina, avvertendo che il mondo si avvicina all'impiego di armi letali autonome da parte di attori che potrebbero non condividere l'approccio britannico basato sul controllo umano.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Il neopremier Burnham inaugura il "No 10 North" a Manchester</h4><p>Devoluzione di poteri verso le regioni: fino a 300 funzionari pubblici in trasferimento entro il prossimo anno.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Il primo ministro britannico Andy Burnham terrà il suo primo giorno di governo lavorando dalla nuova sede decentrata di Downing Street a Manchester, denominata "No 10 North", nello stesso edificio che ospita uffici dei servizi di intelligence GCHQ — parte della strategia di devoluzione di poteri da Whitehall verso le regioni, con fino a 300 funzionari pubblici destinati a trasferirsi entro la fine del prossimo anno. Nella sede manchesteriana Burnham presiederà il primo National Economic Council del suo mandato. La leader conservatrice Kemi Badenoch ha criticato l'iniziativa come insufficiente rispetto alle sfide più urgenti — costo dell'energia per le imprese e finanziamento della difesa — accusando Burnham di comportarsi ancora "da sindaco di Manchester". La sede definitiva sorgerà nell'area di Ancoats, con completamento non previsto prima del 2032.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Un'inchiesta BBC porta alla luce casi di coercizione nello scambismo online</h4><p>Cinquanta donne si sono rivolte alla BBC; sei denunciano stupro, sedici la diffusione non consensuale di immagini.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Cinquanta donne si sono rivolte alla BBC dopo un'inchiesta che raccontava la vicenda di una donna costretta dal partner a rapporti sessuali con oltre cento sconosciuti, sostenendo di essere state a loro volta spinte o costrette dai propri compagni a partecipare a incontri di scambismo organizzati principalmente tramite la piattaforma FabSwingers. Sei donne hanno riferito di essere state vittime di stupro da uomini conosciuti tramite il sito, e sedici hanno denunciato la diffusione non consensuale di proprie immagini intime. L'ex sottosegretaria laburista Jess Phillips ha chiesto la chiusura della piattaforma, sostenendo che il termine "scambismo" tenda a implicare un consenso che sposta impropriamente la responsabilità sulle vittime; la piattaforma respinge le accuse, dichiarando di adottare politiche di moderazione e di non poter essere ritenuta responsabile di condotte private tra adulti. La vicenda solleva questioni più ampie sulla definizione giuridica del consenso e sulla capacità delle piattaforme online di prevenire abusi mascherati da pratiche consensuali.</div>
+      </details>
+    </div>
+
+    <div class="news-day">
+      <div class="news-day-label">23/07/2026</div>
       <div class="news-section-label">Rassegna Italiana — Prima Pagina, Rai Radio 3</div>
 
       <details class="news-item">
@@ -318,6 +395,7 @@
         <summary><div class="summary-text"><h4>Iran: la scuola colpita nella guerra con Israele e Stati Uniti, 120 bambini uccisi</h4><p>Un reportage BBC da Minab ricostruisce l'attacco del 28 febbraio: 156 morti accertati, tra cui 120 minori.</p></div><span class="expand-mark"></span></summary>
         <div class="full-text">Un reportage della BBC da Minab, nel sud dell'Iran, ricostruisce l'attacco del 28 febbraio scorso a una scuola elementare situata accanto a una struttura dei Guardiani della Rivoluzione: 156 morti accertati, tra cui 120 minori. Le autorità iraniane, pur senza ammissione ufficiale da parte statunitense, indicano responsabilità delle forze Usa nel raid, mentre media americani parlano di errore. L'episodio, tra i più gravi dell'intero conflitto per le vittime civili, alimenta il dibattito internazionale sul prezzo pagato dalla popolazione civile nella guerra tra Stati Uniti/Israele e Iran.</div>
       </details>
+    </div>
 
     <!-- NEWS_AUTOGEN_END -->
     </div>
