@@ -56,6 +56,13 @@
   .theme-header h1{font-size:clamp(1.8rem,3.5vw,2.6rem); margin-top:10px;}
   .theme-header .apertura{font-style:italic; color:#4a4640; margin-top:14px; font-size:1.02rem;}
   .correlati{font-family:'IBM Plex Mono',monospace; font-size:0.8rem; margin-top:18px;}
+  .citazione{
+    margin:0 0 26px; padding:18px 0 18px 22px; border-left:3px solid var(--gold);
+    font-family:'Fraunces',serif; font-style:italic; font-size:1.08rem; color:var(--ink); line-height:1.5;
+  }
+  .citazione + .citazione{margin-top:-8px;}
+  .citazione cite{display:block; margin-top:10px; font-family:'IBM Plex Mono',monospace; font-style:normal; font-size:0.76rem; color:#8a8577;}
+  .citazione .risalto{font-weight:600; background:linear-gradient(transparent 62%, rgba(169,131,47,0.32) 62%);}
   .placeholder-note .ns-tag{font-family:'IBM Plex Mono',monospace; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--gold); display:block; margin-bottom:6px;}
   .block{border-top:1px solid var(--line); padding:34px 0; display:grid; grid-template-columns:160px 1fr; gap:28px;}
   .block .block-label{font-family:'IBM Plex Mono',monospace; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#8a8577; padding-top:4px;}
@@ -152,6 +159,10 @@
   <div class="block problema">
     <div class="block-label">Il problema</div>
     <div class="block-content">
+      <blockquote class="citazione">
+        "La proprietà privata è riconosciuta e garantita dalla legge, che ne determina i modi di acquisto, di godimento e i <span class="risalto">limiti</span> allo scopo di assicurarne la funzione sociale e di renderla <span class="risalto">accessibile a tutti</span>."
+        <cite>— Costituzione della Repubblica Italiana, art. 42, secondo comma (in vigore dal 1° gennaio 1948)</cite>
+      </blockquote>
       <h3>La casa come asset finanziario, non solo come bene abitativo</h3>
       <p>Il costo delle abitazioni in Italia, come in gran parte d'Europa, è cresciuto più velocemente dei salari: secondo uno studio della Fondazione Ifel ripreso dal Sole 24 Ore, tra il 2018 e il 2024 i canoni di locazione sono cresciuti in media del 22,6%, e oltre 1,5 milioni di famiglie italiane destinano più del 40% del reddito netto alle spese abitative. Una parte di questa dinamica è legata a un fenomeno raramente affrontato nel dibattito pubblico: la concentrazione di un numero crescente di immobili nelle mani di pochi soggetti — individui, fondi, società immobiliari — che trattano la casa come strumento finanziario piuttosto che come bene abitativo. Il dibattito politico italiano si concentra quasi sempre sulla leva fiscale generale (patrimoniale, IMU) o sull'offerta (permessi edilizi, PNRR): manca quasi del tutto una discussione su un terzo strumento, il limite diretto alla quantità di patrimonio immobiliare accumulabile da un singolo soggetto. Il costo della casa pesa anche su un altro fronte documentato in questo sito: è tra i fattori con effetto negativo più solido sulla natalità (vedi <a href="politiche-familiari-natalita.html">tema 04 — Politiche per le famiglie</a>).</p>
       <div class="mini-chart stat-row">
@@ -259,7 +270,7 @@
   </div>
 </div>
 
-<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 22 luglio 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
+<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 25 luglio 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
 
 <script data-goatcounter="https://pattoequo.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>

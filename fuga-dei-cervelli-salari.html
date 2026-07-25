@@ -56,6 +56,13 @@
   .theme-header h1{font-size:clamp(1.8rem,3.5vw,2.6rem); margin-top:10px;}
   .theme-header .apertura{font-style:italic; color:#4a4640; margin-top:14px; font-size:1.02rem;}
   .correlati{font-family:'IBM Plex Mono',monospace; font-size:0.8rem; margin-top:18px;}
+  .citazione{
+    margin:0 0 26px; padding:18px 0 18px 22px; border-left:3px solid var(--gold);
+    font-family:'Fraunces',serif; font-style:italic; font-size:1.08rem; color:var(--ink); line-height:1.5;
+  }
+  .citazione + .citazione{margin-top:-8px;}
+  .citazione cite{display:block; margin-top:10px; font-family:'IBM Plex Mono',monospace; font-style:normal; font-size:0.76rem; color:#8a8577;}
+  .citazione .risalto{font-weight:600; background:linear-gradient(transparent 62%, rgba(169,131,47,0.32) 62%);}
   .block{border-top:1px solid var(--line); padding:34px 0; display:grid; grid-template-columns:160px 1fr; gap:28px;}
   .block .block-label{font-family:'IBM Plex Mono',monospace; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#8a8577; padding-top:4px;}
   .block .block-content h3{font-size:1.25rem; font-weight:500; margin-bottom:12px;}
@@ -156,6 +163,14 @@
   <div class="block problema">
     <div class="block-label">Il problema</div>
     <div class="block-content">
+      <blockquote class="citazione">
+        "Nessuna società può dirsi fiorente e felice se la gran parte dei suoi membri è povera e infelice."
+        <cite>— Adam Smith, "La ricchezza delle nazioni", libro I, capitolo VIII (1776)</cite>
+      </blockquote>
+      <blockquote class="citazione">
+        "Il lavoratore ha diritto ad una retribuzione proporzionata alla quantità e qualità del suo lavoro e in ogni caso sufficiente ad assicurare a sé e alla sua famiglia un'esistenza libera e dignitosa."
+        <cite>— Costituzione della Repubblica Italiana, art. 36, primo comma (in vigore dal 1° gennaio 1948)</cite>
+      </blockquote>
       <h3>Un paese che forma lavoro qualificato e poi lo regala all'estero</h3>
       <p>I salari reali italiani restano inferiori del 6,1% rispetto al primo trimestre del 2021: secondo l'analisi OCSE ripresa dalla stampa italiana, è il divario più ampio tra le grandi economie dell'area. E non è un incidente recente: sui dati OCSE citati dall'economista Marco Leonardi (Università Statale di Milano, ex capo dei consiglieri economici del governo Draghi), tra il 1991 e il 2023 i salari reali italiani sono <em>scesi</em> del 3,4%, mentre nella media dei paesi industrializzati crescevano del 25% e in Germania e Francia di oltre il 30%; nel solo periodo 2019-2024 l'Italia ha perso circa l'8%. L'occupazione intanto cresce — 24,1 milioni di occupati, un record storico — ma cresce soprattutto dove produttività e salari sono più bassi.</p>
       <p>Il carico fiscale aggrava il quadro, in due modi documentati. Il primo è il fiscal drag: con l'inflazione del 2022-2024, scaglioni IRPEF non indicizzati hanno trasferito dai lavoratori dipendenti e pensionati allo Stato circa 25 miliardi di euro in due anni (stima di Marco Leonardi e Lorenzo Rizzo su lavoce.info, citata nella puntata Revolution del 24/09/2025) — un aumento di tasse mai votato da nessun Parlamento. Il secondo è l'iniquità orizzontale: come osserva Giuseppe Pisauro (ex presidente dell'Ufficio Parlamentare di Bilancio), a parità di reddito un lavoratore dipendente può pagare un'aliquota fino al 45%, mentre un autonomo in regime forfettario paga il 15% sostitutivo fino a 85.000 euro di ricavi. Il sistema fiscale, cioè, tratta il lavoro dipendente come la base imponibile più facile da spremere — lo stesso squilibrio documentato nel <a href="tassa-patrimoniale.html">tema 01</a> rispetto a patrimoni e rendite.</p>
@@ -307,7 +322,7 @@
   </div>
 </div>
 
-<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 22 luglio 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
+<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 25 luglio 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
 
 <script data-goatcounter="https://pattoequo.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>

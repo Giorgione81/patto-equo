@@ -56,6 +56,13 @@
   .theme-header h1{font-size:clamp(1.8rem,3.5vw,2.6rem); margin-top:10px;}
   .theme-header .apertura{font-style:italic; color:#4a4640; margin-top:14px; font-size:1.02rem;}
   .correlati{font-family:'IBM Plex Mono',monospace; font-size:0.8rem; margin-top:18px;}
+  .citazione{
+    margin:0 0 26px; padding:18px 0 18px 22px; border-left:3px solid var(--gold);
+    font-family:'Fraunces',serif; font-style:italic; font-size:1.08rem; color:var(--ink); line-height:1.5;
+  }
+  .citazione + .citazione{margin-top:-8px;}
+  .citazione cite{display:block; margin-top:10px; font-family:'IBM Plex Mono',monospace; font-style:normal; font-size:0.76rem; color:#8a8577;}
+  .citazione .risalto{font-weight:600; background:linear-gradient(transparent 62%, rgba(169,131,47,0.32) 62%);}
   .placeholder-note .ns-tag{font-family:'IBM Plex Mono',monospace; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--gold); display:block; margin-bottom:6px;}
   .block{border-top:1px solid var(--line); padding:34px 0; display:grid; grid-template-columns:160px 1fr; gap:28px;}
   .block .block-label{font-family:'IBM Plex Mono',monospace; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#8a8577; padding-top:4px;}
@@ -157,6 +164,10 @@
   <div class="block problema">
     <div class="block-label">Il problema</div>
     <div class="block-content">
+      <blockquote class="citazione">
+        "C'è una guerra di classe, è vero, ma è la mia classe, la classe dei ricchi, a farla — e la stiamo vincendo."
+        <cite>— Warren Buffett (a Ben Stein, The New York Times, 26 novembre 2006, a proposito dell'aliquota effettiva che pagava rispetto ai propri dipendenti)</cite>
+      </blockquote>
       <h3>Un'aliquota identica per il piccolo risparmiatore e per il grande portafoglio</h3>
       <p>Le rendite finanziarie in Italia sono tassate al 26%, con un'unica eccezione: i titoli di Stato italiani ed esteri whitelist restano al 12,5%. Questa distinzione riguarda però solo il tipo di titolo, non chi lo possiede: chi realizza una plusvalenza da un fondo azionario o incassa un dividendo paga il 26% sia che l'investimento valga 2.000 euro sia che faccia parte di un portafoglio da 50 milioni.</p>
       <p>I Conti distributivi di Banca d'Italia mostrano che il 10% delle famiglie più ricche detiene il 60,6% della ricchezza netta totale, e che la composizione del patrimonio è molto eterogenea: le famiglie più povere lo tengono soprattutto in casa e depositi, quelle più ricche lo diversificano maggiormente, anche in strumenti finanziari. Questo significa che i guadagni da dividendi e capital gain, pur tassati con la stessa aliquota per tutti, si concentrano in misura sproporzionata nella parte più alta della distribuzione.</p>
@@ -268,7 +279,7 @@
   </div>
 </div>
 
-<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 22 luglio 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
+<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 25 luglio 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
 
 <script data-goatcounter="https://pattoequo.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>

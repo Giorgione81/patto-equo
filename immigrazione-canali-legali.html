@@ -56,6 +56,13 @@
   .theme-header h1{font-size:clamp(1.8rem,3.5vw,2.6rem); margin-top:10px;}
   .theme-header .apertura{font-style:italic; color:#4a4640; margin-top:14px; font-size:1.02rem;}
   .correlati{font-family:'IBM Plex Mono',monospace; font-size:0.8rem; margin-top:18px;}
+  .citazione{
+    margin:0 0 26px; padding:18px 0 18px 22px; border-left:3px solid var(--gold);
+    font-family:'Fraunces',serif; font-style:italic; font-size:1.08rem; color:var(--ink); line-height:1.5;
+  }
+  .citazione + .citazione{margin-top:-8px;}
+  .citazione cite{display:block; margin-top:10px; font-family:'IBM Plex Mono',monospace; font-style:normal; font-size:0.76rem; color:#8a8577;}
+  .citazione .risalto{font-weight:600; background:linear-gradient(transparent 62%, rgba(169,131,47,0.32) 62%);}
   .placeholder-note .ns-tag{font-family:'IBM Plex Mono',monospace; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--gold); display:block; margin-bottom:6px;}
   .block{border-top:1px solid var(--line); padding:34px 0; display:grid; grid-template-columns:160px 1fr; gap:28px;}
   .block .block-label{font-family:'IBM Plex Mono',monospace; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#8a8577; padding-top:4px;}
@@ -157,6 +164,10 @@
   <div class="block problema">
     <div class="block-label">Il problema</div>
     <div class="block-content">
+      <blockquote class="citazione">
+        "Abbiamo chiamato braccia da lavoro, e sono arrivate persone."
+        <cite>— Max Frisch, prefazione a "Siamo italiani" di Alexander J. Seiler, 1965 — scritta sui lavoratori italiani emigrati in Svizzera</cite>
+      </blockquote>
       <h3>I numeri non sostengono il racconto dell'invasione, ma il sistema resta inefficiente e la rotta resta letale</h3>
       <p>In Italia risiedono oggi 5,3 milioni di cittadini stranieri (9% della popolazione): un dato stabile da anni, non un'emergenza recente. Le comunità principali — Romania, Albania, Marocco, Cina — sono presenti da 15-20 anni.</p>
       <p>Nel 2025 gli sbarchi sono stati 66.296, quasi identici al 2024 e ben sotto il 2023 (-57,9%): un fenomeno che oscilla con gli accordi di transito, non un'invasione in atto. Le 142.233 persone nelle strutture di accoglienza a fine 2025 restano però un numero da gestire con capacità reali, non illimitate: è il limite di accoglienza e integrazione — non i flussi in sé — il vero rischio quando la gestione fallisce. Lo mostrano le banlieue parigine: segregazione urbana, disoccupazione giovanile concentrata e integrazione mancata, non il numero di chi è arrivato.</p>
@@ -309,7 +320,7 @@
   </div>
 </div>
 
-<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 22 luglio 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
+<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 25 luglio 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
 
 <script data-goatcounter="https://pattoequo.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>

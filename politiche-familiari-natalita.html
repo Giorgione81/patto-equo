@@ -56,6 +56,13 @@
   .theme-header h1{font-size:clamp(1.8rem,3.5vw,2.6rem); margin-top:10px;}
   .theme-header .apertura{font-style:italic; color:#4a4640; margin-top:14px; font-size:1.02rem;}
   .correlati{font-family:'IBM Plex Mono',monospace; font-size:0.8rem; margin-top:18px;}
+  .citazione{
+    margin:0 0 26px; padding:18px 0 18px 22px; border-left:3px solid var(--gold);
+    font-family:'Fraunces',serif; font-style:italic; font-size:1.08rem; color:var(--ink); line-height:1.5;
+  }
+  .citazione + .citazione{margin-top:-8px;}
+  .citazione cite{display:block; margin-top:10px; font-family:'IBM Plex Mono',monospace; font-style:normal; font-size:0.76rem; color:#8a8577;}
+  .citazione .risalto{font-weight:600; background:linear-gradient(transparent 62%, rgba(169,131,47,0.32) 62%);}
   .placeholder-note .ns-tag{font-family:'IBM Plex Mono',monospace; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--gold); display:block; margin-bottom:6px;}
   .block{border-top:1px solid var(--line); padding:34px 0; display:grid; grid-template-columns:160px 1fr; gap:28px;}
   .block .block-label{font-family:'IBM Plex Mono',monospace; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#8a8577; padding-top:4px;}
@@ -156,6 +163,10 @@
   <div class="block problema">
     <div class="block-label">Il problema</div>
     <div class="block-content">
+      <blockquote class="citazione">
+        "La Repubblica <span class="risalto">agevola</span> con misure economiche e altre provvidenze <span class="risalto">la formazione della famiglia</span> e l'adempimento dei compiti relativi, con particolare riguardo alle famiglie numerose. Protegge la maternità, l'infanzia e la gioventù, favorendo gli istituti necessari a tale scopo."
+        <cite>— Costituzione della Repubblica Italiana, art. 31 (in vigore dal 1° gennaio 1948)</cite>
+      </blockquote>
       <h3>Il tasso di fecondità più basso mai registrato in Italia</h3>
       <p>Nel 2025 in Italia sono nati 355mila bambini, il 3,9% in meno rispetto al 2024. Il numero medio di figli per donna è sceso a 1,14, contro l'1,18 dell'anno precedente: il valore più basso mai registrato nella serie storica. La popolazione residente resta sostanzialmente stabile, poco sotto i 59 milioni, ma solo grazie al saldo migratorio (+296mila nel 2025): il saldo naturale — nascite meno decessi — è ampiamente negativo (-296mila circa, peggiore del -283mila del 2024). Senza l'immigrazione, la popolazione italiana starebbe già calando (il ruolo demografico ed economico dell'immigrazione è approfondito nel <a href="immigrazione-canali-legali.html">tema 05 — Immigrazione</a>).</p>
       <p>Il divario territoriale è ampio: la Sardegna è sotto un figlio per donna (0,85) per il sesto anno consecutivo, seguita da Molise (1,02) e Lazio (1,05); il Trentino-Alto Adige, con 1,40, resta la regione più feconda. L'età media al parto è salita a 32,7 anni, massima al Centro Italia (33,1). Nel confronto europeo l'Italia è oggi sotto Germania (1,36 nel 2024), Spagna (1,10, quasi allineata), Francia (1,61) e Svezia (1,43). Ma il confronto con la Francia mostra un effetto spesso trascurato nel dibattito pubblico: se l'Italia avesse avuto la fecondità francese del 2024, i nati sarebbero stati circa 494mila anziché i 370mila realmente registrati — comunque molto meno dei 664mila nati in Francia, perché in Italia le donne in età fertile sono strutturalmente meno numerose. È un effetto demografico che nessuna politica familiare può correggere nel breve periodo. L'Inapp arriva alla stessa conclusione da un'altra angolazione: nei suoi scenari, nemmeno un aumento della fecondità basterebbe da solo a invertire il calo delle nascite nei prossimi decenni, perché pesa già la riduzione strutturale del numero di donne in età feconda, effetto ereditato dalla denatalità degli anni passati. L'Italia è il primo paese al mondo ad aver visto, già nella prima metà degli anni '90, gli ultra65enni superare gli under 15 in numero.</p>
@@ -294,7 +305,7 @@
   </div>
 </div>
 
-<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 22 luglio 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
+<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 25 luglio 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
 
 <script data-goatcounter="https://pattoequo.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
