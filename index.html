@@ -102,6 +102,12 @@
   .stat .num{font-family:'IBM Plex Mono',monospace; font-size:1.4rem; font-weight:500; color:var(--ink); display:block;}
   .stat .label{font-size:0.76rem; color:#6b6659;}
 
+  .obiettivi{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:18px; padding-top:16px; border-top:1px solid var(--line);}
+  .obiettivi .ob b{display:block; font-family:'Fraunces',serif; font-weight:600; font-size:1rem; color:var(--ink); margin-bottom:4px;}
+  .obiettivi .ob p{margin:0; font-size:0.86rem; color:#4a4640; line-height:1.45;}
+  .obiettivi .ob a{display:block; margin-top:6px; font-family:'IBM Plex Mono',monospace; font-size:0.7rem; letter-spacing:0.03em; text-decoration:none; color:var(--gold);}
+  @media (max-width:720px){.obiettivi{grid-template-columns:1fr; gap:12px;}}
+
   .news-panel{background:#fff; border:1px solid var(--line); border-radius:2px;}
   .news-panel-head{padding:18px 20px; border-bottom:1px solid var(--line); background:var(--paper-deep);}
   .news-panel-head .label{font-family:'IBM Plex Mono',monospace; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--gold);}
@@ -247,17 +253,32 @@
     <h1>Per ricostruire il futuro, prima serve consapevolezza.</h1>
     <p class="lead">L'abbondanza senza partecipazione non ci arricchisce. Ci umilia.</p>
     <div style="margin-top:20px; background:var(--paper-deep); border-left:3px solid var(--gold); padding:18px 20px;">
-      <span class="mono" style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--gold); display:block; margin-bottom:8px;">In breve</span>
-      <p style="margin:0; font-size:0.96rem; color:#3a372f; line-height:1.55;">Crediamo in un mercato regolato, non abolito — lo Stato deve tornare a garantire sanità, scuola e welfare, pagate da chi ha di più. Non uguaglianza sulla carta, uguaglianza nei fatti. Auspichiamo un cambiamento vero, attraverso le istituzioni, con i dati alla mano, obiezioni comprese, senza promesse impossibili.</p>
+      <span class="mono" style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--gold); display:block; margin-bottom:8px;">In che Italia crediamo</span>
+      <p style="margin:0; font-size:0.96rem; color:#3a372f; line-height:1.55;">L'Italia non si è bloccata perché mancano talento, lavoro o spirito d'impresa: si è bloccata perché cresce troppo poco, protegge troppe rendite e offre troppe poche opportunità a chi parte senza vantaggi. Crediamo nell'economia di mercato, nell'impresa privata e nell'innovazione — e crediamo che il mercato, da solo, non garantisca né pari opportunità né risultati equi.</p>
+      <p style="margin:10px 0 0; font-size:0.96rem; color:#3a372f; line-height:1.55;">Per questo proponiamo uno Stato che non sostituisce l'economia ma la fa funzionare meglio: investe in istruzione, sanità, ricerca e infrastrutture, contrasta privilegi e rendite, sta dalla parte di chi lavora, produce e innova. Il cambiamento passa dalle istituzioni, con i dati alla mano e le obiezioni comprese, senza promesse impossibili.</p>
+      <p style="margin:10px 0 0; font-size:0.96rem; color:var(--ink); line-height:1.55; font-weight:500;">Non vogliamo un Paese dove tutti abbiano lo stesso risultato. Vogliamo un Paese dove tutti abbiano una possibilità reale di costruirsi il proprio futuro.</p>
+      <div class="obiettivi">
+        <div class="ob">
+          <b>Più crescita</b>
+          <p>Produttività, ricerca, capitale umano, energia competitiva, imprese più forti.</p>
+          <a href="crescita-produttivita-imprese.html">temi 06 e 07 →</a>
+        </div>
+        <div class="ob">
+          <b>Più equità</b>
+          <p>Un fisco che chieda di più a chi ha di più, e servizi pubblici protetti da chi vuole smantellarli.</p>
+          <a href="tassa-patrimoniale.html">temi 01, 02 e 03 →</a>
+        </div>
+        <div class="ob">
+          <b>Più opportunità</b>
+          <p>Casa, istruzione, lavoro e servizi che rendano le scelte libere, non obbligate dalle condizioni economiche.</p>
+          <a href="politiche-familiari-natalita.html">temi 04 e 05 →</a>
+        </div>
+      </div>
     </div>
     <p class="lead" style="margin-top:14px;">Il PIL cresce e le Borse salgono, ma milioni di famiglie italiane arrivano a fine mese più in affanno di prima. Non è retorica: è quello che succede quando la ricchezza si concentra più in fretta di quanto l'economia cresca, e i frutti della crescita non arrivano a chi lavora.</p>
     <p class="lead" style="margin-top:14px;">Siamo working poors: persone povere nonostante lavorino, per un fallimento che nessun governo, di nessun colore, ha saputo correggere. Dal 1990 — trentacinque anni — le retribuzioni reali dei dipendenti italiani sono scese dell'1,6%, mentre nella media OCSE sono cresciute del 35% (+33% in Francia e Germania, +50,5% negli Stati Uniti). Fonte: <a href="https://www.upbilancio.it/it/nota-di-lavoro-n-1-2026-la-dinamica-retributiva-e-il-ruolo-dellimposta-sul-reddito-delle-persone-fisiche/" target="_blank">Ufficio Parlamentare di Bilancio</a>, 2026 <span style="display:inline-flex; align-items:center; gap:4px; border:1.5px solid var(--gold); border-radius:20px; padding:2px 8px 2px 6px; font-family:'IBM Plex Mono',monospace; font-size:0.62rem; letter-spacing:0.03em; text-transform:uppercase; color:var(--gold); background:#fff; vertical-align:middle;"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Verificata</span></p>
     <div style="margin-top:30px; border-top:1px solid var(--line); padding-top:24px;">
       <span class="eyebrow" style="color:var(--red);">Perché c'è speranza — e cosa dobbiamo sacrificare</span>
-      <blockquote class="citazione" style="margin:16px 0 0;">
-        "I popoli non dovrebbero avere paura dei propri governi. Sono i governi che dovrebbero avere paura dei propri popoli."
-        <cite>— V, in <em>V per Vendetta</em> (regia J. McTeigue, sceneggiatura Wachowski, 2005; dal fumetto di Alan Moore, 1982-89)</cite>
-      </blockquote>
       <p class="lead" style="margin-top:16px;">Si può cambiare, per due motivi semplici. Il primo: siamo in una democrazia, e ogni proposta di questo sito — anche la più radicale — può diventare legge se la maggioranza degli elettori la vuole davvero. Non serve altro potere che il voto. Il secondo: non stiamo chiedendo nulla che l'Italia non abbia già promesso a se stessa. Ogni principio che guida queste pagine — la funzione sociale della proprietà, la progressività fiscale, la dignità del lavoro, l'agevolazione della famiglia — è già previsto nella Costituzione. Non inventiamo diritti nuovi: chiediamo che quelli già scritti vengano attuati.</p>
       <p class="lead" style="margin-top:14px;">Ma cambiare ha un prezzo, e va detto subito, non alla fine.</p>
       <blockquote class="citazione" style="margin:16px 0 0;">
@@ -283,7 +304,7 @@
     <div style="margin-top:38px; border-top:1px solid var(--line); padding-top:22px;">
       <span class="eyebrow" style="color:var(--gold);">Perché "Patto Equo"</span>
       <p style="font-size:0.94rem; color:#4a4640; margin:6px 0 0; max-width:600px;">"Equo" è la direzione delle proposte; il patto è il metodo, e vale verso chi legge. Quattro impegni: ogni affermazione ha una fonte linkata; le obiezioni vere sono sempre incluse, mai nascoste; quando un dato non è verificabile lo diciamo, invece di inventare precisione; quando arriva un dato migliore o un'obiezione più solida, correggiamo.</p>
-      <p style="font-size:0.94rem; color:#4a4640; margin-top:14px; max-width:600px;">Trentacinque anni di salari fermi non si sono corretti da soli, e nessun governo lo ha ancora fatto per noi. Ma non è immutabile: cambia se le proposte si conoscono, si discutono, si diffondono — un lettore alla volta. È l'unica cosa che chiediamo: leggere, discutere, condividere quello che qui vi convince, e soprattutto quello che non vi convince.</p>
+      <p style="font-size:0.94rem; color:#4a4640; margin-top:14px; max-width:600px;">Niente di tutto questo cambia da sé: cambia se le proposte si conoscono, si discutono, si diffondono — un lettore alla volta. È l'unica cosa che chiediamo: leggere, discutere, condividere quello che qui vi convince, e soprattutto quello che non vi convince.</p>
     </div>
   </section>
 
