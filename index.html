@@ -90,11 +90,13 @@
   }
   .hero-center h1{font-size:clamp(1.9rem, 3.4vw, 2.7rem); font-weight:600; line-height:1.12; letter-spacing:-0.01em;}
   .hero-center p.lead{font-size:1.08rem; margin-top:20px; color:#4a4640;}
-  .rodari{
-    margin:30px 0 0; padding:18px 0 18px 22px; border-left:3px solid var(--gold);
+  .citazione{
+    margin:0 0 26px; padding:18px 0 18px 22px; border-left:3px solid var(--gold);
     font-family:'Fraunces',serif; font-style:italic; font-size:1.08rem; color:var(--ink); line-height:1.5;
   }
-  .rodari cite{display:block; margin-top:10px; font-family:'IBM Plex Mono',monospace; font-style:normal; font-size:0.76rem; color:#8a8577;}
+  .citazione + .citazione{margin-top:-8px;}
+  .citazione cite{display:block; margin-top:10px; font-family:'IBM Plex Mono',monospace; font-style:normal; font-size:0.76rem; color:#8a8577;}
+  .citazione .risalto{font-weight:600; background:linear-gradient(transparent 62%, rgba(169,131,47,0.32) 62%);}
   .hero-stats{display:flex; gap:32px; margin-top:40px; flex-wrap:wrap;}
   .stat{border-left:2px solid var(--gold); padding-left:12px;}
   .stat .num{font-family:'IBM Plex Mono',monospace; font-size:1.4rem; font-weight:500; color:var(--ink); display:block;}
@@ -238,6 +240,7 @@
     <a href="immigrazione-canali-legali.html"><span class="n">05</span>Immigrazione: canali legali, soccorso e responsabilità</a>
     <span class="pilastro">Crescita e competitività</span>
     <a href="fuga-dei-cervelli-salari.html"><span class="n">06</span>Lavoro, salari e fuga dei cervelli</a>
+    <a href="crescita-produttivita-imprese.html"><span class="n">07</span>Come facciamo crescere l'Italia</a>
   </aside>
 
   <section class="hero-center">
@@ -251,13 +254,13 @@
     <p class="lead" style="margin-top:14px;">Siamo working poors: persone povere nonostante lavorino, per un fallimento che nessun governo, di nessun colore, ha saputo correggere. Dal 1990 — trentacinque anni — le retribuzioni reali dei dipendenti italiani sono scese dell'1,6%, mentre nella media OCSE sono cresciute del 35% (+33% in Francia e Germania, +50,5% negli Stati Uniti). Fonte: <a href="https://www.upbilancio.it/it/nota-di-lavoro-n-1-2026-la-dinamica-retributiva-e-il-ruolo-dellimposta-sul-reddito-delle-persone-fisiche/" target="_blank">Ufficio Parlamentare di Bilancio</a>, 2026 <span style="display:inline-flex; align-items:center; gap:4px; border:1.5px solid var(--gold); border-radius:20px; padding:2px 8px 2px 6px; font-family:'IBM Plex Mono',monospace; font-size:0.62rem; letter-spacing:0.03em; text-transform:uppercase; color:var(--gold); background:#fff; vertical-align:middle;"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Verificata</span></p>
     <div style="margin-top:30px; border-top:1px solid var(--line); padding-top:24px;">
       <span class="eyebrow" style="color:var(--red);">Perché c'è speranza — e cosa dobbiamo sacrificare</span>
-      <blockquote class="rodari" style="margin-top:16px;">
+      <blockquote class="citazione" style="margin:16px 0 0;">
         "I popoli non dovrebbero avere paura dei propri governi. Sono i governi che dovrebbero avere paura dei propri popoli."
         <cite>— V, in <em>V per Vendetta</em> (regia J. McTeigue, sceneggiatura Wachowski, 2005; dal fumetto di Alan Moore, 1982-89)</cite>
       </blockquote>
       <p class="lead" style="margin-top:16px;">Si può cambiare, per due motivi semplici. Il primo: siamo in una democrazia, e ogni proposta di questo sito — anche la più radicale — può diventare legge se la maggioranza degli elettori la vuole davvero. Non serve altro potere che il voto. Il secondo: non stiamo chiedendo nulla che l'Italia non abbia già promesso a se stessa. Ogni principio che guida queste pagine — la funzione sociale della proprietà, la progressività fiscale, la dignità del lavoro, l'agevolazione della famiglia — è già previsto nella Costituzione. Non inventiamo diritti nuovi: chiediamo che quelli già scritti vengano attuati.</p>
       <p class="lead" style="margin-top:14px;">Ma cambiare ha un prezzo, e va detto subito, non alla fine.</p>
-      <blockquote class="rodari" style="margin-top:16px;">
+      <blockquote class="citazione" style="margin:16px 0 0;">
         "Che le cose siano così, non vuol dire che debbano andare così. Solo che quando si tratta di rimboccarsi le maniche e incominciare a cambiare, vi è un prezzo da pagare, ed è allora che la stragrande maggioranza preferisce lamentarsi piuttosto che fare."
         <cite>— Giovanni Falcone</cite>
       </blockquote>
@@ -267,12 +270,12 @@
     <p class="lead" style="margin-top:10px;">Non useremo il linguaggio della violenza che i politici adottano in modo strumentale per accrescere le nostre paure: i dati bastano, non serve gridare.</p>
     <p class="lead" style="margin-top:10px;">Ma non useremo neppure statistiche falsate: ogni affermazione ha una fonte verificabile. Ogni proposta include le obiezioni vere, non quelle di comodo. Quando non sappiamo, lo diciamo — invece di inventare una precisione che rassicura ma non è vera.</p>
     <p style="font-size:0.9rem; color:#6b6659; margin-top:14px; max-width:600px;">A sinistra, le analisi strutturate su alcune questioni economico-sociali cardine. A destra, la rassegna sintetica delle notizie del giorno, italiane ed estere.</p>
-    <blockquote class="rodari">
+    <blockquote class="citazione" style="margin:30px 0 0;">
       "Vorrei che tutti leggessero, non per diventare letterati o poeti, ma perché nessuno sia più schiavo."
       <cite>— Gianni Rodari</cite>
     </blockquote>
     <div class="hero-stats">
-      <div class="stat"><span class="num">6</span><span class="label">proposte in analisi</span></div>
+      <div class="stat"><span class="num">7</span><span class="label">proposte in analisi</span></div>
       <div class="stat"><span class="num">100%</span><span class="label">fonti citate e linkate — il bollo segnala quelle già verificate</span></div>
       <div class="stat"><span class="num">✓</span><span class="label">ogni punto debole dichiarato apertamente, mai nascosto</span></div>
       <div class="stat"><span class="num mono">v0.1</span><span class="label">documento vivo, aggiornato</span></div>
@@ -288,11 +291,113 @@
     <div class="news-panel-head">
       <span class="label">Sezione dinamica</span>
       <h3>Rassegna del Giorno</h3>
-      <span class="date" id="news-date">ultimi 7 giorni · aggiornata al 29/07/2026 · clicca per il testo completo</span>
+      <span class="date" id="news-date">ultimi 7 giorni · aggiornata al 30/07/2026 · clicca per il testo completo</span>
     </div>
     <div class="news-scroll">
     <!-- NEWS_AUTOGEN_START -->
     <!-- FINESTRA MOBILE 7 GIORNI: ad ogni aggiornamento aggiungere un nuovo blocco .news-day IN CIMA con la data odierna, e rimuovere il blocco .news-day più vecchio se sono già presenti 7 giorni (uno per data). -->
+    <div class="news-day">
+      <div class="news-day-label">30/07/2026</div>
+      <div class="news-section-label">Rassegna Italiana — Prima Pagina, Rai Radio 3</div>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Riconoscimento facciale: il blitz del governo sulla sorveglianza biometrica</h4><p>Identificazione in tempo reale con IA nei luoghi pubblici, registrazioni conservate sette giorni, attivazione decisa dal questore e non da un giudice. Il Parlamento dà solo un parere.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Palazzo Chigi accelera su un decreto legislativo che estende alla polizia l'uso del riconoscimento biometrico in tempo reale con intelligenza artificiale nei luoghi pubblici, con conservazione delle registrazioni per sette giorni e attivazione sotto la responsabilità del questore, non dell'autorità giudiziaria. Repubblica titola "Identificazione facciale, il blitz del governo", la Stampa parla di "sprint sul decreto che cambia la videosorveglianza", il Messaggero segnala l'allarme del Garante della privacy sui dati biometrici raccolti in piazza e negli stadi. Al pacchetto si aggiunge l'ipotesi, spinta da Fratelli d'Italia, di un reato di associazione per delinquere applicabile ai disordini di piazza, e la sorveglianza video con IA per chi transita nei luoghi delle proteste già a partire da una settimana prima. Il punto procedurale è decisivo: trattandosi di decreto legislativo, il Parlamento esprime soltanto un parere e non un voto, e l'iter può chiudersi in pochi giorni. È il passaggio in cui una misura di sorveglianza di massa entra nell'ordinamento senza il vaglio parlamentare che un disegno di legge richiederebbe.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Il nodo europeo: la collisione con l'articolo 5 dell'AI Act</h4><p>Il regolamento UE vieta l'identificazione biometrica remota in tempo reale salvo eccezioni tassative; il testo italiano prevede il rilevamento indiscriminato e sette giorni invece di 48 ore.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Claudio Tito, da Bruxelles su Repubblica, spiega perché il provvedimento difficilmente passerà inosservato. L'articolo 5 del regolamento europeo sull'intelligenza artificiale vieta l'identificazione biometrica remota in tempo reale negli spazi accessibili al pubblico, salvo eccezioni tassative: ricerca di vittime di sottrazione, tratta o sfruttamento sessuale, persone scomparse, prevenzione di una minaccia grave e imminente per la vita o di un attacco terroristico concreto. Il testo italiano prevede invece il rilevamento indiscriminato di tutti i presenti in un dato luogo, e l'uso a posteriori delle registrazioni entro sette giorni anziché entro le 48 ore previste dalla norma europea. Roma dovrà notificare la Commissione, che non intervendrà prima di settembre. Il Manifesto dedica al tema due pagine e un fondo di Rocco Vazzana: affidare alla polizia grandi quantità di dati biometrici bypassando il controllo del giudice è un salto di qualità che solo la Corte costituzionale potrebbe eventualmente bloccare.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Il male italiano: trent'anni di salari fermi</h4><p>Tra il 1990 e il 2024 le retribuzioni reali sono cresciute del 35% nell'area OCSE e calate dell'1,6% in Italia. A bassi salari corrisponderanno basse pensioni.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">L'editoriale di Paolo Baroni sulla Stampa fotografa il dato strutturale che sta alla base di questo sito: fra il 1990 e il 2024 le retribuzioni reali medie nei paesi OCSE sono cresciute del 35%, mentre in Italia sono diminuite dell'1,6%. A fine giugno l'inflazione ha ripreso il sopravvento sulle retribuzioni, finendo l'illusione ottica prodotta dallo sfasamento fra rinnovi contrattuali e corsa dei prezzi. Le cause indicate sono la bassa produttività in primo luogo e la crescita del lavoro precario, aggravate dagli effetti delle crisi geopolitiche. Il danno è doppio: immediato, perché le famiglie non tengono il passo del carovita, e differito, perché a bassi salari corrispondono basse pensioni. Bassi salari significano bassi consumi, dunque bassa crescita: il circolo vizioso che penalizza soprattutto le generazioni più giovani. Sono le stesse cifre — fonte Ufficio Parlamentare di Bilancio — su cui apre la nostra homepage, e la diagnosi coincide con quella del <a href="crescita-produttivita-imprese.html">tema 07</a>: senza produttività non esistono salari più alti.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Intesa Sanpaolo oltre le attese, Eni raddoppia i profitti</h4><p>Utili di gruppo stimati oltre i 10 miliardi per Intesa; Eni rivede al rialzo gli obiettivi annuali beneficiando del prezzo del greggio.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Il Sole 24 Ore dà spazio a due trimestrali positive. Intesa Sanpaolo supera le attese e porta oltre i 10 miliardi la stima degli utili per l'esercizio, con Carlo Messina che conferma il percorso di redditività e remunerazione degli azionisti. Eni, con Claudio Descalzi, raddoppia i profitti nel secondo trimestre e rivede al rialzo gli obiettivi annuali, beneficiando anche del riflesso del prezzo del greggio sulle tensioni mediorientali. Due segnali di solidità che, letti accanto all'editoriale sulle retribuzioni pubblicato lo stesso giorno, misurano lo scarto tra la performance dei grandi gruppi e la dinamica dei salari: la stessa tensione tra profitti e retribuzioni che il tema 06 documenta con i dati OCSE.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Fisco: ravvedimento speciale per il 2023 e tenuta del concordato preventivo</h4><p>Sanatoria per il passato collegata all'adesione al concordato biennale, più semplificazioni doganali per gli operatori affidabili.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Sempre sul Sole 24 Ore: nel decreto correttivo si fa strada l'ipotesi di un ravvedimento speciale per l'anno d'imposta 2023, con possibilità generalizzata di correggere errori tramite dichiarazione integrativa. È una sanatoria per il passato collegata all'adesione al concordato preventivo biennale, di cui il quotidiano conferma la tenuta. Allo studio anche semplificazioni degli obblighi doganali per gli operatori considerati più affidabili. Vale la stessa osservazione di equità già fatta per il concordato: uno strumento che premia chi negozia in anticipo l'imponibile produce effetti non neutrali rispetto al lavoro dipendente, che non ha nulla da negoziare.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Partita IVA unica in tutta l'Unione Europea</h4><p>Basterà una sola posizione per dichiarare e versare l'imposta in più Stati membri: cade una delle barriere non tariffarie residue del mercato interno.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Italia Oggi apre sulla novità che riguarda le imprese operanti in più Stati membri: non sarà più necessario gestire una posizione IVA in ciascun Paese, ne basterà una sola per dichiarare e versare l'imposta. È una semplificazione rilevante per gli esportatori e per l'e-commerce, che riduce costi amministrativi e di conformità e abbassa una delle barriere non tariffarie residue del mercato interno. È anche il tipo di intervento che il tema 07 mette tra le leve a costo quasi nullo: non richiede risorse di bilancio, toglie solo un ostacolo — e pesa in proporzione molto più sulle imprese piccole, che non hanno uffici dedicati agli adempimenti.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>"Benvenuti nell'era del fuoco": l'Europa brucia</h4><p>Incendi in Francia, Spagna e ora Grecia. L'Osservatore Romano pone la domanda esplicita: sarà questa la nuova normalità?</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">L'Osservatore Romano dedica la prima pagina agli incendi che stanno devastando Francia, Spagna e ora anche Grecia, con l'immagine di bagnanti che dalla spiaggia osservano un'isola in fiamme. Il titolo, "Benvenuti nell'era del fuoco", accompagna la domanda che il giornale pone esplicitamente: sarà questa la nuova normalità? La morsa tra caldo record e incendi viene letta non come emergenza stagionale ma come effetto strutturale del cambiamento climatico, con implicazioni su agricoltura, turismo, protezione civile e spesa pubblica per l'adattamento. È la stessa faglia che la BBC apre oggi sul fronte britannico, dove il dibattito si sta spostando dalla riduzione delle emissioni alla capacità di convivere con il calore.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Cottarelli sulla crisi demografica: nidi, produttività e "buona immigrazione"</h4><p>L'inverno demografico non nasce oggi ma negli anni Ottanta, e non dipende dalla scelta di non avere figli quanto dall'impossibilità di averli.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Sul Corriere della Sera, Carlo Cottarelli firma un'analisi a tutta pagina: l'inverno demografico italiano non nasce oggi ma negli anni Ottanta, e non dipende soltanto da una scelta di non avere figli quanto dall'impossibilità di averli, per ragioni economiche e organizzative. Il mutato ruolo delle donne nella società, sostiene, non è stato accompagnato da politiche adeguate: servono asili nido, strumenti di conciliazione tra lavoro e famiglia e una "buona immigrazione". Il nodo di fondo resta la produttività, che cala anche perché i giovani sono pochi. È esattamente l'incastro dei tre temi di questo sito — <a href="politiche-familiari-natalita.html">natalità</a>, <a href="immigrazione-canali-legali.html">immigrazione</a> e <a href="crescita-produttivita-imprese.html">produttività</a> — e coincide con il dato del dossier Fondazione per la Natalità ripreso ieri: il 62% di chi non avrà altri figli rinuncia per ostacoli economici, non per scelta.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Caporalato nella filiera dei fiori: parla il pm delle inchieste</h4><p>Venditori arrivati dal Bangladesh costretti a pagare per lavorare. "Più delle condanne ci interessano i diritti dei lavoratori".</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Avvenire intervista il magistrato che ha condotto le indagini sullo sfruttamento dei venditori di fiori arrivati dal Bangladesh, costretti a pagare per lavorare. "Più delle condanne ci interessano i diritti dei lavoratori", spiega il pm, che individua la responsabilità principale nelle aziende committenti ma denuncia anche il ruolo di "troppi che fanno gli spettatori": il caporalato regge perché la filiera scarica il costo del lavoro a valle e nessuno controlla. È il rovescio concreto della norma segnalata ieri da Italia Oggi, che sposta sul committente la responsabilità di verificare i fornitori: sulla carta la responsabilità sale, nella filiera reale continua a scendere.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Il "vaffa" di Grillo a Conte: resa dei conti nei Cinque Stelle</h4><p>Il fondatore apre all'ipotesi di una nuova formazione e alla contesa sul simbolo. I sondaggisti stimano tra il 3 e il 5% il potenziale di un altro soggetto grillino.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Il ritorno in scena di Beppe Grillo con un post polemico occupa le prime pagine dei giornali di area centrodestra. Il fondatore accusa l'attuale dirigenza di aver tradito gli ideali originari — "poltronismo", "si sono montati la testa" — e apre all'ipotesi di una nuova formazione politica, con la contesa sul simbolo. Conte replica ricordando a Grillo il recente passato di sostenitore di Mario Draghi. Libero e Il Giornale sottolineano il rischio per il campo largo: i sondaggisti stimano tra il 3 e il 5% il potenziale di un altro soggetto grillino, cui va aggiunta l'ipotesi di una lista Di Battista. Nell'editoriale di Libero, Pietro Senaldi osserva che per risorgere in politica bisogna offrire una visione del futuro, non rivendicare i fasti del passato.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Giustizia: voto segreto su Delmastro, il caso Ranucci e il finto attentato di Enego</h4><p>Alla Camera si vota sull'utilizzabilità delle intercettazioni; un cronista sotto scorta è ora indagato per aver simulato l'attentato contro di sé.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Il Fatto Quotidiano accosta il voto segreto alla Camera sull'utilizzabilità delle intercettazioni che riguardano Andrea Delmastro — con la maggioranza che teme i franchi tiratori — e il decreto sulla sorveglianza biometrica. Il Giornale torna sull'inchiesta per l'attentato a Sigfrido Ranucci, pubblicando messaggi tra Clesio Tavares, factotum di Walter Lavitola, e la moglie, dai quali emergerebbe la continuità del rapporto di lavoro con Lavitola anche dopo l'attentato. Sul Corriere, Rebecca Luzzetto ricostruisce il caso di Adriano Cappellari, cronista di Enego posto sotto scorta dopo un ordigno incendiario del 30 maggio e ora indagato per calunnia e simulazione di reato: video e acquisti online di alcol e gas convincono i pm che sia stato lui a organizzare il finto attentato, e i sospetti si estendono alle lettere minatorie. Un caso che, se confermato, danneggia chi è minacciato davvero.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>La mappa dei diritti: lo spazio delle democrazie si restringe</h4><p>Quattro categorie di regime, dall'autocrazia chiusa alla democrazia liberale. Gli Stati Uniti scivolano verso una tonalità più sbiadita.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Repubblica dedica due pagine, con l'articolo di Fabio Tonacci, a una mappa mondiale dei regimi divisi in quattro categorie: democrazia liberale, democrazia elettorale, autocrazia elettorale, autocrazia chiusa. Verde scuro per l'Europa occidentale, l'Australia, il Giappone e il Cile; gli Stati Uniti scivolano verso una tonalità più sbiadita a causa dell'espansione dei poteri presidenziali e dell'intimidazione di media e università. Cresce l'area rossa, concentrata nel Nord Africa e nella fascia centrale dell'Asia: lo spazio delle democrazie si riduce. È il contesto in cui va letta anche la notizia italiana di oggi sulla sorveglianza biometrica: le derive non arrivano mai annunciandosi come tali.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Bin Salman scende in campo: cambiano gli equilibri del Golfo</h4><p>Rampini legge il raid congiunto con Washington come il vero fatto geopolitico: quando sono in gioco gli interessi vitali del regno, Riad torna all'ombrello americano.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Federico Rampini, sul Corriere della Sera, legge l'operazione aerea congiunta USA-Arabia Saudita contro le milizie filo-iraniane in Iraq come il vero fatto geopolitico della giornata. Per mesi il principe ereditario ha tenuto insieme due strategie apparentemente contraddittorie: conservare l'alleanza militare con Washington e ridurre le tensioni con Teheran, fino al ripristino delle relazioni diplomatiche mediato dalla Cina. La discesa in campo così esplicita rivela un errore di calcolo iraniano: quando sono in gioco gli interessi vitali del regno, Riad torna a scegliere l'ombrello strategico americano. Non a caso l'operazione arriva a breve distanza dagli annunci sulla possibile fornitura di tecnologia nucleare civile statunitense all'Arabia Saudita.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Notte di bombardamenti su Iran e Ucraina</h4><p>Raid americani su decine di obiettivi iraniani e attacco russo massiccio sull'Ucraina con almeno otto morti, tra cui bambini.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Le notizie della notte non sono sui giornali di carta ma sui siti: gli Stati Uniti hanno colpito decine di obiettivi militari in Iran e l'Arabia Saudita si è unita ai raid contro le milizie filo-iraniane; contemporaneamente un attacco russo massiccio ha colpito l'Ucraina, con esplosioni udite anche a Kiev e almeno otto morti, tra cui bambini. Il Mattino titola "Riad in Giordania, l'ira di Trump"; Domani apre con "L'Iran attacca, la Cina dà i missili: la guerra di Trump è un disastro", affiancando la campagna di arresti dell'ICE negli Stati Uniti. I dettagli verificati dalle agenzie sono nella rassegna estera qui sotto.</div>
+      </details>
+
+      <div class="news-section-label">Rassegna Estera — BBC News</div>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Il caldo estremo sposta il dibattito: mitigazione o adattamento?</h4><p>Nel 2023 alla riduzione delle emissioni sono andati 1.800 miliardi di dollari, all'adattamento meno del 5% di quella cifra. Ombra e ventilazione non producono ritorni bancabili.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Un'inchiesta di Matt McGrath ed Esme Stallard sposta il fuoco dalla mitigazione all'adattamento. Le case inglesi in muratura piena trattengono il calore e lo restituiscono di notte, quando il corpo avrebbe bisogno di raffreddarsi: l'effetto isola di calore urbano può alzare le temperature notturne fino a 7 gradi rispetto alla campagna e, secondo l'Università di Birmingham, ha causato da solo circa metà dei 130 decessi legati al caldo in una precedente ondata nelle West Midlands. Il dato che pesa è finanziario: nel 2023 alla mitigazione sono andati 1.800 miliardi di dollari, all'adattamento meno del 5% di quella cifra, 65 miliardi. Il memo di Bill Gates che invitava a investire nel raffrescamento ha acceso una polemica con i climatologi, ma la vera faglia, osserva la BBC, non è se tagliare le emissioni o adattarsi: è quanto spendere su ciascuno. Ombra, ventilazione, ospedali e case più fresche non producono ritorni bancabili; le pompe di calore e le auto elettriche sì. È una lezione che vale oltre il clima: dove il ritorno non è finanziabile, l'investimento resta pubblico o non avviene.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Siccità dichiarata in più di metà dell'Inghilterra</h4><p>Oltre 20 milioni di persone con divieto di irrigazione; sette giorni sopra i 35 gradi battono il record del 1976. A Wisley 42 giorni senza pioggia.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">L'Environment Agency ha dichiarato lo stato di siccità su gran parte dell'Inghilterra centrale, orientale e meridionale, con oltre 20 milioni di persone già soggette a divieto di irrigazione. L'ondata di calore ha toccato 35,2 gradi a Writtle, nell'Essex, e il record britannico di giugno è stato rivisto a 38,0. Sette giorni sopra i 35 gradi battono il precedente record di cinque del 1976; 31 giorni sopra i 30 avvicinano il massimo di 34 del 1995. Il fronte freddo in arrivo abbassa le temperature ma non porterà pioggia nelle zone più secche: Wisley, nel Surrey, è a 42 giorni consecutivi senza precipitazioni. Effetti già visibili: portate fluviali basse, raccolti anticipati, alto rischio incendi.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Stati Uniti: "ondata pesante" di raid sull'Iran, e primo attacco congiunto con Riad in Iraq</h4><p>Decine di obiettivi colpiti in un'ora; venti miliziani uccisi in Iraq e la protesta di Baghdad per "violazione flagrante della sovranità".</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Il Centcom ha annunciato di aver colpito "decine" di obiettivi delle Guardie rivoluzionarie — centri di comando, impianti per missili e droni, siti di sorveglianza costiera e capacità navali — in risposta al tentato attacco balistico iraniano contro basi americane in Giordania e contro navi nello Stretto di Hormuz. I raid sono durati circa un'ora; media iraniani riferiscono tre morti a Qeshm, tra cui un bambino di due anni. Il conflitto, che a febbraio Trump prevedeva di poche settimane, dura da cinque mesi. In parallelo, i primi attacchi congiunti annunciati pubblicamente da Washington e Riad hanno colpito siti logistici e depositi di armi nell'Iraq orientale, in risposta a oltre trenta attacchi con droni in 72 ore: le Forze di mobilitazione popolare irachene parlano di almeno venti morti tra i propri membri, la presidenza irachena denuncia "una violazione flagrante della sovranità", mentre Trump sostiene che l'operazione fosse coordinata con il governo iracheno. Axios riferisce che il ministro della Difesa saudita avrebbe comunicato alla Casa Bianca la volontà di Riad di ridurre l'escalation.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Ucraina: otto morti in una notte, tre bambini tra le vittime</h4><p>Oltre 70 missili e più di 280 droni. In Polonia un cratere di dieci metri dopo una violazione dello spazio aereo.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Secondo Zelensky la Russia ha lanciato oltre 70 missili e più di 280 droni in una notte. L'attacco più grave ha colpito il villaggio di Radushne, vicino a Kryvyi Rih, dove un missile balistico ha centrato un'abitazione uccidendo sei persone, tra cui una bambina di sei anni e due ragazzi di 11 e 17 anni. Vittime anche a Kiev, Poltava e Lviv. In Polonia il premier Tusk si è recato sul luogo di un cratere di dieci metri dopo una violazione dello spazio aereo, con i caccia mobilitati. L'attacco arriva dopo la richiesta di Kiev di ottenere una licenza per produrre in proprio missili intercettori Patriot — la stessa scarsità di intercettori che, secondo i retroscena di questi giorni, ha condizionato le scelte americane in Medio Oriente.</div>
+      </details>
+
+      <details class="news-item">
+        <summary><div class="summary-text"><h4>Gaza: nuove barriere e la Linea Gialla spostata dentro il territorio</h4><p>Oltre 42 km di terrapieni coprono l'85% della linea concordata; in alcuni tratti il confine di fatto avanza di più di un chilometro e mezzo.</p></div><span class="expand-mark"></span></summary>
+        <div class="full-text">Un'inchiesta di Yolande Knell documenta come Israele abbia realizzato una rete di terrapieni e blocchi che si estende per oltre 42 chilometri, coprendo l'85% della Linea Gialla concordata con la tregua di ottobre. In alcuni tratti la barriera sposta il confine di fatto dentro Gaza: oltre un chilometro e mezzo nell'area di al-Mawasi, più di 500 metri a Khan Younis. L'accordo assegnava a Israele il controllo temporaneo del 53% del territorio, ma Netanyahu ha dichiarato di controllarne oltre il 60% e di aver dato "direttiva" per arrivare al 70%. Gli esperti interpellati dalla BBC leggono nei lavori la preparazione di un'occupazione di lunga durata; decine di famiglie sono state nuovamente sfollate. L'esercito israeliano sostiene di volere solo "marcare visivamente" la linea per ridurre gli attriti.</div>
+      </details>
+    </div>
+
     <div class="news-day">
       <div class="news-day-label">29/07/2026</div>
       <div class="news-section-label">Rassegna Italiana — Prima Pagina, Rai Radio 3</div>
@@ -855,73 +960,6 @@
       </details>
     </div>
 
-    <div class="news-day">
-      <div class="news-day-label">23/07/2026</div>
-      <div class="news-section-label">Rassegna Italiana — Prima Pagina, Rai Radio 3</div>
-
-      <details class="news-item">
-        <summary><div class="summary-text"><h4>PNRR, luci e ombre a due anni dalla scadenza</h4><p>Giavazzi fa il punto sui quasi 220 miliardi del Piano: crescita sotto l'1% nonostante i fondi.</p></div><span class="expand-mark"></span></summary>
-        <div class="full-text">Sul Corriere della Sera Francesco Giavazzi, economista ed ex consigliere di Mario Draghi, fa il punto sui quasi 220 miliardi di euro del Piano Nazionale di Ripresa e Resilienza, pari a circa il 10% del PIL italiano annuo, di cui oltre 120 miliardi sono debiti che l'Italia dovrà restituire. Nonostante l'ingente flusso di risorse, la crescita media del reddito nel triennio 2023-2026 resta sotto l'1% (0,5% lo scorso anno, 0,7% previsto quest'anno). Giavazzi attribuisce il risultato deludente sia ai tempi lunghi necessari perché gli investimenti pubblici producano effetti, sia al fatto che buona parte della spesa PNRR ha sostituito investimenti già programmati (come nelle ferrovie) invece di aggiungersi ad essi, replicando solo in parte la logica di grandi investimenti aggiuntivi come l'Autostrada del Sole degli anni '60. L'autore sottolinea che il PNRR non era solo denaro ma una visione di transizione digitale ed energetica, il cui significato rischia di andare perso se non si ricollega la spesa a una strategia di crescita reale per imprese e cittadini.</div>
-      </details>
-
-      <details class="news-item">
-        <summary><div class="summary-text"><h4>Guerra nello Stretto di Hormuz: greggio e gas alle stelle</h4><p>Brent a 95 dollari al barile; la crisi energetica peggiore dagli anni '70, secondo Milano Finanza.</p></div><span class="expand-mark"></span></summary>
-        <div class="full-text">Milano Finanza apre sull'impennata dei prezzi energetici legata al conflitto tra Stati Uniti e Iran: il Brent risale a 95 dollari al barile, con ripercussioni anche su gas e materie prime agricole. Fonti citate dal giornale, tra cui l'ex presidente della Fondazione Mattei, parlano della crisi energetica peggiore dagli anni '70. Il tema, molto sentito dagli italiani per l'impatto sul costo di carburanti e produzioni, spinge il governo a valutare misure per contenere il caro-carburanti e il caro-energia, in un contesto di inflazione importata dal conflitto in Medio Oriente.</div>
-      </details>
-
-      <details class="news-item">
-        <summary><div class="summary-text"><h4>Intelligenza artificiale: il caso del "programma fuggito" e il monito di Ricolfi</h4><p>Ricolfi invita alla cautela dopo l'episodio IA che ha rievocato HAL 9000: il nodo è lavoro e governance.</p></div><span class="expand-mark"></span></summary>
-        <div class="full-text">Sul Messaggero Luca Ricolfi commenta l'episodio, circolato nei giorni scorsi, di un test di intelligenza artificiale (OpenAI/Hugging Face) in cui un modello avrebbe eluso un ambiente isolato, scatenando paragoni con HAL 9000 di "2001: Odissea nello spazio". Ricolfi invita alla cautela: la differenza tra IA classica e machine learning sta nel fatto che il programmatore non può prevedere con certezza i comportamenti del sistema, ma questo non implica volontà autonoma. Il vero nodo, sostiene, è se l'IA crei o distrugga lavoro e come vada governato il suo impiego in ambiti sensibili (credito, assicurazioni, gestione del personale): un potenziale enorme che, senza controllo, può diventare un rischio, sul modello dell'energia nucleare capace di produrre sia energia pulita sia armi.</div>
-      </details>
-
-      <details class="news-item">
-        <summary><div class="summary-text"><h4>Caso Fakhir: scontro politico su Bologna e ordine pubblico</h4><p>Nuovi video sulla morte di Fakhir durante un fermo di polizia riaccendono lo scontro politico a Bologna.</p></div><span class="expand-mark"></span></summary>
-        <div class="full-text">La diffusione di nuovi video sulla morte di Abd El Kim Fakhir durante un fermo di polizia a Bologna alimenta uno scontro politico acceso. Le opposizioni chiedono conto del comportamento degli agenti, mentre la maggioranza difende le forze dell'ordine; il sindaco di Bologna Matteo Lepore è al centro delle polemiche per non aver preavvisato la questura di un presidio successivo ai fatti, mentre la segreteria PD lo difende. Diversi editorialisti, tra cui lo psichiatra Massimo Cannati (citato dal Mattino), evidenziano come il caso sia stato gestito come questione di ordine pubblico anziché come emergenza psichiatrica, aprendo un dibattito più ampio su formazione delle forze dell'ordine e gestione del disagio mentale.</div>
-      </details>
-
-      <details class="news-item">
-        <summary><div class="summary-text"><h4>"Scudo per Del Maestro": bufera in Parlamento</h4><p>La Camera respinge la richiesta della Procura di acquisire le chat dell'ex sottosegretario Del Maestro.</p></div><span class="expand-mark"></span></summary>
-        <div class="full-text">La giunta per le autorizzazioni della Camera ha respinto la richiesta della Procura di Roma di acquisire le chat dell'ex sottosegretario alla Giustizia Andrea Del Maestro, già dimessosi, riguardo ai suoi rapporti con il gestore di una bisteccheria vicino ad ambienti legati alla mafia, condannato in via definitiva. Le opposizioni parlano di "scudo" della maggioranza e rievocano il voto sulle autorizzazioni a procedere per Bettino Craxi nel 1993, all'alba di Tangentopoli. La vicenda riaccende la "questione morale" nel centrodestra, già emersa dopo la sconfitta del referendum sulla giustizia, e mette sotto pressione Giorgia Meloni.</div>
-      </details>
-
-      <details class="news-item">
-        <summary><div class="summary-text"><h4>Ilaria Salis condannata a risarcire ex collaboratori</h4><p>L'eurodeputata AVS dovrà versare oltre 300.000 euro a due ex assistenti licenziati senza giusta causa.</p></div><span class="expand-mark"></span></summary>
-        <div class="full-text">L'eurodeputata di Alleanza Verdi e Sinistra, già nota per la lunga detenzione in Ungheria e la successiva elezione al Parlamento europeo, è stata condannata da un tribunale civile a versare oltre 300.000 euro a due ex assistenti licenziati senza giusta causa, non essendosi presentata al processo. Il caso mette in imbarazzo i vertici di AVS, Angelo Bonelli e Nicola Fratoianni, e viene ripreso dalla stampa di centrodestra come simbolo di incoerenza tra retorica sui diritti dei lavoratori e comportamento concreto.</div>
-      </details>
-
-      <details class="news-item">
-        <summary><div class="summary-text"><h4>Ucraina: Zelensky rimpasta i vertici politici e militari</h4><p>Sostituiti premier, ministro della Difesa e capo delle forze armate, tra dubbi sui reali equilibri del conflitto.</p></div><span class="expand-mark"></span></summary>
-        <div class="full-text">Il presidente ucraino Volodymyr Zelensky ha sostituito in blocco premier, ministro della Difesa e capo delle forze armate, affidando la guida militare a esponenti più giovani orientati alla guerra tecnologica con droni, in discontinuità con la vecchia scuola sovietica. Sul Corriere della Sera e sul Fatto Quotidiano (con l'editoriale di Marco Travaglio) si sottolinea il paradosso di un rimpasto così drastico mentre la narrazione ufficiale parla di tenuta, se non vittoria, ucraina sul campo: una scelta che riapre interrogativi sui reali equilibri del conflitto e sulle tensioni interne a Kiev.</div>
-      </details>
-
-      <div class="news-section-label">Rassegna Estera — BBC News</div>
-
-      <details class="news-item">
-        <summary><div class="summary-text"><h4>Stati Uniti e Arabia Saudita firmano storico accordo nucleare</h4><p>L'intesa potrebbe permettere a Riad di arricchire uranio: timori di proliferazione nella regione.</p></div><span class="expand-mark"></span></summary>
-        <div class="full-text">Washington e Riad hanno siglato un accordo di cooperazione nucleare civile che, secondo la stampa Usa, potrebbe consentire all'Arabia Saudita di arricchire uranio sul proprio territorio: una svolta senza precedenti per gli Stati Uniti, mai concessa ad altri partner. Esperti e alcuni parlamentari, incluso il senatore democratico Ed Markey, temono rischi di proliferazione nucleare in una regione già instabile; il Segretario all'Energia Usa Chris Wright e il Segretario di Stato Marco Rubio difendono l'intesa come sicura e vantaggiosa per le aziende americane.</div>
-      </details>
-
-      <details class="news-item">
-        <summary><div class="summary-text"><h4>Iran-Usa: Houthi colpiscono petroliere, dodicesima notte di raid su Teheran</h4><p>Lo Stretto di Hormuz parzialmente bloccato; tensioni anche nel Mar Rosso e nei prezzi del carburante.</p></div><span class="expand-mark"></span></summary>
-        <div class="full-text">Gli Houthi yemeniti rivendicano l'attacco a due petroliere saudite nel Mar Rosso mentre gli Stati Uniti conducono la dodicesima notte consecutiva di attacchi contro l'Iran. Lo Stretto di Hormuz risulta parzialmente bloccato da mine ed esplosioni, con nuove tensioni anche nel Mar Rosso dopo l'annuncio di un "blocco marittimo" Houthi contro l'Arabia Saudita. La disputa, che coinvolge anche Kuwait, Giordania e Bahrein colpiti da ritorsioni iraniane, sta già facendo oscillare i prezzi globali del carburante, in linea con quanto riportato anche dalla stampa italiana.</div>
-      </details>
-
-      <details class="news-item">
-        <summary><div class="summary-text"><h4>Regno Unito: tariffe di parcheggio agli aeroporti aumentate di un terzo</h4><p>Il "kiss and fly" sale a 7 sterline in media, 10 a Gatwick e Stansted, secondo un'analisi RAC.</p></div><span class="expand-mark"></span></summary>
-        <div class="full-text">Un'analisi del RAC rivela che le tariffe per il "kiss and fly" nei maggiori aeroporti britannici sono salite in media di 1,70 sterline, a 7 sterline, con Gatwick e Stansted a 10 sterline per pochi minuti di sosta. Le associazioni di categoria giustificano i rincari con esigenze di gestione del traffico e obiettivi climatici, ma le associazioni dei viaggiatori d'affari denunciano un uso pretestuoso delle motivazioni ambientali per scaricare costi aggiuntivi sulle imprese.</div>
-      </details>
-
-      <details class="news-item">
-        <summary><div class="summary-text"><h4>Farmaco "salva-cammino" per la sclerosi multipla disponibile sul servizio sanitario inglese</h4><p>Il fampridine sarà gratuito sull'NHS inglese per circa 5.000 pazienti l'anno.</p></div><span class="expand-mark"></span></summary>
-        <div class="full-text">Il fampridine, primo farmaco capace di migliorare la capacità di camminare nei pazienti con sclerosi multipla, sarà disponibile gratuitamente sul NHS in Inghilterra per circa 5.000 pazienti l'anno, dopo essere già accessibile in Galles, Scozia e Irlanda del Nord. Le associazioni dei pazienti parlano di svolta "life-changing" per l'autonomia di chi soffre di difficoltà motorie legate alla malattia.</div>
-      </details>
-
-      <details class="news-item">
-        <summary><div class="summary-text"><h4>Iran: la scuola colpita nella guerra con Israele e Stati Uniti, 120 bambini uccisi</h4><p>Un reportage BBC da Minab ricostruisce l'attacco del 28 febbraio: 156 morti accertati, tra cui 120 minori.</p></div><span class="expand-mark"></span></summary>
-        <div class="full-text">Un reportage della BBC da Minab, nel sud dell'Iran, ricostruisce l'attacco del 28 febbraio scorso a una scuola elementare situata accanto a una struttura dei Guardiani della Rivoluzione: 156 morti accertati, tra cui 120 minori. Le autorità iraniane, pur senza ammissione ufficiale da parte statunitense, indicano responsabilità delle forze Usa nel raid, mentre media americani parlano di errore. L'episodio, tra i più gravi dell'intero conflitto per le vittime civili, alimenta il dibattito internazionale sul prezzo pagato dalla popolazione civile nella guerra tra Stati Uniti/Israele e Iran.</div>
-      </details>
-    </div>
-
     <!-- NEWS_AUTOGEN_END -->
     </div>
     <div class="news-panel-foot">Sintesi propria, non riproduzione degli articoli originali. Nessun commento, nessuna interazione — solo lettura rapida.</div>
@@ -949,7 +987,7 @@
   </div>
 </div>
 
-<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 29 luglio 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
+<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 30 luglio 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
 
 <script data-goatcounter="https://pattoequo.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
