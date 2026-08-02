@@ -72,11 +72,12 @@
   .citazione + .citazione{margin-top:-8px;}
   .citazione cite{display:block; margin-top:10px; font-family:'IBM Plex Mono',monospace; font-style:normal; font-size:0.76rem; color:#8a8577;}
   .citazione .risalto{font-weight:600; background:linear-gradient(transparent 62%, rgba(169,131,47,0.32) 62%);}
+  .chiave{text-decoration:underline; text-decoration-color:var(--gold); text-decoration-thickness:2px; text-underline-offset:3px;}
   .placeholder-note .ns-tag{font-family:'IBM Plex Mono',monospace; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--gold); display:block; margin-bottom:6px;}
   .block{border-top:1px solid var(--line); padding:34px 0; display:grid; grid-template-columns:160px 1fr; gap:28px;}
   .block .block-label{font-family:'IBM Plex Mono',monospace; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#8a8577; padding-top:4px;}
   .block .block-content h3{font-size:1.25rem; font-weight:500; margin-bottom:12px;}
-  .block .block-content p{margin:0 0 10px; color:#3a372f;}
+  .block .block-content p{margin:0 0 15px; color:#3a372f;}
   .block.problema .block-label{color:var(--red);}
   .block.proposta .block-label{color:var(--ink);}
   .source-card{background:var(--paper-deep); border-left:3px solid var(--gold); padding:16px 18px; margin-top:14px; font-size:0.92rem; position:relative;}
@@ -178,7 +179,7 @@
         <cite>— Warren Buffett (a Ben Stein, The New York Times, 26 novembre 2006, a proposito dell'aliquota effettiva che pagava rispetto ai propri dipendenti)</cite>
       </blockquote>
       <h3>Un'aliquota identica per il piccolo risparmiatore e per il grande portafoglio</h3>
-      <p>Le rendite finanziarie in Italia sono tassate al 26%, con un'unica eccezione: i titoli di Stato italiani ed esteri whitelist restano al 12,5%. Questa distinzione riguarda però solo il tipo di titolo, non chi lo possiede: chi realizza una plusvalenza da un fondo azionario o incassa un dividendo paga il 26% sia che l'investimento valga 2.000 euro sia che faccia parte di un portafoglio da 50 milioni.</p>
+      <p>Le rendite finanziarie in Italia sono tassate al 26%, con un'unica eccezione: i titoli di Stato italiani ed esteri whitelist restano al 12,5%. Questa distinzione riguarda però solo il tipo di titolo, non chi lo possiede: chi realizza una plusvalenza da un fondo azionario o incassa un dividendo <span class="chiave">paga il <strong>26%</strong> sia che l'investimento valga <strong>2.000 euro</strong> sia che faccia parte di un portafoglio da <strong>50 milioni</strong></span>.</p>
       <p>I Conti distributivi di Banca d'Italia mostrano che il 10% delle famiglie più ricche detiene il 60,6% della ricchezza netta totale, e che la composizione del patrimonio è molto eterogenea: le famiglie più povere lo tengono soprattutto in casa e depositi, quelle più ricche lo diversificano maggiormente, anche in strumenti finanziari. Questo significa che i guadagni da dividendi e capital gain, pur tassati con la stessa aliquota per tutti, si concentrano in misura sproporzionata nella parte più alta della distribuzione.</p>
       <div class="mini-chart">
         <span class="mc-title">Aliquota su dividendi e capital gain — oggi vs proposta</span>
@@ -189,6 +190,13 @@
       </div>
       <h3 style="margin-top:22px;">Come fanno gli altri paesi</h3>
       <p>Il confronto europeo conferma che l'Italia non è un caso isolato nell'uso di un'aliquota unica: Germania (25% + solidarietà, ~26,4%) e Francia (flat tax al 30%) applicano anch'esse un'aliquota fissa sulle rendite finanziarie, indipendente dal reddito o dal patrimonio (salvo opzione per la tassazione IRPEF ordinaria, se più conveniente per chi ha redditi bassi). La Spagna invece usa una scala progressiva dal 19% al 30% legata all'importo annuo del reddito da capitale, non al patrimonio complessivo. Un vero precedente di aliquota legata al valore del patrimonio detenuto esiste nei Paesi Bassi, dove l'imposta si applica a un rendimento presunto che cresce con il valore totale degli asset posseduti. Un'aliquota italiana esplicitamente differenziata per fasce di patrimonio finanziario non ha oggi equivalenti diretti tra i principali Paesi UE.</p>
+      <div class="mini-chart">
+        <span class="mc-title">Aliquota flat su dividendi e capital gain in Europa</span>
+        <div class="mc-row"><span class="mc-label">Italia</span><div class="mc-track"><div class="mc-fill red" style="width:87%"></div></div><span class="mc-value">26%</span></div>
+        <div class="mc-row"><span class="mc-label">Germania (incl. solidarietà)</span><div class="mc-track"><div class="mc-fill" style="width:88%"></div></div><span class="mc-value">~26,4%</span></div>
+        <div class="mc-row"><span class="mc-label">Francia</span><div class="mc-track"><div class="mc-fill" style="width:100%"></div></div><span class="mc-value">30%</span></div>
+        <span class="mc-source">Tax Foundation Europe, Capital Gains Tax Rates in Europe, 2026. La Spagna non è in tabella perché usa una scala progressiva (19-30%) legata al reddito annuo, non un'aliquota unica: un solo valore la rappresenterebbe in modo impreciso</span>
+      </div>
       <div class="source-card">
         <span class="verificata-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Verificata</span>
         <span class="src-name">Banca d'Italia — Conti distributivi sulla ricchezza delle famiglie, 4° trimestre 2025</span>
@@ -203,7 +211,7 @@
       <h3>20% sotto i 5 milioni di patrimonio finanziario, 30-35% sulla parte che eccede</h3>
       <p>I titoli di Stato restano invariati al 12,5%, per tutti, indipendentemente dal patrimonio detenuto: non tocchiamo il costo di finanziamento del debito pubblico. La differenziazione per patrimonio riguarda solo dividendi e capital gain su azioni, ETF, fondi comuni e obbligazioni societarie.</p>
       <p>Per chi ha un patrimonio finanziario investito in questi strumenti sotto i 5 milioni di euro, l'aliquota scende dal 26% al 20% (o anche meno, da definire in sede tecnica): un beneficio diretto per la larghissima maggioranza dei risparmiatori italiani. Per la parte di patrimonio che eccede i 5 milioni, l'aliquota sale in una forbice tra il 30% e il 35% — un intervallo aperto, non un numero secco, perché non esiste oggi una stima pubblica che indichi un valore preciso come ottimale.</p>
-      <p>Il meccanismo è a "top-up" sulla sola eccedenza, sullo stesso modello già proposto per la <a href="tassa-patrimoniale.html">patrimoniale sopra i 50 milioni</a>: chi ha un patrimonio finanziario di 5,5 milioni paga il 20% sui primi 5 milioni e il 30-35% solo sui 500.000 euro che superano la soglia, non sull'intero portafoglio. Evita l'effetto "scalino" per chi si trova appena sopra il limite.</p>
+      <p>Il meccanismo è a "top-up" sulla sola eccedenza, sullo stesso modello già proposto per la <a href="tassa-patrimoniale.html">patrimoniale sopra i 50 milioni</a>: chi ha un patrimonio finanziario di 5,5 milioni paga il 20% sui primi 5 milioni e il 30-35% solo sui 500.000 euro che superano la soglia, non sull'intero portafoglio. <span class="chiave">Evita l'effetto "scalino" per chi si trova appena sopra il limite</span>.</p>
       <p>Un nodo tecnico da affrontare apertamente: la soglia richiede di conoscere il patrimonio finanziario complessivo di ciascun contribuente, aggregato tra tutti gli intermediari presso cui detiene conti e titoli — non solo il singolo conto su cui matura il guadagno.</p>
       <h3 id="anagrafe" style="margin-top:22px;">La proposta infrastrutturale: un'anagrafe della ricchezza</h3>
       <p>Questo nodo non è un limite solo di questa proposta: è lo stesso che impedisce di conoscere con precisione quante famiglie superano i 50 milioni di euro nel <a href="tassa-patrimoniale.html">tema sulla patrimoniale</a> o quante concentrano oltre 100 appartamenti nel <a href="concentrazione-immobiliare.html">tema sulla concentrazione immobiliare</a>. Proponiamo quindi, come infrastruttura comune alle tre proposte, l'estensione sistematica dell'Archivio dei rapporti finanziari (ex art. 7, sesto comma, DPR 605/1973) — che oggi l'Agenzia delle Entrate usa già per i controlli fiscali puntuali, ma non come base sistematica per calcolare soglie patrimoniali — integrata con i dati catastali e i registri societari (per il <a href="concentrazione-immobiliare.html">look-through sulle società immobiliari</a> già proposto sul tema della casa). Non è una nuova banca dati da costruire da zero, ma un uso sistematico di dati che lo Stato già raccoglie per altri fini. Resta un nodo politico reale, non solo tecnico: più lo Stato sa, più aumenta il potenziale di controllo su ogni cittadino, non solo sui grandi patrimoni — un compromesso tra capacità impositiva e privacy che va dichiarato apertamente, non nascosto dietro l'aspetto puramente tecnico.</p>
@@ -250,7 +258,7 @@
       </details>
       <details class="obj">
         <summary>Un'anagrafe della ricchezza non aumenta il controllo dello Stato sui cittadini?</summary>
-        <div class="risposta"><span class="tag">Risposta</span>Sì, ed è un costo che dichiariamo invece di negarlo: collegare archivi oggi separati aumenta ciò che lo Stato sa di ogni cittadino, non solo di chi ha grandi patrimoni. Tre limiti riducono il rischio senza annullarlo: i dati sono già raccolti oggi, non se ne creano di nuovi; l'accesso può restare vincolato alla finalità fiscale, con tracciamento delle consultazioni e sanzioni per l'uso improprio, come già previsto per l'Archivio dei rapporti finanziari; il calcolo di una soglia richiede un totale, non la storia dei singoli movimenti. Resta un compromesso tra capacità impositiva e privacy: chi ritiene che il secondo valore prevalga ha un'obiezione legittima, non un fraintendimento tecnico.</div>
+        <div class="risposta"><span class="tag">Risposta</span><span class="chiave">Sì, ed è un costo che dichiariamo invece di negarlo: collegare archivi oggi separati aumenta ciò che lo Stato sa di ogni cittadino, non solo di chi ha grandi patrimoni</span>. Tre limiti riducono il rischio senza annullarlo: i dati sono già raccolti oggi, non se ne creano di nuovi; l'accesso può restare vincolato alla finalità fiscale, con tracciamento delle consultazioni e sanzioni per l'uso improprio, come già previsto per l'Archivio dei rapporti finanziari; il calcolo di una soglia richiede un totale, non la storia dei singoli movimenti. Resta un compromesso tra capacità impositiva e privacy: chi ritiene che il secondo valore prevalga ha un'obiezione legittima, non un fraintendimento tecnico.</div>
       </details>
     </div>
   </div>
@@ -296,7 +304,7 @@
   </div>
 </div>
 
-<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 27 luglio 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
+<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 2 agosto 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
 
 <script data-goatcounter="https://pattoequo.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>

@@ -70,10 +70,11 @@
   .citazione + .citazione{margin-top:-8px;}
   .citazione cite{display:block; margin-top:10px; font-family:'IBM Plex Mono',monospace; font-style:normal; font-size:0.76rem; color:#8a8577;}
   .citazione .risalto{font-weight:600; background:linear-gradient(transparent 62%, rgba(169,131,47,0.32) 62%);}
+  .chiave{text-decoration:underline; text-decoration-color:var(--gold); text-decoration-thickness:2px; text-underline-offset:3px;}
   .block{border-top:1px solid var(--line); padding:34px 0; display:grid; grid-template-columns:160px 1fr; gap:28px;}
   .block .block-label{font-family:'IBM Plex Mono',monospace; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#8a8577; padding-top:4px;}
   .block .block-content h3{font-size:1.25rem; font-weight:500; margin-bottom:12px;}
-  .block .block-content p{margin:0 0 10px; color:#3a372f;}
+  .block .block-content p{margin:0 0 15px; color:#3a372f;}
   .block.problema .block-label{color:var(--red);}
   .block.proposta .block-label{color:var(--ink);}
   .source-card{background:var(--paper-deep); border-left:3px solid var(--gold); padding:16px 18px; margin-top:14px; font-size:0.92rem; position:relative;}
@@ -97,6 +98,7 @@
   .mini-chart .mc-track{flex:1; height:14px; background:var(--paper-deep); border-radius:2px; overflow:hidden;}
   .mini-chart .mc-fill{height:100%; background:var(--gold);}
   .mini-chart .mc-fill.green{background:var(--green-gain);}
+  .mini-chart .mc-fill.red{background:var(--red);}
   .mini-chart .mc-value{font-family:'IBM Plex Mono',monospace; font-size:0.85rem; color:var(--ink); width:70px; text-align:right; flex-shrink:0;}
   .mini-chart .mc-source{display:block; margin-top:10px; font-size:0.72rem; color:#8a8577;}
   @media (max-width:520px){.mini-chart .mc-label{width:100px; font-size:0.76rem;}}
@@ -180,11 +182,20 @@
       </blockquote>
       <h3>Un paese che forma lavoro qualificato e poi lo regala all'estero</h3>
       <p>I salari reali italiani restano inferiori del 6,1% rispetto al primo trimestre del 2021: secondo l'analisi OCSE ripresa dalla stampa italiana, è il divario più ampio tra le grandi economie dell'area. E non è un incidente recente: sui dati OCSE citati dall'economista Marco Leonardi (Università Statale di Milano, ex capo dei consiglieri economici del governo Draghi), tra il 1991 e il 2023 i salari reali italiani sono <em>scesi</em> del 3,4%, mentre nella media dei paesi industrializzati crescevano del 25% e in Germania e Francia di oltre il 30%; nel solo periodo 2019-2024 l'Italia ha perso circa l'8%. L'occupazione intanto cresce — 24,1 milioni di occupati, un record storico — ma cresce soprattutto dove produttività e salari sono più bassi.</p>
-      <p>Il carico fiscale aggrava il quadro, in due modi documentati. Il primo è il fiscal drag: con l'inflazione del 2022-2024, scaglioni IRPEF non indicizzati hanno trasferito dai lavoratori dipendenti e pensionati allo Stato circa 25 miliardi di euro in due anni (stima di Marco Leonardi e Lorenzo Rizzo su lavoce.info, citata nella puntata Revolution del 24/09/2025) — un aumento di tasse mai votato da nessun Parlamento. Il secondo è l'iniquità orizzontale: come osserva Giuseppe Pisauro (ex presidente dell'Ufficio Parlamentare di Bilancio), a parità di reddito un lavoratore dipendente può pagare un'aliquota fino al 45%, mentre un autonomo in regime forfettario paga il 15% sostitutivo fino a 85.000 euro di ricavi. Il sistema fiscale, cioè, tratta il lavoro dipendente come la base imponibile più facile da spremere — lo stesso squilibrio documentato nel <a href="tassa-patrimoniale.html">tema 01</a> rispetto a patrimoni e rendite.</p>
+      <p>Il carico fiscale aggrava il quadro, in due modi documentati. Il primo è il fiscal drag: con l'inflazione del 2022-2024, <span class="chiave">scaglioni IRPEF non indicizzati hanno trasferito dai lavoratori dipendenti e pensionati allo Stato circa <strong>25 miliardi</strong> di euro in <strong>due anni</strong></span> (stima di Marco Leonardi e Lorenzo Rizzo su lavoce.info, citata nella puntata Revolution del 24/09/2025) — un aumento di tasse mai votato da nessun Parlamento. Il secondo è l'iniquità orizzontale: come osserva Giuseppe Pisauro (ex presidente dell'Ufficio Parlamentare di Bilancio), a parità di reddito un lavoratore dipendente può pagare un'aliquota fino al 45%, mentre un autonomo in regime forfettario paga il 15% sostitutivo fino a 85.000 euro di ricavi. <span class="chiave">Il sistema fiscale, cioè, tratta il lavoro dipendente come la base imponibile più facile da spremere</span> — lo stesso squilibrio documentato nel <a href="tassa-patrimoniale.html">tema 01</a> rispetto a patrimoni e rendite.</p>
       <h3 style="margin-top:22px;">Come fanno gli altri paesi</h3>
       <p>Di fronte all'inflazione del 2022-23 gli altri grandi paesi europei hanno protetto il potere d'acquisto con strumenti pubblici: la Francia con il salario minimo indicizzato, la Germania alzando i salari pubblici e facendo pressione sui contratti privati, la Spagna con clausole di garanzia nei contratti collettivi; quasi tutti hanno neutralizzato il fiscal drag. L'Italia — con una contrattazione ancora basata sul protocollo Ciampi del 1993, che non prevede il recupero dell'inflazione imprevista, e con scaglioni IRPEF non indicizzati — è rimasta indietro di circa 8 punti di potere d'acquisto (analisi di Marco Leonardi, Revolution 30/04/2026).</p>
       <h3 style="margin-top:22px;">Chi parte, quanti sono, quanto ci costa</h3>
-      <p>Il risultato si legge nei flussi migratori. Secondo l'Istat, nel 2024 gli espatri di cittadini italiani sono stati 156.000 (+36,5% sul 2023): 270.000 nel solo biennio 2023-24, +39,3% sul biennio precedente, il valore più alto dell'ultimo decennio. Chi parte è giovane (età media 32,8 anni) e istruito: tra i 25-34enni che espatriano la quota di laureati è passata dal 38,7% del 2019 al 50,9% del 2023, e nel quinquennio 2019-2023 il saldo con l'estero dei giovani laureati italiani è negativo per 58.000 unità — perdita che a livello nazionale viene azzerata solo dall'arrivo di 68.000 giovani laureati stranieri. Il saldo migratorio complessivo degli italiani con l'estero è negativo per 103.000 persone nel solo 2024, e l'Europa resta la principale destinazione: Regno Unito, Germania, Francia, Svizzera e Spagna assorbono da sole quasi il 55% degli espatri, l'America Latina circa il 10%. La Fondazione Nord Est stima che tra il 2011 e il 2023 siano emigrati circa 550.000 giovani tra i 18 e i 34 anni, con un saldo netto di -377.000 unità e un valore del capitale umano perso di circa 134 miliardi di euro; e che l'Italia attragga appena il 6% dei giovani europei che si spostano, contro il 34% della Svizzera e il 32% della Spagna. AlmaLaurea misura anche il perché: tra i laureati magistrali italiani occupati a cinque anni dal titolo, chi lavora all'estero guadagna in media 2.941 euro netti al mese contro i 1.840 di chi è rimasto — il 59,9% in più, al netto però del diverso costo della vita — e il 29,8% di chi è partito indica come motivo la mancanza di opportunità adeguate in Italia.</p>
+      <p>Il risultato si legge nei flussi migratori. Secondo l'Istat, nel 2024 gli espatri di cittadini italiani sono stati 156.000 (+36,5% sul 2023): 270.000 nel solo biennio 2023-24, +39,3% sul biennio precedente, il valore più alto dell'ultimo decennio. Chi parte è giovane (età media 32,8 anni) e istruito: <span class="chiave">tra i 25-34enni che espatriano la quota di laureati è passata dal <strong>38,7%</strong> del 2019 al <strong>50,9%</strong> del 2023</span>, e nel quinquennio 2019-2023 il saldo con l'estero dei giovani laureati italiani è negativo per 58.000 unità — perdita che a livello nazionale viene azzerata solo dall'arrivo di 68.000 giovani laureati stranieri. Il saldo migratorio complessivo degli italiani con l'estero è negativo per 103.000 persone nel solo 2024, e l'Europa resta la principale destinazione: Regno Unito, Germania, Francia, Svizzera e Spagna assorbono da sole quasi il 55% degli espatri, l'America Latina circa il 10%.</p>
+      <p>La Fondazione Nord Est stima che tra il 2011 e il 2023 siano emigrati circa 550.000 giovani tra i 18 e i 34 anni, con un saldo netto di -377.000 unità e un valore del capitale umano perso di circa 134 miliardi di euro; e che l'Italia attragga appena il 6% dei giovani europei che si spostano, contro il 34% della Svizzera e il 32% della Spagna.</p>
+      <div class="mini-chart">
+        <span class="mc-title">Quota di giovani europei mobili attratti da ciascun paese</span>
+        <div class="mc-row"><span class="mc-label">Svizzera</span><div class="mc-track"><div class="mc-fill green" style="width:100%"></div></div><span class="mc-value">34%</span></div>
+        <div class="mc-row"><span class="mc-label">Spagna</span><div class="mc-track"><div class="mc-fill" style="width:94%"></div></div><span class="mc-value">32%</span></div>
+        <div class="mc-row"><span class="mc-label">Italia</span><div class="mc-track"><div class="mc-fill red" style="width:18%"></div></div><span class="mc-value">6%</span></div>
+        <span class="mc-source">Fondazione Nord Est, presentazione al CNEL, ottobre 2024</span>
+      </div>
+      <p>AlmaLaurea misura anche il perché: tra i laureati magistrali italiani occupati a cinque anni dal titolo, chi lavora all'estero guadagna in media 2.941 euro netti al mese contro i 1.840 di chi è rimasto — il 59,9% in più, al netto però del diverso costo della vita — e il 29,8% di chi è partito indica come motivo la mancanza di opportunità adeguate in Italia.</p>
       <div class="mini-chart">
         <span class="mc-title">Retribuzione netta a 5 anni dal titolo</span>
         <div class="mc-row"><span class="mc-label">Laureati in Italia</span><div class="mc-track"><div class="mc-fill" style="width:62.6%"></div></div><span class="mc-value">1.840 €</span></div>
@@ -277,7 +288,7 @@
       </details>
       <details class="obj">
         <summary>Gli incentivi al rientro esistono già: il regime "impatriati"</summary>
-        <div class="risposta"><span class="tag">Risposta</span>Esistono, e per alcuni profili funzionano come spinta al rientro. Ma sono sgravi temporanei: alla scadenza, la persona si ritrova con le stesse condizioni che l'avevano spinta a partire — salari d'ingresso più bassi che altrove, precarietà più lunga, ricerca sottofinanziata. Un incentivo fiscale a tempo non corregge un divario strutturale: lo rinvia. È il motivo per cui la proposta punta sulle condizioni per restare, non solo sugli sconti per tornare.</div>
+        <div class="risposta"><span class="tag">Risposta</span>Esistono, e per alcuni profili funzionano come spinta al rientro. Ma sono sgravi temporanei: alla scadenza, la persona si ritrova con le stesse condizioni che l'avevano spinta a partire — salari d'ingresso più bassi che altrove, precarietà più lunga, ricerca sottofinanziata. <span class="chiave">Un incentivo fiscale a tempo non corregge un divario strutturale: lo rinvia.</span> È il motivo per cui la proposta punta sulle condizioni per restare, non solo sugli sconti per tornare.</div>
       </details>
       <details class="obj">
         <summary>I salari li decide il mercato, non la politica</summary>
@@ -331,7 +342,7 @@
   </div>
 </div>
 
-<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 27 luglio 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
+<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 2 agosto 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
 
 <script data-goatcounter="https://pattoequo.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>

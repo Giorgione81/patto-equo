@@ -70,11 +70,12 @@
   .citazione + .citazione{margin-top:-8px;}
   .citazione cite{display:block; margin-top:10px; font-family:'IBM Plex Mono',monospace; font-style:normal; font-size:0.76rem; color:#8a8577;}
   .citazione .risalto{font-weight:600; background:linear-gradient(transparent 62%, rgba(169,131,47,0.32) 62%);}
+  .chiave{text-decoration:underline; text-decoration-color:var(--gold); text-decoration-thickness:2px; text-underline-offset:3px;}
   .placeholder-note .ns-tag{font-family:'IBM Plex Mono',monospace; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--gold); display:block; margin-bottom:6px;}
   .block{border-top:1px solid var(--line); padding:34px 0; display:grid; grid-template-columns:160px 1fr; gap:28px;}
   .block .block-label{font-family:'IBM Plex Mono',monospace; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#8a8577; padding-top:4px;}
   .block .block-content h3{font-size:1.25rem; font-weight:500; margin-bottom:12px;}
-  .block .block-content p{margin:0 0 10px; color:#3a372f;}
+  .block .block-content p{margin:0 0 15px; color:#3a372f;}
   .block.problema .block-label{color:var(--red);}
   .block.proposta .block-label{color:var(--ink);}
   .source-card{background:var(--paper-deep); border-left:3px solid var(--gold); padding:16px 18px; margin-top:14px; font-size:0.92rem; position:relative;}
@@ -176,8 +177,8 @@
         <cite>— Max Frisch, prefazione a "Siamo italiani" di Alexander J. Seiler, 1965 — scritta sui lavoratori italiani emigrati in Svizzera</cite>
       </blockquote>
       <h3>I numeri non sostengono il racconto dell'invasione, ma il sistema resta inefficiente e la rotta resta letale</h3>
-      <p>In Italia risiedono oggi 5,3 milioni di cittadini stranieri (9% della popolazione): un dato stabile da anni, non un'emergenza recente. Le comunità principali — Romania, Albania, Marocco, Cina — sono presenti da 15-20 anni.</p>
-      <p>Nel 2025 gli sbarchi sono stati 66.296, quasi identici al 2024 e ben sotto il 2023 (-57,9%): un fenomeno che oscilla con gli accordi di transito, non un'invasione in atto. Le 142.233 persone nelle strutture di accoglienza a fine 2025 restano però un numero da gestire con capacità reali, non illimitate: è il limite di accoglienza e integrazione — non i flussi in sé — il vero rischio quando la gestione fallisce. Lo mostrano le banlieue parigine: segregazione urbana, disoccupazione giovanile concentrata e integrazione mancata, non il numero di chi è arrivato.</p>
+      <p><span class="chiave">In Italia risiedono oggi <strong>5,3 milioni</strong> di cittadini stranieri (<strong>9%</strong> della popolazione)</span>: un dato stabile da anni, non un'emergenza recente. Le comunità principali — Romania, Albania, Marocco, Cina — sono presenti da 15-20 anni.</p>
+      <p>Nel 2025 gli sbarchi sono stati 66.296, quasi identici al 2024 e ben sotto il 2023 (-57,9%): un fenomeno che oscilla con gli accordi di transito, non un'invasione in atto. Le 142.233 persone nelle strutture di accoglienza a fine 2025 restano però un numero da gestire con capacità reali, non illimitate: <span class="chiave">è il limite di accoglienza e integrazione — non i flussi in sé — il vero rischio quando la gestione fallisce</span>. Lo mostrano le banlieue parigine: segregazione urbana, disoccupazione giovanile concentrata e integrazione mancata, non il numero di chi è arrivato.</p>
       <p>Malgrado il calo degli sbarchi, la rotta resta letale: l'OIM ha registrato 2.279 morti e dispersi nel 2024, e nel 2025 il Missing Migrants Project ne conta già oltre 1.000 entro novembre sulla sola rotta del Mediterraneo centrale. Le stime variano da fonte a fonte — non esiste un conteggio esatto, e va detto invece di scegliere la cifra più comoda.</p>
       <div class="mini-chart">
         <span class="mc-title">Quote decreto flussi 2024 — assegnate vs convertite in permesso reale</span>
@@ -263,6 +264,12 @@
         <span class="verificata-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Verificata</span>
         <span class="src-name">Eurostat — dataset `migr_eiord1` (ordini di lasciare il territorio) e `migr_eirtn1` (rimpatri eseguiti), dati estratti il 28 luglio 2026</span>
         <p>Italia, anno 2025: 21.295 ordini di rimpatrio, 4.780 eseguiti (22,4%). Citiamo i dataset e non la pagina riassuntiva di Eurostat perché quella viene riscritta a ogni trimestre: chi la aprisse tra un mese non ritroverebbe questi numeri. Due avvertenze della stessa Eurostat: i rimpatri di un periodo non si riferiscono necessariamente agli ordini emessi nello stesso periodo, e per l'Italia esiste una rottura di serie dal primo trimestre 2025 per cambio della fonte dei dati — i valori precedenti non sono direttamente confrontabili.</p>
+        <div class="mini-chart" style="margin-top:12px;">
+          <span class="mc-title">Ordini di rimpatrio, Italia 2025</span>
+          <div class="mc-row"><span class="mc-label">Emessi</span><div class="mc-track"><div class="mc-fill" style="width:100%"></div></div><span class="mc-value">21.295</span></div>
+          <div class="mc-row"><span class="mc-label">Eseguiti</span><div class="mc-track"><div class="mc-fill red" style="width:22.4%"></div></div><span class="mc-value">4.780</span></div>
+          <span class="mc-source">Eurostat, migr_eiord1 e migr_eirtn1, estrazione 28 luglio 2026</span>
+        </div>
         <a href="https://ec.europa.eu/eurostat/databrowser/view/migr_eiord1/default/table?lang=en" target="_blank">→ eurostat — migr_eiord1, ordini di rimpatrio (selezionare Italia)</a>
         <a href="https://ec.europa.eu/eurostat/databrowser/view/migr_eirtn1/default/table?lang=en" target="_blank" style="display:block; margin-top:4px;">→ eurostat — migr_eirtn1, rimpatri eseguiti</a>
       </div>
@@ -284,7 +291,7 @@
     <div class="block-content">
       <details class="obj">
         <summary>Canali legali più ampi rischiano di essere letti come un incentivo a partire, non solo un aiuto a chi è già in viaggio</summary>
-        <div class="risposta"><span class="tag">Risposta</span>È un'obiezione legittima, ma confonde due leve diverse. L'apertura di canali legali riguarda chi vuole emigrare per lavoro, ed è gestibile con quote, selezione e accordi bilaterali. L'obbligo di soccorso in mare riguarda invece chi è già partito ed è in pericolo di vita: è un obbligo giuridico che discende dal diritto internazionale del mare, indipendente dalle politiche di ingresso. Trattarle come un'unica questione — "se aiutiamo chi rischia di annegare, ne arriveranno di più" — è proprio l'ambiguità che ha reso opaca la catena di soccorso nella notte di Cutro.</div>
+        <div class="risposta"><span class="tag">Risposta</span>È un'obiezione legittima, ma confonde due leve diverse. <span class="chiave">L'apertura di canali legali riguarda chi vuole emigrare per lavoro, ed è gestibile con quote, selezione e accordi bilaterali. L'obbligo di soccorso in mare riguarda invece chi è già partito ed è in pericolo di vita: è un obbligo giuridico che discende dal diritto internazionale del mare, indipendente dalle politiche di ingresso.</span> Trattarle come un'unica questione — "se aiutiamo chi rischia di annegare, ne arriveranno di più" — è proprio l'ambiguità che ha reso opaca la catena di soccorso nella notte di Cutro.</div>
       </details>
       <details class="obj">
         <summary>Il cosiddetto "pull factor": un soccorso più efficiente potrebbe incentivare partenze più rischiose</summary>
@@ -314,7 +321,7 @@
         <div class="piatto guadagna">
           <div class="who">Chi ci guadagna, con le riforme proposte</div>
           <span class="amount">177 miliardi di euro di valore aggiunto (9% del PIL, 2024)</span>
-          <div class="note">Secondo la Fondazione Leone Moressa, è il valore aggiunto prodotto dagli occupati stranieri nell'economia italiana nel 2024 — fino al 18% del valore aggiunto in agricoltura e al 16,4% in edilizia. Sul piano fiscale, il saldo tra entrate e uscite pubbliche legate alla presenza straniera è positivo per +1,2 miliardi di euro (dati 2023): 41,1 miliardi di entrate (di cui 25,5 miliardi di contributi sociali netti) contro 39,9 miliardi di uscite (di cui 19,2 miliardi di protezione sociale, 7,3 di scuola, 6,3 di sanità). A questo si aggiungono 787.000 imprenditori nati all'estero nel 2024 (+24,4% in dieci anni, contro un calo del 5,7% tra gli imprenditori nativi) e 8,3 miliardi di euro di rimesse inviate nel 2024 ai paesi d'origine. Canali legali funzionanti e soccorso separato dal controllo ridurrebbero inoltre la dipendenza dai trafficanti, il cui modello di business si regge proprio sulla scarsità di alternative legali.</div>
+          <div class="note">Secondo la Fondazione Leone Moressa, è il valore aggiunto prodotto dagli occupati stranieri nell'economia italiana nel 2024 — fino al 18% del valore aggiunto in agricoltura e al 16,4% in edilizia. <span class="chiave">Sul piano fiscale, il saldo tra entrate e uscite pubbliche legate alla presenza straniera è positivo per <strong>+1,2 miliardi</strong> di euro</span> (dati 2023): 41,1 miliardi di entrate (di cui 25,5 miliardi di contributi sociali netti) contro 39,9 miliardi di uscite (di cui 19,2 miliardi di protezione sociale, 7,3 di scuola, 6,3 di sanità). A questo si aggiungono 787.000 imprenditori nati all'estero nel 2024 (+24,4% in dieci anni, contro un calo del 5,7% tra gli imprenditori nativi) e 8,3 miliardi di euro di rimesse inviate nel 2024 ai paesi d'origine. Canali legali funzionanti e soccorso separato dal controllo ridurrebbero inoltre la dipendenza dai trafficanti, il cui modello di business si regge proprio sulla scarsità di alternative legali.</div>
         </div>
       </div>
     </div>
@@ -342,7 +349,7 @@
   </div>
 </div>
 
-<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 27 luglio 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
+<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 2 agosto 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
 
 <script data-goatcounter="https://pattoequo.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>

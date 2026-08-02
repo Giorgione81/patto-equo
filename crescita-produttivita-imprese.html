@@ -72,11 +72,12 @@
   .citazione + .citazione{margin-top:-8px;}
   .citazione cite{display:block; margin-top:10px; font-family:'IBM Plex Mono',monospace; font-style:normal; font-size:0.76rem; color:#8a8577;}
   .citazione .risalto{font-weight:600; background:linear-gradient(transparent 62%, rgba(169,131,47,0.32) 62%);}
+  .chiave{text-decoration:underline; text-decoration-color:var(--gold); text-decoration-thickness:2px; text-underline-offset:3px;}
   .placeholder-note .ns-tag{font-family:'IBM Plex Mono',monospace; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--gold); display:block; margin-bottom:6px;}
   .block{border-top:1px solid var(--line); padding:34px 0; display:grid; grid-template-columns:160px 1fr; gap:28px;}
   .block .block-label{font-family:'IBM Plex Mono',monospace; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#8a8577; padding-top:4px;}
   .block .block-content h3{font-size:1.25rem; font-weight:500; margin-bottom:12px;}
-  .block .block-content p{margin:0 0 10px; color:#3a372f;}
+  .block .block-content p{margin:0 0 15px; color:#3a372f;}
   .block.problema .block-label{color:var(--red);}
   .block.proposta .block-label{color:var(--ink);}
   .source-card{background:var(--paper-deep); border-left:3px solid var(--gold); padding:16px 18px; margin-top:14px; font-size:0.92rem; position:relative;}
@@ -184,9 +185,16 @@
       </blockquote>
       <h3>Trent'anni di produttività ferma</h3>
       <p>Tra il 1995 e il 2024 la produttività del lavoro italiana è cresciuta in media dello 0,3% l'anno. Non è un rallentamento recente: è una linea piatta che attraversa cinque legislature, tre crisi e una pandemia. Negli ultimi due anni è addirittura arretrata — il 2,7% in meno nel 2023 e l'1,9% in meno nel 2024 — perché le ore lavorate sono aumentate più del valore aggiunto: si lavora di più, non si produce di più. Anche la produttività totale dei fattori, l'indicatore che misura l'efficienza complessiva con cui capitale e lavoro vengono combinati, è in calo dell'1,2%. E non è che il passato remoto fosse peggiore del presente: quello 0,3% medio annuo è identico se si guarda al solo decennio 2014-2024 — lo scrive l'Istat — cioè l'ultimo decennio non è andato meglio della media trentennale.</p>
+      <div class="mini-chart">
+        <span class="mc-title">Produttività del lavoro, variazione annua</span>
+        <div class="mc-row"><span class="mc-label">Media 1995-2024</span><div class="mc-track"><div class="mc-fill" style="width:11%"></div></div><span class="mc-value">+0,3%</span></div>
+        <div class="mc-row"><span class="mc-label">2023</span><div class="mc-track"><div class="mc-fill red" style="width:100%"></div></div><span class="mc-value">-2,7%</span></div>
+        <div class="mc-row"><span class="mc-label">2024</span><div class="mc-track"><div class="mc-fill red" style="width:70%"></div></div><span class="mc-value">-1,9%</span></div>
+        <span class="mc-source">Istat, Misure di produttività, Anni 1995-2024 (report 12 dicembre 2025)</span>
+      </div>
       <p>Questo dato spiega gli altri temi di questo sito. Un paese la cui produttività non cresce non può alzare i salari senza comprimere i profitti, né sostenere il welfare quando la popolazione in età lavorativa si riduce. È il motivo per cui nel <a href="fuga-dei-cervelli-salari.html">tema 06</a> i salari reali italiani risultano fermi da trent'anni mentre altrove crescevano del 25-30%, e il motivo per cui nel <a href="immigrazione-canali-legali.html">tema 05</a> scriviamo che il calo della forza lavoro si affronta prima di tutto aumentando la produttività, non delegandolo alla sola immigrazione.</p>
       <h3 style="margin-top:22px;">Perché la produttività non cresce: tre fatti scomodi</h3>
-      <p><strong>Le imprese non crescono di dimensione.</strong> L'86% delle imprese italiane in industria, costruzioni e servizi di mercato ha meno di dieci addetti. Non è un dettaglio statistico: le imprese piccole investono meno in tecnologia, esportano meno, pagano meno e adottano pratiche manageriali più arretrate. L'83% delle imprese sotto i dieci addetti è a proprietà e gestione familiare, e la selezione dei dirigenti dentro la famiglia o la cerchia stretta — invece che per merito e qualifica — pesa su innovazione e produttività. Anche la regione più produttiva, la Lombardia, ha l'83% di imprese sotto i dieci addetti: il problema è nazionale, non meridionale.</p>
+      <p><strong>Le imprese non crescono di dimensione.</strong> <span class="chiave">L'<strong>86%</strong> delle imprese italiane in industria, costruzioni e servizi di mercato ha meno di dieci addetti</span>. Non è un dettaglio statistico: le imprese piccole investono meno in tecnologia, esportano meno, pagano meno e adottano pratiche manageriali più arretrate. L'83% delle imprese sotto i dieci addetti è a proprietà e gestione familiare, e la selezione dei dirigenti dentro la famiglia o la cerchia stretta — invece che per merito e qualifica — pesa su innovazione e produttività. Anche la regione più produttiva, la Lombardia, ha l'83% di imprese sotto i dieci addetti: il problema è nazionale, non meridionale.</p>
       <p><strong>Il capitale non arriva.</strong> Solo il 3,9% delle società non finanziarie italiane si finanzia sul mercato dei capitali; tra quelle con più di 250 addetti la quota sale al 18,7%, ma le grandi imprese in Italia sono poche. Il finanziamento resta dipendente dal credito bancario, il risparmio delle famiglie — 11.700 miliardi di ricchezza netta — non si trasforma in capitale d'impresa, e venture capital e private equity restano sottodimensionati rispetto a quasi tutti i paesi OCSE.</p>
       <p><strong>Ricerca e competenze sono sotto la soglia europea.</strong> La spesa in ricerca e sviluppo è all'1,37% del PIL contro il 2,21% della media UE27, e la componente delle imprese si ferma allo 0,80%. Tra i 25-34enni ha una laurea il 24,4% degli uomini e il 37,1% delle donne, contro medie europee del 37,6% e 48,8%: un divario di oltre undici punti. Un'economia con poche imprese grandi e pochi laureati genera poca domanda di competenze — che è il motivo per cui chi le ha se ne va.</p>
       <div class="mini-chart">
@@ -213,7 +221,7 @@
     <div class="block-label">La proposta</div>
     <div class="block-content">
       <h3>Quattro leve, non un elenco di buoni propositi</h3>
-      <p>La produttività non è una leva: è il risultato. Quello che segue sono le quattro leve che, sulla base dei dati qui sopra, riteniamo capaci di produrlo — in ordine di solidità delle prove, non di popolarità.</p>
+      <p><span class="chiave">La produttività non è una leva: è il risultato.</span> Quello che segue sono le quattro leve che, sulla base dei dati qui sopra, riteniamo capaci di produrlo — in ordine di solidità delle prove, non di popolarità.</p>
       <h3 style="margin-top:22px;">1. Far crescere le imprese e aprire il mercato dei capitali</h3>
       <p>Nessun incentivo alla ricerca funziona in un tessuto di imprese troppo piccole per usarla. Proponiamo due interventi convergenti. Il primo è la neutralità fiscale delle aggregazioni: oggi fondersi o entrare in una rete d'impresa comporta costi e discontinuità di agevolazioni che scoraggiano la crescita dimensionale, cioè il sistema penalizza proprio chi prova a crescere. Il secondo è la canalizzazione del risparmio delle famiglie verso il capitale d'impresa attraverso fondi pensione e strumenti collettivi vigilati, con un ruolo del venture capital pubblico concentrato sulle start-up nella fase in cui il capitale privato non arriva.</p>
       <h3 style="margin-top:22px;">2. Ricerca e capitale umano ai livelli europei</h3>
@@ -267,7 +275,7 @@
       </details>
       <details class="obj">
         <summary>Il PNRR ha portato 220 miliardi e la crescita è restata sotto l'1%: perché dovrebbe funzionare adesso?</summary>
-        <div class="risposta"><span class="tag">Risposta</span>È l'obiezione più solida, e viene da chi ha lavorato a quel piano: Francesco Giavazzi ha documentato che nel triennio 2023-2026 la crescita media del reddito è restata sotto l'1% nonostante quasi 220 miliardi, pari a circa il 10% del PIL annuo, di cui oltre 120 da restituire. Le due ragioni che indica sono i tempi lunghi con cui gli investimenti pubblici producono effetti e — più grave — il fatto che buona parte della spesa PNRR abbia <em>sostituito</em> investimenti già programmati invece di aggiungersi. È la ragione per cui qui non proponiamo un nuovo piano di spesa, ma interventi strutturali su regole, dimensione d'impresa e mercato dei capitali, che non richiedono di spendere di più ma di rimuovere ostacoli. Se la risposta fosse solo "più soldi", l'obiezione sarebbe fatale.</div>
+        <div class="risposta"><span class="tag">Risposta</span>È l'obiezione più solida, e viene da chi ha lavorato a quel piano: Francesco Giavazzi ha documentato che <span class="chiave">nel triennio 2023-2026 la crescita media del reddito è restata sotto l'<strong>1%</strong> nonostante quasi <strong>220 miliardi</strong></span>, pari a circa il 10% del PIL annuo, di cui oltre 120 da restituire. Le due ragioni che indica sono i tempi lunghi con cui gli investimenti pubblici producono effetti e — più grave — il fatto che buona parte della spesa PNRR abbia <em>sostituito</em> investimenti già programmati invece di aggiungersi. È la ragione per cui qui non proponiamo un nuovo piano di spesa, ma interventi strutturali su regole, dimensione d'impresa e mercato dei capitali, che non richiedono di spendere di più ma di rimuovere ostacoli. Se la risposta fosse solo "più soldi", l'obiezione sarebbe fatale.</div>
       </details>
       <details class="obj">
         <summary>Le piccole imprese non sono la forza dell'Italia?</summary>
@@ -321,7 +329,7 @@
   </div>
 </div>
 
-<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 30 luglio 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
+<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 2 agosto 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
 
 <script data-goatcounter="https://pattoequo.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
