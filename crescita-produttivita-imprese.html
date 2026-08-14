@@ -105,6 +105,17 @@
   .mini-chart .mc-value{font-family:'IBM Plex Mono',monospace; font-size:0.85rem; color:var(--ink); width:60px; text-align:right; flex-shrink:0;}
   .mini-chart .mc-source{display:block; margin-top:10px; font-size:0.72rem; color:#8a8577;}
   @media (max-width:520px){.mini-chart .mc-label{width:100px; font-size:0.76rem;}}
+  .leve{background:#fff; border:1px solid var(--line); padding:20px 22px; margin-bottom:22px;}
+  .leve .lv-title{font-family:'IBM Plex Mono',monospace; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--gold); display:block; margin-bottom:18px;}
+  .leve .lv-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:16px;}
+  .leve .lv-cell{display:block; text-align:center; text-decoration:none; color:var(--ink);}
+  .leve .lv-num{font-family:'IBM Plex Mono',monospace; font-size:0.66rem; letter-spacing:0.06em; color:var(--gold); display:block; margin-bottom:8px;}
+  .leve .lv-ico{display:block; width:28px; height:28px; margin:0 auto 8px; stroke:currentColor; stroke-width:1.5; fill:none; stroke-linecap:round; stroke-linejoin:round;}
+  .leve .lv-lab{font-family:'IBM Plex Mono',monospace; font-size:0.72rem; line-height:1.25; display:block;}
+  .leve .lv-cell:hover .lv-lab{text-decoration:underline; text-decoration-color:var(--gold); text-decoration-thickness:2px; text-underline-offset:3px;}
+  .leve .lv-note{display:block; margin-top:18px; padding-top:14px; border-top:1px solid var(--line); font-family:'Inter',sans-serif; font-size:0.82rem; color:#6b6659;}
+  @media (max-width:720px){.leve .lv-grid{grid-template-columns:repeat(2,1fr); gap:18px;}}
+  @media (max-width:420px){.leve .lv-grid{grid-template-columns:1fr;}}
   .placeholder-note{
     background:#fff; border:1px dashed var(--gold); padding:16px 18px; margin-top:14px; font-size:0.9rem; color:#6b6659;
   }
@@ -222,19 +233,30 @@
   <div class="block proposta">
     <div class="block-label">La proposta</div>
     <div class="block-content">
+      <div class="leve">
+        <span class="lv-title">Le cinque leve</span>
+        <div class="lv-grid">
+          <a class="lv-cell" href="#leva-1"><span class="lv-num">01</span><svg class="lv-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5h17"/><path d="M6 20.5v-6h3v6M11 20.5v-9.5h3v9.5M16 20.5v-13h3v13"/></svg><span class="lv-lab">imprese e capitali</span></a>
+          <a class="lv-cell" href="#leva-2"><span class="lv-num">02</span><svg class="lv-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 18.5h5M10.5 21.5h3"/><path d="M12 2.5a6.2 6.2 0 0 0-3.6 11.2v2.3h7.2v-2.3A6.2 6.2 0 0 0 12 2.5z"/></svg><span class="lv-lab">ricerca e competenze</span></a>
+          <a class="lv-cell" href="#leva-3"><span class="lv-num">03</span><svg class="lv-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 2 4.5 13.8h5.6L9 22l8.7-11.8h-5.6z"/></svg><span class="lv-lab">costo dell'energia</span></a>
+          <a class="lv-cell" href="#leva-4"><span class="lv-num">04</span><svg class="lv-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.2V21M8.5 21h7M4 8.8h16"/><path d="M4 8.8 1.6 13.4a2.7 2.7 0 0 0 4.8 0z"/><path d="M20 8.8l-2.4 4.6a2.7 2.7 0 0 0 4.8 0z"/></svg><span class="lv-lab">tempi della giustizia</span></a>
+          <a class="lv-cell" href="#leva-5"><span class="lv-num">05</span><svg class="lv-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5.5 21V10h13v11"/><path d="M8.5 6.5 12 3.2l3.5 3.3"/><circle cx="12" cy="15.5" r="2.1"/><path d="M12 12.2v-1.1M12 20v-1.1M8.6 15.5H7.5M16.5 15.5h-1.1"/></svg><span class="lv-lab">produttività dello Stato</span></a>
+        </div>
+        <span class="lv-note">Le cinque leve sono elencate in ordine di solidità delle prove: la prima è quella su cui l'evidenza è più forte.</span>
+      </div>
       <h3>Cinque leve, non un elenco di buoni propositi</h3>
       <p><span class="chiave">La produttività non è una leva: è il risultato.</span> Quello che segue sono le cinque leve che, sulla base dei dati qui sopra, riteniamo capaci di produrlo — in ordine di solidità delle prove, non di popolarità.</p>
-      <h3 style="margin-top:22px;">1. Far crescere le imprese e aprire il mercato dei capitali</h3>
+      <h3 id="leva-1" style="margin-top:22px;">1. Far crescere le imprese e aprire il mercato dei capitali</h3>
       <p>Nessun incentivo alla ricerca funziona in un tessuto di imprese troppo piccole per usarla. Proponiamo due interventi convergenti. Il primo è la <span class="chiave">neutralità delle soglie dimensionali</span>: oggi crescere costa, perché superare certe dimensioni fa perdere regimi fiscali semplificati e agevolazioni riservate alle piccole imprese e fa scattare obblighi aggiuntivi, tutti in un colpo. Il risultato è che a molte imprese conviene restare sotto la soglia — e il sistema penalizza esattamente chi prova a crescere. Serve che il passaggio sia graduale: benefici che si riducono per gradi e obblighi che entrano in vigore per gradi, invece di uno scalino secco.</p>
       <p>Il secondo è la <span class="chiave">canalizzazione del risparmio delle famiglie verso il capitale d'impresa</span> attraverso fondi pensione e strumenti collettivi vigilati, con un ruolo del venture capital pubblico concentrato sulle start-up nella fase in cui il capitale privato non arriva. In Italia ci sono 11.700 miliardi di ricchezza netta delle famiglie e imprese che si finanziano quasi solo in banca: il problema non è la scarsità di risparmio, è che non trova la strada per arrivare all'impresa.</p>
       <p>Nella stessa direzione va la riduzione degli adempimenti: consolidare i tributi che l'impresa oggi versa separatamente, a partire dall'integrazione dei tributi regionali sulle attività produttive nel pagamento dell'imposta sui redditi. Non costa risorse di bilancio e pesa in proporzione molto più sulle imprese piccole, che non hanno un ufficio dedicato. Ma va detto con onestà che è un intervento di manutenzione: <strong>libera tempo, non produce produttività</strong>.</p>
-      <h3 style="margin-top:22px;">2. Ricerca e capitale umano ai livelli europei</h3>
+      <h3 id="leva-2" style="margin-top:22px;">2. Ricerca e capitale umano ai livelli europei</h3>
       <p>Obiettivo: <span class="chiave">portare la spesa in ricerca e sviluppo alla media dell'area euro entro il 2035</span>, con uno sforzo pubblico e privato in parti uguali — è la <strong>raccomandazione dell'OCSE</strong> nel rapporto sull'Italia del 2026, e ha il vantaggio di essere misurabile ogni anno. Sul capitale umano: aumento dei posti nell'istruzione terziaria, comprese le lauree professionalizzanti brevi che in Italia sono quasi assenti, e una politica dei salari accademici e di ricerca che smetta di finanziare la formazione di persone che poi lavorano altrove. Il tema 06 documenta il costo di quella formazione regalata all'estero.</p>
-      <h3 style="margin-top:22px;">3. Togliere all'industria un costo dell'energia fuori mercato</h3>
+      <h3 id="leva-3" style="margin-top:22px;">3. Togliere all'industria un costo dell'energia fuori mercato</h3>
       <p>Il prezzo del gas si forma sui mercati internazionali, ma il divario con gli altri paesi europei no: nel 2024 l'industria italiana ha pagato l'elettricità 26,5 centesimi per kWh contro i 16,7 della Spagna, che compra il gas sugli stessi mercati. La differenza dipende da tre cose, e tutte e tre si decidono in Italia. La prima è <strong>come produciamo l'elettricità</strong>: in Italia una quota molto alta viene da centrali a gas, e nel mercato elettrico il prezzo per tutti lo fissa la centrale più costosa tra quelle in funzione in quel momento — da noi, quasi sempre una centrale a gas. Chi ha più idroelettrico, nucleare o rinnovabili le accende meno spesso, e paga meno. La seconda sono <strong>rete e accumuli</strong>: quando mancano le linee per trasportare l'energia e le batterie per conservarla, l'elettricità rinnovabile prodotta in un certo momento o in una certa zona non arriva a chi la userebbe, e va perduta. La terza sono <strong>gli oneri di sistema</strong>, cioè le voci della bolletta che non pagano l'energia consumata ma decisioni pubbliche del passato: incentivi agli impianti, smantellamento delle vecchie centrali nucleari, sconti riservati ad alcune categorie. Proponiamo accelerazione degli iter autorizzativi per rinnovabili e accumuli, revisione degli oneri impropri caricati sulla bolletta industriale, e contratti di fornitura di lungo periodo a prezzo fisso per l'industria energivora, sul modello già in uso in Francia e Spagna.</p>
-      <h3 style="margin-top:22px;">4. I tempi della giustizia civile: la leva a costo quasi zero</h3>
+      <h3 id="leva-4" style="margin-top:22px;">4. I tempi della giustizia civile: la leva a costo quasi zero</h3>
       <p>È la leva su cui sono tutti d'accordo, e per questo vale la pena guardare i numeri invece di ripetere lo slogan. Sui tempi della giustizia civile l'Italia si è mossa davvero: tra il 2019 e il 2025 la durata media dei procedimenti è scesa del 27,8% nel civile e del 37,8% nel penale. Ma l'obiettivo concordato con il PNRR è una riduzione del 40% entro giugno 2026, e su quel fronte l'OCSE scrive che serve un'accelerazione: il progresso è reale e insufficiente insieme. Non è un dettaglio per giuristi — tempi incerti di recupero di un credito o di risoluzione di una controversia sono un costo che entra nel prezzo del capitale e scoraggia gli investimenti, soprattutto quelli esteri.</p>
-      <h3 style="margin-top:22px;">5. La produttività dello Stato: spendere meglio quello che già spendiamo</h3>
+      <h3 id="leva-5" style="margin-top:22px;">5. La produttività dello Stato: spendere meglio quello che già spendiamo</h3>
       <p>Anche lo Stato produce: servizi, autorizzazioni, sentenze, infrastrutture. E quando li produce male il conto non lo paga il bilancio pubblico — lo pagano le imprese e i cittadini, in denaro o in tempo. Per questo la revisione della spesa non è, per noi, un capitolo di ragioneria da mettere in fondo: è una leva di produttività come le altre quattro. Ed è anche la premessa politica di tutto il resto — <span class="chiave">prima di chiedere un euro in più, bisogna dimostrare dove si spende meglio quello che c'è già</span>.</p>
       <p><strong>La revisione della spesa esiste già, e questa è la parte che nessuno racconta.</strong> È prevista dalla legge di contabilità dal 2009 ed è stata rafforzata come riforma del PNRR: ogni anno un decreto assegna a ciascun ministero un obiettivo di risparmio, e il MEF verifica a consuntivo se è stato raggiunto. La relazione sull'esercizio 2024 attesta il "sostanziale raggiungimento" degli obiettivi. Non è un'invocazione, quindi: è una procedura che funziona.</p>
       <p><strong>Il problema è la scala.</strong> Gli obiettivi crescono ogni anno, ma restano intorno ai due miliardi: <span class="chiave">circa un quinto di quello che l'OCSE assegna a questa leva</span>. E riguardano i soli ministeri: oggi la revisione della spesa si applica a una parte limitata della macchina pubblica, mentre l'obiettivo dovrebbe essere estenderla sistematicamente a tutta l'amministrazione.</p>
@@ -389,7 +411,7 @@
     <summary>Glossario minimo: "produttività totale dei fattori", "mercato dei capitali", "oneri di sistema"</summary>
     <div class="risposta"><span class="tag">Definizioni</span><strong>Produttività totale dei fattori</strong>: misura quanto valore si ottiene combinando lavoro e capitale, al netto della quantità di entrambi — cattura quindi progresso tecnico, organizzazione ed efficienza, non lo sforzo. <strong>Mercato dei capitali</strong>: l'insieme dei canali con cui un'impresa raccoglie denaro emettendo azioni o obbligazioni invece di indebitarsi in banca. <strong>Oneri di sistema</strong>: le voci della bolletta elettrica che non pagano l'energia ma finanziano altre politiche pubbliche, e che in Italia pesano sui clienti industriali più che altrove.</div>
   </details>
-  <p class="correlati">Temi correlati: <a href="fuga-dei-cervelli-salari.html">06 — Lavoro, salari e fuga dei cervelli</a> · <a href="tassazione-rendite-finanziarie.html">02 — Tassazione delle rendite finanziarie</a> · <a href="immigrazione-canali-legali.html">05 — Immigrazione: canali legali, soccorso e responsabilità</a></p>
+  <p class="correlati">Temi correlati: <a href="fuga-dei-cervelli-salari.html">06 — Lavoro, salari e fuga dei cervelli</a> · <a href="tassazione-rendite-finanziarie.html">02 — Tassazione delle rendite finanziarie</a> · <a href="immigrazione-canali-legali.html">05 — Immigrazione: canali legali, soccorso e responsabilità</a> · <a href="citta-caldo-vivibilita.html">08 — Città, caldo e qualità della vita</a></p>
 </div>
 
 <div class="ascolta-wrap" id="ascolta">
@@ -404,7 +426,7 @@
   </div>
 </div>
 
-<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 4 agosto 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
+<footer>Patto Equo — documento vivo, v0.1 · ultima revisione: 14 agosto 2026<br><span style="font-size:0.75rem;">Contenuti pubblicati con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank">Creative Commons BY-SA 4.0</a> — puoi condividerli e riusarli citando la fonte</span></footer>
 
 <script data-goatcounter="https://pattoequo.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
