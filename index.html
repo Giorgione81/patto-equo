@@ -106,7 +106,9 @@
   .obiettivi{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:18px; padding-top:16px; border-top:1px solid var(--line);}
   .obiettivi .ob b{display:block; font-family:'Fraunces',serif; font-weight:600; font-size:1rem; color:var(--ink); margin-bottom:4px;}
   .obiettivi .ob p{margin:0; font-size:0.86rem; color:#4a4640; line-height:1.45;}
-  .obiettivi .ob a{display:block; margin-top:6px; font-family:'IBM Plex Mono',monospace; font-size:0.7rem; letter-spacing:0.03em; text-decoration:none; color:var(--gold);}
+  .obiettivi .ob .temi-link{display:block; margin-top:6px; font-family:'IBM Plex Mono',monospace; font-size:0.7rem; letter-spacing:0.03em; color:var(--gold);}
+  .obiettivi .ob .temi-link a{color:var(--gold); text-decoration:underline; text-decoration-color:rgba(169,131,47,0.45); text-underline-offset:3px;}
+  .obiettivi .ob .temi-link a:hover{text-decoration-color:var(--gold); text-decoration-thickness:2px;}
   @media (max-width:720px){.obiettivi{grid-template-columns:1fr; gap:12px;}}
 
   .news-panel{background:#fff; border:1px solid var(--line); border-radius:2px;}
@@ -263,17 +265,17 @@
         <div class="ob">
           <b>Più crescita</b>
           <p>Produttività, ricerca, capitale umano, energia competitiva, imprese più forti.</p>
-          <a href="crescita-produttivita-imprese.html">temi 06, 07 e 08 →</a>
+          <span class="temi-link">temi <a href="fuga-dei-cervelli-salari.html">06</a>, <a href="crescita-produttivita-imprese.html">07</a> e <a href="citta-caldo-vivibilita.html">08</a> →</span>
         </div>
         <div class="ob">
           <b>Più equità</b>
           <p>Un fisco che chieda di più a chi ha di più, e servizi pubblici protetti da chi vuole smantellarli.</p>
-          <a href="tassa-patrimoniale.html">temi 01, 02 e 03 →</a>
+          <span class="temi-link">temi <a href="tassa-patrimoniale.html">01</a>, <a href="tassazione-rendite-finanziarie.html">02</a> e <a href="concentrazione-immobiliare.html">03</a> →</span>
         </div>
         <div class="ob">
           <b>Più opportunità</b>
           <p>Casa, istruzione, lavoro e servizi che rendano le scelte libere, non obbligate dalle condizioni economiche.</p>
-          <a href="politiche-familiari-natalita.html">temi 04 e 05 →</a>
+          <span class="temi-link">temi <a href="politiche-familiari-natalita.html">04</a> e <a href="immigrazione-canali-legali.html">05</a> →</span>
         </div>
       </div>
     </div>
