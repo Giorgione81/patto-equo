@@ -17,7 +17,7 @@
 <meta name="twitter:image" content="https://pattoequo.it/og-image.png">
 <link rel="canonical" href="https://pattoequo.it/">
 <meta name="google-site-verification" content="DaS3Dn8JhldQL6mpq6Xtet7uhfjyfLVkrzQzGjKVx2o" />
-<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="39" cy="42" r="17" fill="none" stroke="%231B2A4A" stroke-width="5"/><circle cx="61" cy="42" r="17" fill="none" stroke="%23A9832F" stroke-width="5"/><path d="M 53.72 50.5 A 17 17 0 0 1 44.25 58.17" fill="none" stroke="%231B2A4A" stroke-width="5"/><line x1="15" y1="70" x2="85" y2="70" stroke="%231B2A4A" stroke-width="3" stroke-linecap="round"/></svg>'>
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="39" cy="42" r="17" fill="none" stroke="%23B33A2B" stroke-width="5"/><circle cx="61" cy="42" r="17" fill="none" stroke="%23C9971F" stroke-width="5"/><path d="M 53.72 50.5 A 17 17 0 0 1 44.25 58.17" fill="none" stroke="%23B33A2B" stroke-width="5"/><line x1="12" y1="70" x2="88" y2="70" stroke="%232F7A4F" stroke-width="3" stroke-linecap="round"/><line x1="34" y1="79" x2="66" y2="79" stroke="%232F7A4F" stroke-width="3" stroke-linecap="round"/></svg>'>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -60,7 +60,7 @@
 
   .layout-grid{
     display:grid;
-    grid-template-columns: 200px 1fr 300px;
+    grid-template-columns: 240px 1fr 300px;
     gap:44px;
     max-width:1280px;
     margin:0 auto;
@@ -77,12 +77,22 @@
     letter-spacing:0.06em; color:#8a8577; margin:22px 0 2px; padding-bottom:4px;
   }
   .temi-sidebar .sidebar-label + .pilastro{margin-top:4px;}
-  .temi-sidebar a{
-    display:block; padding:14px 0; border-bottom:1px solid var(--line);
-    text-decoration:none; color:var(--charcoal); font-size:0.92rem; font-weight:500; line-height:1.35;
+  .tema-card{
+    display:block; background:#fff; border:1px solid var(--line); border-left:3px solid var(--gold);
+    padding:13px 14px 11px; margin-bottom:10px; text-decoration:none; color:var(--charcoal);
+    transition:border-left-color .15s ease, transform .15s ease;
   }
-  .temi-sidebar a:hover{color:var(--gold);}
-  .temi-sidebar a .n{font-family:'IBM Plex Mono',monospace; font-size:0.75rem; color:#a39c8a; margin-right:8px;}
+  .tema-card:hover{border-left-color:var(--ink); transform:translateX(2px);}
+  .tema-card .tc-head{display:flex; align-items:center; gap:10px;}
+  .tema-card .tc-n{font-family:'IBM Plex Mono',monospace; font-size:0.72rem; color:var(--gold); letter-spacing:0.06em;}
+  .tema-card .tc-ico{width:28px; height:28px; stroke:var(--ink); stroke-width:1.4; fill:none; stroke-linecap:round; stroke-linejoin:round; flex-shrink:0; margin-left:auto;}
+  .tema-card .tc-title{font-family:'Fraunces',serif; color:var(--ink); font-size:1.04rem; font-weight:600; line-height:1.22; margin-top:8px;}
+  .tema-card .tc-desc{font-size:0.82rem; color:#4a4640; line-height:1.42; margin-top:7px;}
+  .tema-card .tc-impact{
+    margin-top:10px; padding-top:8px; border-top:1px solid var(--line);
+    font-family:'IBM Plex Mono',monospace; font-size:0.65rem; letter-spacing:0.04em;
+    text-transform:uppercase; color:var(--green-gain);
+  }
 
   .hero-center .eyebrow{
     font-family:'IBM Plex Mono',monospace; font-size:0.78rem; color:var(--red);
@@ -220,11 +230,12 @@
 <header>
   <div class="logo" style="display:flex; align-items:center; gap:10px;">
     <a href="index.html" style="text-decoration:none; color:var(--ink); display:flex; align-items:center; gap:10px;">
-      <svg viewBox="0 0 100 100" width="26" height="26" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="39" cy="42" r="17" fill="none" stroke="#1B2A4A" stroke-width="5"/>
-        <circle cx="61" cy="42" r="17" fill="none" stroke="#A9832F" stroke-width="5"/>
-        <path d="M 53.72 50.5 A 17 17 0 0 1 44.25 58.17" fill="none" stroke="#1B2A4A" stroke-width="5"/>
-        <line x1="15" y1="70" x2="85" y2="70" stroke="#1B2A4A" stroke-width="3" stroke-linecap="round"/>
+      <svg viewBox="0 0 100 100" width="34" height="34" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="39" cy="42" r="17" fill="none" stroke="#B33A2B" stroke-width="5"/>
+        <circle cx="61" cy="42" r="17" fill="none" stroke="#C9971F" stroke-width="5"/>
+        <path d="M 53.72 50.5 A 17 17 0 0 1 44.25 58.17" fill="none" stroke="#B33A2B" stroke-width="5"/>
+        <line x1="12" y1="70" x2="88" y2="70" stroke="#2F7A4F" stroke-width="3" stroke-linecap="round"/>
+        <line x1="34" y1="79" x2="66" y2="79" stroke="#2F7A4F" stroke-width="3" stroke-linecap="round"/>
       </svg>
       Patto <span>Equo</span>
     </a>
@@ -242,16 +253,72 @@
   <aside class="temi-sidebar" id="temi">
     <span class="sidebar-label">Sezione permanente</span>
     <span class="pilastro">Equità patrimoniale e fiscale</span>
-    <a href="tassa-patrimoniale.html"><span class="n">01</span>Patrimoniale sopra i 50M</a>
-    <a href="tassazione-rendite-finanziarie.html"><span class="n">02</span>Tassazione differenziata delle rendite finanziarie</a>
-    <a href="concentrazione-immobiliare.html"><span class="n">03</span>Limite alla concentrazione di beni immobili</a>
+    <a class="tema-card" href="tassa-patrimoniale.html">
+      <span class="tc-head"><span class="tc-n">01</span>
+        <svg class="tc-ico" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 28h26"/><path d="M6 28V20h7v8M17 28V8h7v20"/><path d="M20.5 8V4"/><path d="M8.5 23h2M19.5 12h2M19.5 17h2M19.5 22h2"/></svg>
+      </span>
+      <span class="tc-title">Patrimoniale sopra i 50M</span>
+      <span class="tc-desc">Chi possiede patrimoni enormi contribuisce di più. Per la quasi totalità degli italiani non cambia nulla.</span>
+      <span class="tc-impact">ci guadagna: chi vive del proprio lavoro</span>
+    </a>
+    <a class="tema-card" href="tassazione-rendite-finanziarie.html">
+      <span class="tc-head"><span class="tc-n">02</span>
+        <svg class="tc-ico" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 26h24"/><path d="M5 21l7-8 5 4 10-12"/><path d="M22 5h5v5"/></svg>
+      </span>
+      <span class="tc-title">Tassazione differenziata delle rendite finanziarie</span>
+      <span class="tc-desc">Più contributo dalle grandi rendite finanziarie. Tutela del piccolo risparmio e dei titoli di Stato.</span>
+      <span class="tc-impact">ci guadagna: chi vive di stipendio, non di rendita</span>
+    </a>
+    <a class="tema-card" href="concentrazione-immobiliare.html">
+      <span class="tc-head"><span class="tc-n">03</span>
+        <svg class="tc-ico" viewBox="0 0 32 32" aria-hidden="true"><path d="M2 27h28"/><path d="M4 27V15h5v12M9 27V10h6v17M15 27V18h5v9M20 27V12h5v15M25 27V20h4v7"/><path d="M6 19h1M11 15h1M11 21h1M22 16h1M22 22h1"/></svg>
+      </span>
+      <span class="tc-title">Limite alla concentrazione di beni immobili</span>
+      <span class="tc-desc">Meno convenienza a lasciare immobili vuoti. Più case disponibili per chi ci deve vivere.</span>
+      <span class="tc-impact">ci guadagna: chi cerca casa</span>
+    </a>
     <span class="pilastro">Sostenibilità sociale</span>
-    <a href="politiche-familiari-natalita.html"><span class="n">04</span>Politiche per le famiglie e la natalità</a>
-    <a href="immigrazione-canali-legali.html"><span class="n">05</span>Immigrazione: regole, rimpatri e canali legali</a>
+    <a class="tema-card" href="politiche-familiari-natalita.html">
+      <span class="tc-head"><span class="tc-n">04</span>
+        <svg class="tc-ico" viewBox="0 0 32 32" aria-hidden="true"><circle cx="11" cy="8" r="3.4"/><path d="M11 11.4V20M11 20l-3.4 8M11 20l3.4 8M6.5 14.5 11 11.8l4.5 2.7"/><circle cx="23" cy="15" r="2.6"/><path d="M23 17.6V23M23 23l-2.6 5M23 23l2.6 5M19.6 19.6 23 17.6l3.4 2"/></svg>
+      </span>
+      <span class="tc-title">Politiche per le famiglie e la natalità</span>
+      <span class="tc-desc">Servizi, tempo e sostegni stabili. Avere figli deve tornare a essere una scelta possibile.</span>
+      <span class="tc-impact">ci guadagna: chi vorrebbe figli e rinuncia</span>
+    </a>
+    <a class="tema-card" href="immigrazione-canali-legali.html">
+      <span class="tc-head"><span class="tc-n">05</span>
+        <svg class="tc-ico" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 25c2 0 2 2 4 2s2-2 4-2 2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2"/><path d="M6 20h20l-3 4H9z"/><path d="M16 6v12M12.5 9.5 16 6l3.5 3.5"/></svg>
+      </span>
+      <span class="tc-title">Immigrazione: regole, rimpatri e canali legali</span>
+      <span class="tc-desc">Rimpatri effettivi per chi non ha titolo a restare, quote rispettate e ingressi tracciabili.</span>
+      <span class="tc-impact">ci guadagna: chi lavora in regola</span>
+    </a>
     <span class="pilastro">Crescita e competitività</span>
-    <a href="fuga-dei-cervelli-salari.html"><span class="n">06</span>Lavoro, salari e fuga dei cervelli</a>
-    <a href="crescita-produttivita-imprese.html"><span class="n">07</span>Come facciamo crescere l'Italia</a>
-    <a href="citta-caldo-vivibilita.html"><span class="n">08</span>Città, caldo e qualità della vita</a>
+    <a class="tema-card" href="fuga-dei-cervelli-salari.html">
+      <span class="tc-head"><span class="tc-n">06</span>
+        <svg class="tc-ico" viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="9" width="24" height="16" rx="2"/><path d="M4 15h24"/><path d="M11 9V7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/><path d="M14.5 15v2.5h3V15"/></svg>
+      </span>
+      <span class="tc-title">Lavoro, salari e fuga dei cervelli</span>
+      <span class="tc-desc">Salari reali fermi da trentacinque anni: cinque leve per farli ripartire e per trattenere le competenze.</span>
+      <span class="tc-impact">ci guadagna: chi lavora e non vede aumenti</span>
+    </a>
+    <a class="tema-card" href="crescita-produttivita-imprese.html">
+      <span class="tc-head"><span class="tc-n">07</span>
+        <svg class="tc-ico" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 27h24"/><path d="M7 27V19M14 27V13M21 27V17M28 27V7"/></svg>
+      </span>
+      <span class="tc-title">Come facciamo crescere l'Italia</span>
+      <span class="tc-desc">Investimenti, ricerca, energia competitiva e uno Stato che spende meglio.</span>
+      <span class="tc-impact">ci guadagna: chi lavora in imprese che crescono</span>
+    </a>
+    <a class="tema-card" href="citta-caldo-vivibilita.html">
+      <span class="tc-head"><span class="tc-n">08</span>
+        <svg class="tc-ico" viewBox="0 0 32 32" aria-hidden="true"><circle cx="23" cy="8" r="4"/><path d="M23 1.5v1.5M23 13v1.5M29.5 8H28M18 8h-1.5"/><path d="M3 28h26"/><path d="M6 28V16h8v12M14 28v-8h7v8"/></svg>
+      </span>
+      <span class="tc-title">Città, caldo e qualità della vita</span>
+      <span class="tc-desc">Ombra, suolo permeabile e servizi raggiungibili a piedi, misurati in gradi e in minuti.</span>
+      <span class="tc-impact">ci guadagna: chi non può comprarsi il fresco</span>
+    </a>
   </aside>
 
   <section class="hero-center">
