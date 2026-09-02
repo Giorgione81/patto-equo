@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<title>og-image — generatore della card social (non è una pagina del sito)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1B2A4A; --paper:#F7F5EF; --paper-deep:#EFEBE1; --red:#8C3B33;
+    --gold:#A9832F; --line:#D9D2C2; --green-gain:#3E6B4F;
+    --logo-red:#B33A2B; --logo-gold:#C9971F; --logo-green:#2F7A4F;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:#E4E0D6; font-family:'Inter',system-ui,sans-serif; padding:40px;}
+  .istruzioni{max-width:1200px; margin:0 auto 28px; font-size:0.9rem; color:#4a4640; line-height:1.6;}
+  .istruzioni b{color:var(--ink);}
+  .istruzioni code{font-family:'IBM Plex Mono',monospace; font-size:0.85em; background:#fff; padding:1px 5px; border:1px solid var(--line);}
+  .istruzioni ol{padding-left:20px; margin:8px 0 0;}
+  .istruzioni li{margin-bottom:5px;}
+
+  /* --- IL NODO DA CATTURARE: 1200 x 630 --- */
+  #card{
+    width:1200px; height:630px; background:var(--paper); position:relative;
+    display:flex; flex-direction:column; justify-content:space-between;
+    padding:64px 72px; overflow:hidden; margin:0 auto;
+    border:1px solid var(--line);
+  }
+  #card .marchio{display:flex; align-items:center; gap:28px;}
+  #card .marchio .nome{font-family:'Fraunces',serif; font-weight:600; font-size:88px; color:var(--ink); letter-spacing:-0.01em;}
+  #card .marchio .nome span{color:var(--red);}
+  #card h1{
+    font-family:'Fraunces',serif; font-weight:600; color:var(--ink); margin:0;
+    font-size:46px; line-height:1.18; letter-spacing:-0.01em; max-width:940px;
+  }
+  #card .claim{font-size:24px; color:#4a4640; margin:24px 0 0; max-width:900px; line-height:1.42;}
+  #card .metodo{display:flex; gap:34px; align-items:center; border-top:1px solid var(--line); padding-top:26px;}
+  #card .metodo .voce{font-family:'IBM Plex Mono',monospace; font-size:17px; letter-spacing:0.03em; color:#6b6659;}
+  #card .metodo .voce b{color:var(--ink); font-weight:500;}
+  #card .dominio{margin-left:auto; font-family:'IBM Plex Mono',monospace; font-size:19px; color:var(--gold); letter-spacing:0.06em;}
+  #card .fascia{position:absolute; left:0; top:0; width:10px; height:100%;
+    background:linear-gradient(180deg, var(--logo-red) 0 33.3%, var(--logo-gold) 33.3% 66.6%, var(--logo-green) 66.6% 100%);}
+</style>
+</head>
+<body>
+
+<div class="istruzioni">
+  <b>Questo file non è una pagina del sito</b> — ha il <code>noindex</code> e serve solo a produrre <code>og-image.png</code>, l'immagine di anteprima che compare quando qualcuno condivide un link di pattoequo.it.
+  <ol>
+    <li>Apri questo file in Chrome.</li>
+    <li>Tasto destro sulla card qui sotto → <b>Ispeziona</b>.</li>
+    <li>Nel pannello Elements, tasto destro sul nodo <code>&lt;div id="card"&gt;</code> → <b>Capture node screenshot</b>.</li>
+    <li>Il PNG scaricato va rinominato <code>og-image.png</code> (un solo <code>.png</code>) e messo nella cartella del sito, accanto a <code>index.html</code>.</li>
+  </ol>
+  Su uno schermo ad alta densità la cattura esce a 2400×1260 invece di 1200×630: va bene, ma i meta <code>og:image:width</code> e <code>og:image:height</code> delle pagine devono dichiarare le dimensioni reali del file.
+</div>
+
+<div id="card">
+  <span class="fascia"></span>
+
+  <div class="marchio">
+    <svg viewBox="0 0 100 100" width="176" height="176" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="39" cy="42" r="17" fill="none" stroke="#B33A2B" stroke-width="5"/>
+      <circle cx="61" cy="42" r="17" fill="none" stroke="#C9971F" stroke-width="5"/>
+      <path d="M 53.72 50.5 A 17 17 0 0 1 44.25 58.17" fill="none" stroke="#B33A2B" stroke-width="5"/>
+      <line x1="12" y1="70" x2="88" y2="70" stroke="#2F7A4F" stroke-width="3" stroke-linecap="round"/>
+      <line x1="34" y1="79" x2="66" y2="79" stroke="#2F7A4F" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+    <span class="nome">Patto <span>Equo</span></span>
+  </div>
+
+  <div>
+    <h1>Proposte concrete per un'Italia più giusta</h1>
+    <p class="claim">Le grandi questioni economiche e sociali italiane, una per una: i dati con le fonti, le obiezioni vere, una proposta, e chi ci guadagna e chi ci perde.</p>
+  </div>
+
+  <div class="metodo">
+    <span class="voce"><b>fonti</b> sempre linkate</span>
+    <span class="voce"><b>obiezioni</b> sempre incluse</span>
+    <span class="voce"><b>quando non sappiamo</b>, lo diciamo</span>
+    <span class="dominio">pattoequo.it</span>
+  </div>
+</div>
+
+</body>
+</html>
